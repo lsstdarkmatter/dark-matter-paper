@@ -1,11 +1,11 @@
 # Choose which style to pass to docswitch
 # NB: Default value here is always used by Overleaf
-$theflag = $ENV{'STYLEFLAG'} || '\def\flag{lsstdescnote}';
+$theflag = $ENV{'STYLEFLAG'} || '\def\flag{prd}';
 
 # Set environment variables to search for tex inputs
 # http://tex.stackexchange.com/a/50847/121099
-$ENV{'TEXINPUTS'}='./texmf//:./tables/:' . $ENV{'TEXINPUTS'};
-$ENV{'BSTINPUTS'}='./texmf/bib/:' . $ENV{'BSTINPUTS'};
+$ENV{'TEXINPUTS'}='./desc-tex//:./tables/:' . $ENV{'TEXINPUTS'};
+$ENV{'BSTINPUTS'}='./desc-tex/bib/:' . $ENV{'BSTINPUTS'};
 
 # Set control tools
 $go_mode = 1;

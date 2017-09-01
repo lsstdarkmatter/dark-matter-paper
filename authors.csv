@@ -29,4 +29,7 @@
 #
 # ======================================================================
 Lastname,Firstname,Authorname,AuthorType,Affiliation,Contribution,Email
-"Author", "Ann","A.~N.~Author",Contact,"Affiliation","Contribution","ann.author@dev.null"
+"Drlica-Wagner","Alex","A.~Drlica-Wagner",Contact,"Fermi National Accelerator Laboratory, P. O. Box 500, Batavia, IL 60510, USA","Science!","kadrlica@fnal.gov"
+"Bechtol","Keith","K.~Bechtol",Contact,"LSST","Science!","bechtol@lsst.org"
+"Dawson","William","W.~A.~Dawson",Contact,"Livermore","Science!","dawson29@llnl.gov"
+"Cohen-Tanugi","Johann","J.~Cohen-Tanugi",Contact,"LUPM","Science!","johann.cohen-tanugi@umontpellier.fr"
