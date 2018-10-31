@@ -12,56 +12,28 @@ def plot_limit(section):
     data = limits[section]
     mass,limit = np.genfromtxt(StringIO(data['xystring'])).T
     kwargs = dict(**data['style'])
-    #plt.plot(np.log10(mass),np.log10(limit),**kwargs)
     plt.plot(mass,limit,**kwargs)
-
-def plot_projection():
-    data = limits['ackermann15_bb']
-    mass,limit = np.genfromtxt(StringIO(data['xystring'])).T
-    # Now for the projection factors
-    proj_factor = np.ones(len(limit))
-
-    # 1) apace predicts that the integrated J-factor could increase by a factor of 10
-    proj_factor *= 10
-    # 2) We expect to have ~18 years of data
-    proj_factor *= 3
-    # 3) the limits will scale as N^(1/2) at low mass and N^(1) at high mass
-    # We fit to the curve in Fig 16 in 1605.02016
-    slope = (0.5 - 0.75)/ (np.log10(6) - np.log10(1e4))
-    fn = lambda mass: slope * np.log10(mass) + 0.43
-
-    proj_factor = proj_factor**(-fn(mass))
-    proj = proj_factor * limit
-
-    kwargs=dict(ls='-',lw=1.5,color='dodgerblue')
-    plt.plot(mass, proj, **kwargs)
 
 fig,ax = plt.subplots()
 ax.set_yscale('log')
 ax.set_xscale('log')
-plt.axhline(3e-26,ls='--',lw=2,color='gray')
 
-limits = yaml.load(open('data/limits.yaml'))
+limits = yaml.load(open('data/macho_limits.yaml'))
 
-plot_limit('ackermann15_bb')
-#plot_limit('gordon2013_bb_1s')
-#plot_limit('abazajian2014_contour_bb_1s')
-#plot_limit('calore2014_bb_1s')
-#plot_limit('daylan2014_bb_1s')
-plot_limit('hess_gc_einasto_abazajian_bb_95cl')
-plot_limit('zaharijas2018_cta_bb')
-plot_limit('gc_summary_bb_1s')
+plot_limit('macho_alcock_2001')
+plot_limit('eros_tisserand_2007')
+plot_limit('eridanus_li_2016')
+plot_limit('kepler_griest_2013')
+plot_limit('hsc_niikura_2017')
+plot_limit('binaries_quinn_2009')
 
-plot_projection()
-
-plt.xlim(1,1e4)
-plt.ylim(5e-28,1e-22)
-plt.xlabel(r'$m_{\rm DM}$ (GeV)',fontsize=18)
-plt.ylabel(r'$\langle \sigma_{\rm ann} v \rangle {\rm (cm^3 s^{-1})}$',fontsize=18)
+plt.xlim(1e-18,1e17)
+plt.ylim(1e-5,1.0)
+plt.xlabel(r'${\rm Compact\ Object\ Mass}\ (M_\odot)$',fontsize=18)
+plt.ylabel(r'${\rm Dark\ Matter\ Fraction}$',fontsize=18)
 plt.subplots_adjust(top=0.95,bottom=0.12)
 
-plt.annotate(r'$\chi \chi \rightarrow b \bar b$', xy=(2e3,1e-27),fontsize=24)
+#plt.annotate(r'$\chi \chi \rightarrow b \bar b$', xy=(2e3,1e-27),fontsize=24)
 
-plt.savefig('id_annih.pdf')
+plt.savefig('macho_limits.pdf')
 plt.ion()
-
