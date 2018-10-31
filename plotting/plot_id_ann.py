@@ -49,17 +49,21 @@ plot_limit('ackermann15_bb')
 #plot_limit('calore2014_bb_1s')
 #plot_limit('daylan2014_bb_1s')
 plot_limit('hess_gc_einasto_abazajian_bb_95cl')
+plot_limit('zaharijas2018_cta_bb')
 plot_limit('gc_summary_bb_1s')
 
 plot_projection()
 
 plt.xlim(1,1e4)
 plt.ylim(5e-28,1e-22)
-plt.xlabel(r'$m_{\rm DM}$ (GeV)')
-plt.ylabel(r'$\langle \sigma_{\rm ann} v \rangle {\rm (cm^3 s^{-1})}$')
+plt.xlabel(r'$m_{\rm DM}$ (GeV)',fontsize=18)
+plt.ylabel(r'$\langle \sigma_{\rm ann} v \rangle {\rm (cm^3 s^{-1})}$',fontsize=18)
+plt.subplots_adjust(top=0.95,bottom=0.12)
+
+plt.annotate(r'$\chi \chi \rightarrow b \bar b$', xy=(2e3,1e-27),fontsize=24)
 
 plt.savefig('id_annih.pdf')
 plt.ion()
 
-ell= Ellipse((1.6,-25.45), 0.37, 0.88)
-print(10**ell.get_patch_transform().transform(ell.get_path().vertices))
+#ell= Ellipse((1.6,-25.45), 0.37, 0.88)
+#print(10**ell.get_patch_transform().transform(ell.get_path().vertices))

@@ -44,16 +44,29 @@ ax.set_yscale('log')
 ax.set_xscale('log')
 ax2.set_xscale('log')
 
+##########################################
+# Plot the data
+
 plt.axvline(3,ls='--',lw=2,color='r')
 plt.axhline(1,ls='--',lw=2,color='r')
 
+# This is just an example for illustration...
+mwdm = np.logspace(np.log10(3),2,100)
+plt.plot(mwdm, -1.0/(mwdm-2)**0.5 + 1, color='dodgerblue', lw=3)
+
+##########################################
+
 plt.xlim(0.1,100)
 plt.ylim(0.01,10)
-plt.xlabel(r'$m_{\rm WDM}$ (keV)')
-plt.ylabel(r'$\sigma_{\rm SIDM} {\rm (cm^2 g^{-1})}$')
-
 ax2.set_xlim(mwdm2mhalo(np.array(ax.get_xlim())))
-#ax2.xaxis.set_major_locator(LogLocator(numticks=6,prune='left'))
-ax2.set_xlabel(r'Halo Mass ($M_\odot$)')
 
+plt.xlabel(r'${\rm Particle\ Mass\ (keV)}$',fontsize=20)
+plt.ylabel(r'$\sigma_{\rm SIDM}\ {\rm (cm^2 g^{-1})}$',fontsize=20)
+ax2.set_xlabel(r'${\rm Halo\ Mass\ (M_\odot)}$',fontsize=20)
+
+# This is "necessary" to get the ax2 labels...
+plt.savefig('wdm_sidm.pdf')
+
+ticklabels = ['' if i%2 else t.get_text() for i,t in enumerate(ax2.get_xticklabels())]
+ax2.set_xticklabels(ticklabels)
 plt.savefig('wdm_sidm.pdf')
