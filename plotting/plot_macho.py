@@ -41,7 +41,7 @@ ax.set_yscale('log')
 ax.set_xscale('log')
 plt.axhline(3e-26,ls='--',lw=2,color='gray')
 
-limits = yaml.load(open('data/ann_limits.yaml'))
+limits = yaml.load(open('data/limits.yaml'))
 
 plot_limit('ackermann15_bb')
 #plot_limit('gordon2013_bb_1s')
@@ -65,5 +65,3 @@ plt.annotate(r'$\chi \chi \rightarrow b \bar b$', xy=(2e3,1e-27),fontsize=24)
 plt.savefig('id_annih.pdf')
 plt.ion()
 
-#ell= Ellipse((1.6,-25.45), 0.37, 0.88)
-#print(10**ell.get_patch_transform().transform(ell.get_path().vertices))
