@@ -11,6 +11,8 @@ from matplotlib.patches import Ellipse
 def plot_limit(section):
     data = limits[section]
     mass,limit = np.genfromtxt(StringIO(data['xystring'])).T
+    if data['mass_unit'] == 'gram':
+        mass /= 2e33
     kwargs = dict(**data['style'])
     plt.plot(mass,limit,**kwargs)
 
@@ -28,6 +30,8 @@ plot_limit('hsc_niikura_2017')
 plot_limit('binaries_quinn_2009')
 plot_limit('disk_lacey_1985')
 plot_limit('binaries_yoo_2003')
+plot_limit('gammaray_femtolens_carr_2016')
+plot_limit('ns_capture_optimistic_capela_2013')
 
 plt.xlim(1e-18,1e17)
 plt.ylim(1e-5,1.0)
