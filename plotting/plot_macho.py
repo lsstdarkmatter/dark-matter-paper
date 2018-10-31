@@ -26,12 +26,15 @@ plot_limit('eridanus_li_2016')
 plot_limit('kepler_griest_2013')
 plot_limit('hsc_niikura_2017')
 plot_limit('binaries_quinn_2009')
+plot_limit('disk_lacey_1985')
+plot_limit('binaries_yoo_2003')
 
 plt.xlim(1e-18,1e17)
 plt.ylim(1e-5,1.0)
 plt.xlabel(r'${\rm Compact\ Object\ Mass}\ (M_\odot)$',fontsize=18)
 plt.ylabel(r'${\rm Dark\ Matter\ Fraction}$',fontsize=18)
 plt.subplots_adjust(top=0.95,bottom=0.12)
+
 
 #plt.annotate(r'$\chi \chi \rightarrow b \bar b$', xy=(2e3,1e-27),fontsize=24)
 

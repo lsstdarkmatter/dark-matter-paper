@@ -65,6 +65,7 @@ eros_tisserand_2007:
   mass_unit: 'msun'
 
   xystring: |
+    4.93075e-08	1.0	    
     4.93075e-08	0.6	
     5.30163e-08	0.529787
     5.7004e-08	0.453191
@@ -116,6 +117,7 @@ eros_tisserand_2007:
     15.7344	0.533617	
     18.1904	0.580851	
     18.8621	0.598723	
+    30.0        1.0
 
 binaries_quinn_2009:
   # https://academic.oup.com/mnrasl/article/396/1/L11/979865
@@ -149,6 +151,34 @@ binaries_quinn_2009:
     1.05208e+07	0.644382
     4.14308e+07	0.649438
     9.67892e+07	0.659551
+
+binaries_yoo_2003:
+  # https://arxiv.org/pdf/astro-ph/0307437.pdf
+
+  style:
+    label : 'Wide Binaries'
+    color : 'green' 
+    marker : 'None'
+    linestyle : '-'
+    linewidth : 1.5
+
+  channel_label : ''
+  conf_label : ''
+  mass_unit: 'msun'
+
+  xystring: |
+     40.6464	0.993521	
+     96.5967	0.526998	
+     292.527	0.280778	
+     1017.46	0.149028	
+     2976.35	0.187905	
+     9330.93	0.159827	
+     94938.8	0.153348	
+     308121	0.168467	
+     965967	0.142549	
+     3.4781e+06	0.142549
+     1.1288e+07	0.157667
+     9.3309e+07	0.149028
 
 eridanus_li_2016:
 
@@ -280,4 +310,45 @@ kepler_griest_2013:
     1.28694e-07	1.35703 
     2.58576e-07	3.10066 
 
+disk_lacey_1985:
+  # This data is scraped from Fig 7 Yoo et al. 2003:
+  # https://arxiv.org/pdf/astro-ph/0307437.pdf
+  # Yoo et al. reference Lacey & Ostriker 1985:
+  # http://adsabs.harvard.edu/abs/1985ApJ...299..633L
+  # and this is often referred to as the Xu-Ostriker bound
+  # http://articles.adsabs.harvard.edu/pdf/1994ApJ...437..184X
+  # However, neither of these have good figures to scrape
+
+  style:
+    label : 'Disk Stability'
+    color : 'purple' 
+    marker : 'None'
+    linestyle : '-'
+    linewidth : 1.5
+
+  channel_label : ''
+  conf_label : ''
+  mass_unit: 'msun'
+
+  xystring: |
+    2.14204e+06	0.99784 
+    2.37651e+06	0.939525
+    2.37651e+06	0.915767
+    2.54692e+06	0.861771
+    2.72954e+06	0.781857
+    3.13502e+06	0.701944
+    3.47819e+06	0.62419 
+    3.85892e+06	0.546436
+    4.74998e+06	0.466523
+    5.45559e+06	0.388769
+    6.95193e+06	0.311015
+    9.17077e+06	0.235421
+    1.01746e+07	0.213823
+    1.43845e+07	0.155508
+    1.59591e+07	0.140389
+    2.41801e+07	0.090712
+    2.97635e+07	0.073434
+    5.94889e+07	0.036717
+    8.41031e+07	0.028077
+    9.33093e+07	0.023758
 
