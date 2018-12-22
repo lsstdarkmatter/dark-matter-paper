@@ -12,6 +12,7 @@ def plot_limit(section):
     data = limits[section]
     mass,limit = np.genfromtxt(StringIO(data['xystring'])).T
     kwargs = dict(**data['style'])
+    kwargs['lw'] = 2
     #plt.plot(np.log10(mass),np.log10(limit),**kwargs)
     plt.plot(mass,limit,**kwargs)
 
@@ -21,8 +22,8 @@ def plot_projection():
     # Now for the projection factors
     proj_factor = np.ones(len(limit))
 
-    # 1) apace predicts that the integrated J-factor could increase by a factor of 10
-    proj_factor *= 10
+    # 1) @apace predicts that the integrated J-factor could increase by ~3x
+    proj_factor *= 3
     # 2) We expect to have ~18 years of data
     proj_factor *= 3
     # 3) the limits will scale as N^(1/2) at low mass and N^(1) at high mass
@@ -33,7 +34,7 @@ def plot_projection():
     proj_factor = proj_factor**(-fn(mass))
     proj = proj_factor * limit
 
-    kwargs=dict(ls='-',lw=1.5,color='dodgerblue')
+    kwargs=dict(ls='-',lw=2,color='dodgerblue')
     plt.plot(mass, proj, **kwargs)
 
 fig,ax = plt.subplots()
@@ -48,8 +49,8 @@ plot_limit('ackermann15_bb')
 #plot_limit('abazajian2014_contour_bb_1s')
 #plot_limit('calore2014_bb_1s')
 #plot_limit('daylan2014_bb_1s')
-plot_limit('hess_gc_einasto_abazajian_bb_95cl')
-plot_limit('zaharijas2018_cta_bb')
+#plot_limit('hess_gc_einasto_abazajian_bb_95cl')
+#plot_limit('zaharijas2018_cta_bb')
 plot_limit('gc_summary_bb_1s')
 
 plot_projection()
