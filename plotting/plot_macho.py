@@ -14,17 +14,24 @@ def plot_limit(section):
     if data['mass_unit'] == 'gram':
         mass /= 2e33
     kwargs = dict(**data['style'])
-    plt.plot(mass,limit,**kwargs)
+    plt.plot(mass, limit, **kwargs)
+    x_label = np.median(mass)
+    y_label = np.min(limit)
+    plt.text(x_label, y_label, data['style']['label'],
+             horizontalalignment='center',
+             verticalalignment='top')
 
 fig,ax = plt.subplots()
 ax.set_yscale('log')
 ax.set_xscale('log')
 
-limits = yaml.load(open('data/macho_limits.yaml'))
+limits = yaml.load(open('../data/macho_limits.yaml'))
 
 plot_limit('macho_alcock_2001')
 plot_limit('eros_tisserand_2007')
 plot_limit('eridanus_li_2016')
+plot_limit('eridanus_brandt_2016_tight')
+plot_limit('eridanus_brandt_2016_loose')
 plot_limit('kepler_griest_2013')
 plot_limit('hsc_niikura_2017')
 plot_limit('binaries_quinn_2009')
@@ -32,6 +39,9 @@ plot_limit('disk_lacey_1985')
 plot_limit('binaries_yoo_2003')
 plot_limit('gammaray_femtolens_carr_2016')
 plot_limit('ns_capture_optimistic_capela_2013')
+plot_limit('lsst_paralensing')
+plot_limit('lsst_microlensing')
+
 
 plt.xlim(1e-18,1e17)
 plt.ylim(1e-5,1.0)
