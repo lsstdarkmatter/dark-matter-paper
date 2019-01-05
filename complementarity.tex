@@ -1,0 +1,227 @@
+The unique data set that LSST will provide can be combined with measurements from many other astronomy and physics experiments to place even stronger constraints on dark matter models.
+
+% Spectroscopy
+\subsection{Spectroscopy}
+ \Contributors{Josh S., Ting L. ...}
+\label{sec:spectroscopy}
+
+\ADW{It would be good to have an overview here of the current and future telescopes/resources that would be necessary to pursue spectroscopy connected to LSST dark matter science. For example, Keck, Magellan, Gemini, MSE, ELTs, etc.}
+
+In additional to the photometric and astrometric data from LSST, the dark matter constraints from various probes discussed in Section \ref{sec:probes} can be further improved with additional spectroscopic observations. In particular, spectroscopic follow-up studies will provide kinematic properties and redshifts of the objects found in LSST.
+Given the faintness and high density targets that expected from LSST, community access to multi-object spectrograph on a large aperture telescope is required for these studies (cite the LSST-OIR report). Given that LSST is a imaging survey in the Southern Hemisphere, such spectroscopic facility is preferred in the south to maximize the overlap with LSST.
+
+(TL: do we want to make a table to compare the specs of various spectroscopy facility. I do not think this is the scope of this paper...)
+
+Many next generation telescopes and instruments are currently under preparation or construction, e.g., the Southern Spectroscopic Survey Instrument (SSSI), a project recommended for consideration by the DOE’s Cosmic Visions panel (arxiv.org/abs/1604.07626 and arxiv.org/abs/1604.07821), the Primary Focus Spectrograph (PFS) instrument on the Subaru telescope, the Maunakea Spectroscopic Explorer (MSE) at CFHT, a future ESO wide-field spectroscopic facility (need to check if this one has a name already or not), and many 30m class telescopes such as Thirty Meter Telescope (TMT), Giant Magellan Telescope (GMT), and European Extremely Large Telescope (E-ELT). 
+
+In this section, we illustrate a few examples on how spectroscopy could improve the measurements on the dark matter properties for several probes.
+
+\subsubsection{Milky Way Dwarfs \Contact{Josh}}
+\Contributors{Josh, Ting, ...}
+In Section~\ref{sec:smallest_galaxies} we discussed the derivation of an upper limit on the minimum dark matter halo mass based only on the observed luminosity function of satellites discovered by LSST.  An alternative approach is to obtain spectroscopy of individual stars in each satellite to measure its velocity dispersion, from which the central mass and density can be inferred.  Then one can compare either the densities or the circular velocity function directly with theoretical predictions without assumptions about the subhalo mass function or the stellar mass-halo mass relation.
+
+Spectroscopy of individual stars in the faint Milky Way satellites that will be identified with LSST will require deep observations with multiplexed spectrographs on large telescopes.  Measurements of the stellar velocity dispersions of these systems can be obtained either with 8-10~m-class telescopes or with the next generation of 25-30~m telescopes.  As illustrated in Fig.~\ref{fig:specfollowup_distance}, spectroscopy of a nearly complete sample of satellites can be pushed $\sim2$~mag fainter in luminosity and a factor of $\sim2$ farther in distance with plausible investments of observing time on a GSMT than with existing facilities.
+
+\begin{comment}
+\begin{figure}
+\centering
+\vspace{-2in}
+\includegraphics[width=0.85\textwidth]{figures/dwarf_observability_barplot_distance.pdf}
+\vspace{-2in}
+\caption{Possibility of spectroscopic follow-up for the LSST satellite population as a function of distance. Current telescopes will be able to measure velocity dispersions for $\sim50\%$ of the expected satellites, while a GSMT can measure velocity dispersions for $\sim80\%$. }\label{fig:specfollowup_distance}
+\end{figure}
+
+
+\begin{figure}
+\centering
+\vspace{-2in}
+\includegraphics[width=0.85\textwidth]{figures/dwarf_observability_barplot_luminosity.pdf}
+\vspace{-2in}
+\caption{Possibility of spectroscopic follow-up for the LSST satellite population as a function of magnitude. }\label{fig:specfollowup_distance}
+\end{figure}
+\end{comment}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.49\textwidth]{figures/dwarf_observability_barplot_distance.pdf}
+  \includegraphics[width=0.50\textwidth]{figures/dwarf_observability_barplot_luminosity.pdf}
+  \caption{Possibility of spectroscopic follow-up for the LSST satellite population as a function of distance (left) and magnitude (right). Current telescopes will be able to measure velocity dispersions for $\sim50\%$ of the expected satellites, while a GSMT can measure velocity dispersions for $\sim80\%$.}
+  \label{fig:specfollowup_distance}
+\end{figure}
+
+\subsubsection{Stellar Streams \Contact{Ting}}
+\Contributors{Ting, ...}
+
+As discussed in Section~\ref{sec:stream_gaps}, subhalo encounters with cold stellar streams will induce density perturbations that will be detectable by LSST, constraining the minimum dark matter halo mass and the mass function of dark matter halos from $\sim10^{5} - 10^{9}$~M$_{\odot}$. In addition, these flybys cause velocity perturbations that correlate with the density variations.  The velocity signal near stream gaps can be measured either via line-of-sight velocity measurements from spectroscopy or tangential velocity measurements from astrometry, improving the precision with which the perturber mass can be determined.
+The velocity variation (peak to peak) from these flybys will be small. To estimate this, we consider a stream orbiting the Milky Way with a radius of 14 kpc and compute the typical maximum velocity kick expected over its lifetime of 5 Gyr using the formalism from \cite{erkal2016}.  This gives $\sim$0.6, 0.3, 0.1 km/s for subhaloes in the range $10^7-10^8 M_\odot$, $10^6-10^7 M_\odot$, $10^5 -10^6 M_\odot$ respectively. Due to the low density of the stream stars, a massively multiplexed, wide field-of-view spectroscopic facility such as PFS on Subaru or MSE is needed. Furthermore, given the expected small velocity kick amplitude, the velocity accuracy for each star determined from the spectroscopic observations should be at or better than 1 km/s to unambiguously detect the signal with an ensemble of stream stars.
+
+\subsubsection{Galaxy Clusters \Contact{Will}}
+\Contributors{Will, ...}
+As noted in \S\ref{sec:merging_clusters} one of largest systematics associated with merging galaxy cluster constraints of SIDM is modeling the merger. The more complex the merger the more severe the systematics.
+The best means of constraining merging galaxy cluster substructure is with spectroscopic measurement of as many galaxy cluster member galaxies as possible \cite[see e.g.,][]{2018arXiv180610619G}.
+As noted in \cite{2016arXiv161001661N}, perhaps the best spectroscopic follow-up facilities are large telescopes with slitmask-like multi-object spectrometers, or fiber-based multiplex spectrometers with low ($\mathcal{O}(arcsec)$) fiber collision regions, due to the density of cluster members.
+
+
+\subsubsection{Lyman-$\alpha$ Forest \Contact{Francis-Yan}}
+
+\ADW{This is expected to be one paragraph from Francis-Yan.}
+
+% High-resolution imaging
+\subsection{High-Resolution Imaging \Contact{Will}}
+\Contributors{Will, ...}
+\label{sec:highres}
+
+Since the LSST point spread function (PSF) is limited to an angular resolution of $\sim 0.5\arcsec$ by the atmospheric seeing, there are many dark matter science cases where higher resolution imaging from space or ground-based adaptive optics (AO) facilities, which can reach $\sim 0.01\arcsec$ in some cases, can be highly complementary. We briefly summarize some of these cases in this subsection and relate them to the dark matter science capabilities of LSST.
+\WAD{This section currently focuses on high resolution optical imaging, however it is worth considering other wavelengths, especially radio.}
+
+% Astrometric microlensing of compact dark matter
+\subsubsection{Astrometric Microlensing of Compact Dark Matter \Contact{Will}}
+\Contributors{Will, ...}
+\label{sec:astrometric_microlens}
+Related to photometric microlensing (\S\ref{sec:microlensing}), astrometric microlensing relies on the fact that the two images generated during a compact object lensing event will be of differing brightness, and the brightness ratio of these two images will vary throughout the duration of the lensing event.
+The two images will be of most similar brightness when the projected lens-source separation is at its minimum.
+By precisely measuring the astrometry of these blended images as a function of time and combining with the LSST photometric microlensing measurement one can break the lens mass-distance degeneracy and precisely measure the mass and location of individual black holes \cite{2015ApJ...814L..11Y}.
+
+% Strong-microlensing
+\subsubsection{Strong-Microlensing of Compact Dark Matter \Contributors{Will, ...}}
+Strong-microlensing is related to astrometric microlensing (\S\ref{sec:astrometric_microlens}).
+The Einstein radius of a given lens, which is approximately the separation of the multiple images in a compact object lensing scenario, scales as $\sqrt{M_\mathrm{lens}}$.
+In the intermediate mass black hole range, the separation of the two images approaches that of the resolution of various optical ground and spaced-based telescopes, see Figure \ref{fig:strong_microlensing}.
+If the multiple images can be resolved and their flux ratio measured it enables precise measurement of the mass and distance of the lens.
+
+\begin{figure}
+\label{fig:strong_microlensing}
+\centering
+\includegraphics[width=0.6\columnwidth]{figures/StrongMicrolensing.png}
+\caption{The Einstein radius (i.e., 1/2 the separation of the multiple images) for microlensing lensing events as a function of IM MACHO mass and distance between us and the MW bulge. Any parameter space below a black curve indicates that the multiple lensed source images will be resolvable by that telescope. \Contributors{Will, PALS Collaboration, ...}}
+\end{figure}
+
+% Merging Galaxy Clusters
+\subsubsection{Merging Galaxy Clusters and Cluster Subhalos \Contributors{Will D., Dave W., ...}}
+
+Most dark matter constraints from merging galaxy clusters (\secref{halo_profile_clusters}) and cluster subhalos (\secref{halo_profile_clusters}) rely on accurately measuring the distribution of dark matter in (sub)clusters via gravitational lensing.
+Strong and weak gravitational lensing both benefit from high resolution imaging.
+For strong lensing the high resolution imaging enables better detection and characterization of strongly lensed background images in the dense cluster environment.
+Similarly high resolution imaging provides $\sim4$ times more lensed source galaxies per unit area than ground-based imaging at similar depths, which enable higher resolution weak gravitational lensing.
+Historically Hubble Space Telescope (HST) has provided this higher resolution imaging, although in the era of LSST it appears that we will rely on space-based telescopes such as JWST, Euclid, and WFIRST.
+There is also the potential to leverage future wide field AO instruments \WAD{Need to provide and example.}.
+
+% Strong gravitational lensing
+\subsubsection{Strong Gravitational Lensing \Contributors{Chris F.} \label{sec:SLcomplement}}
+
+All three approaches to use strong gravitational lens systems to make inferences on the nature of dark matter that were described in \S\ref{sec:stronglens}\ utilize LSST as a lens-finding facility.
+Once the lenses are found, the dark matter science requires follow-up observations with other facilities.
+The flux-ratio anomaly approach requires imaging that spatially resolves the lensed images from each other at a wavelength at which microlensing does not affect the image fluxes.
+These observations can be in optical/near-IR wavelengths, utilizing IFU spectrographs behind the adaptive optics systems on ELTs to isolate the emission from the narrow-line regions of the lensed AGN, at mid-IR wavelengths with JWST, or at radio wavelengths for the subset of LSST lenses that is radio-loud.
+The gravitational imaging and power-spectrum approaches both require milliarcsecond-scale angular resolution imaging for best results.
+These observations require either ELT adaptive optics imaging or VLBI radio imaging of the targets.
+ALMA can also be used in its most extended configuration, although this will not achieve as high a resolution as the ELTs and VLBI in most cases.
+
+% Indirect Detection
+\subsection{Indirect Detection }
+
+\input{indirect.tex}
+
+% Direct Detection
+\subsection{Direct Detection }
+
+\subsubsection{Baryon Scattering \Contact{Vera}}
+\Contributors{Vera, Kim, Lina N.}
+
+The most sensitive low-energy searches for dark matter are looking to directly detect collisions of dark matter particles from the local galactic halo in underground detectors \citep{2013arXiv1310.8327C}. 
+They have unprecedented sensitivity to WIMPs with masses well above a GeV, but the current generation of experiments is largely insensitive to lighter particles, for kinematic reasons. 
+New technologies are necessary to open up sub-GeV models of dark matter to detailed exploration \citep{Battaglieri:2017aum}. 
+Moreover, due to the extensive shielding of their targets, direct detection experiments have a ceiling on their sensitivity to large cross sections. 
+The portion of dark matter parameter space excluded by current null results is shown in \figref{dd}. 
+\begin{figure}
+\centering
+\includegraphics[width=0.6\columnwidth]{figures/planck_dd.png}
+\caption{Currently-excluded regions of dark matter parameter space (mass versus cross section for scattering with protons through a velocity-independent spin-independent contact interaction) are shown as shaded regions. Gray region is excluded by various direct detection null results \citep{2018PhRvD..97l3013K} and red is excluded by CMB measurements \citep{Gluscevic:2017ywp}. We note that there are other limits in the same parameter space, but we choose to compare only these two, for illustration of complementarity between cosmological and low-energy laboratory searches.}
+\label{fig:dd}
+\end{figure}
+
+Current null results from targeted laboratory searches motivate broad scans of parameter space that is inaccessible to underground experiments. Cosmological and astrophysical observables provide such a complementary search strategy. In particular, they are sensitive to scattering of sub-GeV particles with baryons at any point in cosmic history. Furthermore, there is no upper boundary on the interaction cross section they can probe. Finally, they are not subject to the uncertainty on local astrophysical properties of dark matter particles (their phase-space distribution), which affects the inferred limits on the particle properties of dark matter. 
+
+If dark matter particles scatter with baryons, they transfer momentum between the two cosmological fluids, affecting density fluctuations and suppressing power at small scales; the power suppression can be captured by a variety of observables. The current limits come from the CMB \citep{Gluscevic:2017ywp}, cosmic-ray \citep{Cappiello:2018hsu}, and Lyman-$\alpha$ forest measurements \cite{Xu:2018efh}. For illustration, Figure \ref{fig:dd} compares currently excluded regions of dark matter parameter space, from analyses of Planck data, and from null results of various direct-detection searches.\footnote{We caution the reader that this is not a comprehensive list of current upper limits, but only serves to illustrate complementarity of cosmological and direct detection probes.} LSST will deliver state-of-the-art measurements of observables that trace matter fluctuations on a range of smaller scales, extending the sensitivity of astrophysical and cosmological searches far beyond the reach of Planck.
+
+\subsubsection{Local Dark Matter Velocity Distribution \Contact{Lina}}
+\Contributors{Lina N.}
+
+%One way to detect dark matter (DM) is a process called direct detection, where DM particles scatter off heavy nuclei, emitting scintillation/ionization light that provide a direct signal of DM \citep{Goodman:1984dc}. 
+
+The signal strength of dark matter (DM) scattering in direct detection experiments depends on both the local DM density and the DM velocity distribution. In this section we focus on the DM velocity distribution.
+
+The differential rate with respect to the recoil energy $dR/dQ$ depends on the integral of the DM velocity distribution, $f(v)$, as
+\begin{equation}
+    \frac{dR}{dQ} \propto \int_{v_{\rm{min}}}^{v_{\rm{esc}}} \frac{f(v)}{v} dv, 
+\end{equation}
+where $v_{\rm{min}} = \sqrt{Q m_N/ (2 \mu^2)}$, with $Q$ the recoil energy, $m_N$ the mass of the nucleus against which DM is scattering, and $\mu = (m_N m_\chi / (m_N + m_\chi))$ the reduced mass of the nucleus $m_N$ and the DM mass $m_\chi$.
+
+A novel method has recently been proposed to use the stars as tracers for the DM velocity \citep{Herzog-Arbeitman:2017fte,Necib:2018b}. These papers suggest that since accreted DM and stars have a comment origin, and are both collisionless, accreted stars are able to trace the velocity distribution of DM. This correlation holds for both the relaxed component of the DM, traced by older metal poor stars, and DM velocity substructure called debris flow traced by less metal poor stars from more recent mergers \citep{Lisanti:2011as,Kuhlen:2012fz,Lisanti:2014dva}. 
+
+This method has already been applied on RAVE-TGAS data \citep{Herzog-Arbeitman:2017zbm}, and the second data release of Gaia in \cite{necib2018}. It has been found that the relaxed component of the DM although isotropic, has a mean speed lower than that of the assumed Maxwell Boltzmann distribution, reducing current limits by direct detection experiments \citep{Aprile:2018dbl}.
+
+Another interesting aspect is the ability to reconstruct of more recent mergers. Using the second data release of Gaia, a new merger called the Gaia Sausage or the Gaia Enceleadus \citep{2018MNRAS.477.1472B,2018Natur.563...85H} has been found. Using the correlation observed in simulations, \cite{necib2018} extracted the new velocity distribution of DM brought in by the same merger, and studied its implications in current direct detection experiments. 
+
+In order to do obtain the full empirical distribution of DM, one needs the 3-d velocities of the stars in the local neighborhood. Gaia provides proper motion and parallaxes for stars down to 20th magnitude. LSST will be able to extend this dataset to fainter stars, giving us a more accurate measurement of proper motions of stars in the solar neighborhood and beyond.
+
+ Using proper motions of stars from LSST, coupled with radial velocity measurements from future telescopes like MSE, we will be able to obtain the most accurate 3-d velocity measurements of the local stars, and subsequently use this information to obtain a full empirical measurement of DM. Such detailed analysis will unveil new structures much smaller than the Gaia Sausage, but with equal importance in DM direct detection if it passes by the Solar neighborhood.
+
+
+
+\begin{comment}
+\subsection{Particle Accelerators \Contact{???}}
+\Contributors{...}
+\ADW{If no one steps up here, we should remove this section.}
+\end{comment}
+
+\begin{comment}
+\subsection{Cosmic Microwave Background \Contributors{Vera,Kim,Francis-Yan,Cora}}
+
+Consider removing this section for now. Points to potentially consider in the future:
+\begin{itemize}
+    \item Cross-correlation science.
+    \item CMB limits on dark matter-baryon and dark matter-dark radiation interactions are robust, but probe large scales. Smaller-scale probes (dwarfs etc) have a better discovery potential.
+    \item In a meta-analysis where many observables are fit with all parameters of interest, we'd want to vary all LCDM parameters. We'd use CMB data for this, in a joint likelihood analysis. But we're not there yet.
+\end{itemize}
+\end{comment}
+
+\begin{comment}
+\subsection{Gravitational Waves \Contact{???}}
+\Contributors{...}
+\ADW{If no one steps up here, we should remove this section.}
+\end{comment}
+
+\begin{comment}
+\subsection{Radio \Contact{Will?}}
+\Contributors{Will, Tony, ...}
+\label{sec:radio} 
+
+% Radio Relics: SKA, etc.
+\WAD{Need to flesh out this section.}
+\begin{itemize}
+    \item Radio relics are...
+    \item Because radio relics are only associated with post-major-cluster-mergers they can be a convenient way of identifying post-mergers.
+    \item Given the spectral index ($\alpha\sim-2$) radio relics are easier to detect at frequencies of order 100 MHz.
+    \item In the era of LSST, SKA will provide the best means of detecting mergers through their radio relics
+    \item According to \cite{2012MNRAS.420.2006N} LOFAR will detect $\sim2500$ radio relics. Given that SKA will be XXX times more sensitive it can be expected to detect YYY radio relics in the southern hemisphere. \WAD{Need to scale the sensitivity to estimate the number of relics that will be detected.}
+\end{itemize}
+\end{comment}
+
+\begin{comment}
+\subsection{X-Ray \Contact{???}}
+\Contributors{Will, Tony, Esra, ...}
+\label{sec:xray} 
+% LSST plus X-ray facilities: etc.
+{\color{red} Esra will write a section on eROSITA and Athena complementary X-ray observations here. This section can also be moved to Galaxy clusters section}
+
+\begin{itemize}
+    \item Given Athena's all sky coverage and resolution it should provide the necessary course spatial and spectral characterization of gas and merging clusters.
+\end{itemize}
+\end{comment}
+
+\begin{comment}
+\subsection{Targeted Follow Up \Contact{???}}
+\Contributors{Nate, Will, Michael...}
+\subsubsection{Transients}
+\end{comment}
