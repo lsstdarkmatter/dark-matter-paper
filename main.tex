@@ -76,7 +76,7 @@ Observations with LSST will critically complement and guide other experimental e
 \Contributors{Alex, Annika, Keith ...}
 \label{sec:intro}
 
-\ADW{Do we need an executive summary? Should we rename ``Introduction'' to ``Executive Summary''?}
+\ADW{Do we need an executive summary? Should we rename ``Introduction'' to ``Executive Summary''?}\AHGP{I am down with relabeling this section as ``Executive Summary"}
 
 \input{intro.tex}
 
@@ -181,7 +181,7 @@ where $t_0 = ab(\sigma/m)\rho_s v_0$ with $v_0^2=4\pi G \rho_s r_s^2$, $a=\sqrt{
 
 Let us define a core radius by the equation $\rho_{\rm NFW}(r_c) = \rho_0$ where $r_c$ is the core radius. If $r_c < R_h$, then we should modify the relation between $\sigma_\star$ and density. We use the simple modification that $f(t/t_0)$ has a maximum value given by $1/(x_h(1+x_h)^2)$, where $x_h = R_h/r_s$. 
 
-To incorporate these results we make the further assumption that the tidal evolution of subhalos is not highly sensitive to dark matter particle physics. Current simulations tend to support this point of view, although it is likely that the stripped mass fraction will be somewhat larger for subhalos that are puffier in the center due to either a cut-off in the power spectrum or self-interactions \citep{Lovell:2013ola, 1603.08919}. 
+To incorporate these results we make the further assumption that the tidal evolution of subhalos is not highly sensitive to dark matter particle physics. Current simulations tend to support this point of view, although it is likely that the stripped mass fraction will be somewhat larger for subhalos that are puffier in the center due to either a cut-off in the power spectrum or self-interactions \citep{Lovell:2013ola,Dooley:2016ajo}. 
 
 To map the present-day mass of our subhalos to their luminosities, we combine the zoom-in simulations presented in \cite{Mao2015} with the subhalo--satellite galaxy model presented in \cite{Nadler:2018} to obtain the probability that a subhalo of present-day mass $M_{\rm{vir}}$ hosts a satellite of luminosity $L_\star$. The mapping from subhalos to satellites includes a prescription for hydrodynamic effects such as enhanced subhalo disruption due to a central galactic disk, the galaxy formation threshold due to reionization, and a flexible model for the relationship between luminosity and subhalo peak circular velocity. To characterize $P(L_\star|M_{\rm{vir}})$, we sample from the posterior distribution of model parameters from the fit to classical and SDSS-detected satellites in \cite{Nadler:2018}, generate a large number of satellite population realizations for each Milky Way host halo, and fit the resulting $(L_\star|M_{\rm{vir}})$ relation with a normal distribution.
 
@@ -208,16 +208,17 @@ L(N_1,N_2|\sigma/m,m_{\rm wdm}) \propto & {\rm Possion}(L_\star>L, \sigma_\star 
 For any LSST-detected satellite dataset, i.e., values of $N(L_\star>L, \sigma_\star < \sigma_{\star,lim})$, $N(L_\star>L,\sigma_\star> \sigma_{\star,lim})$, $L$ and $\sigma_{\star,lim}$, we can draw detection limit contours at fixed likelihood. 
 We choose $L_{lim}=100 {\rm M}_\odot$ and $\sigma_{\star,lim}=3 {\rm km}/{\rm s}$. 
 The $3 {\rm km/s}$ dispersion is chosen because we have order ten satellites that have velocity dispersion values larger than this. 
-The lower limit on $L_\star$ is chosen with the view that LSST will detect many more systems with luminosity similar to Segue 1 \citep[\eg][]{Hargis:2014}. 
+The lower limit on $L_\star$ is chosen with the view that LSST will detect many more systems with luminosity similar to Segue 1 \citep[\eg][]{Hargis:2014,Kim:2017iwr}. 
 %EON: if we need to use a specific number for the total number of satellites (or the number of new satellites discovered by LSST), it should be consistent with what Josh cites in the complementarity section.
 The resulting projected joint constraints on the WDM particle mass and the SIDM cross section are shown in \figref{sidm_wdm}.
 
-To detect even lower-mass subhalos, it will likely be necessary to use gravitational probes. Two examples of such probes are described in the following subsections. \ADW{Can we also make a version of the plot where we make projections for stream/lensing constraints?}
+To detect even lower-mass subhalos, it will likely be necessary to use gravitational probes. Two examples of such probes are described in the following subsections. \ADW{Can we also make a version of the plot where we make projections for stream/lensing constraints?}\FYCR{Yes}
 
 \begin{figure}
 \centering
-\includegraphics[width=0.6\columnwidth]{figures/SIDM_WDM_fig.pdf}
-\caption{\label{fig:sidm_wdm} Warm dark matter mass vs self-interacting dark matter cross section. Two fundamental characteristics of dark matter that are best probed with astrophysics. \EON{N.B. even though there is a degeneracy between SIDM/WDM when considering subhalo counts and profiles, it might be possible to break this degeneracy using the fact that halos form later in WDM -- see \citet{Bozek:2018ekc} for hydro simulation results.}}
+\includegraphics[width=0.49\columnwidth]{figures/SIDM_WDM_figw_coll.pdf}
+\includegraphics[width=0.49\columnwidth]{figures/SIDM_WDM_fig_wo_coll.pdf}
+\caption{\label{fig:sidm_wdm} Warm dark matter mass vs self-interacting dark matter cross section. Two fundamental characteristics of dark matter that are best probed with astrophysics.\FYCR{Left side includes gravothermal collapse at high cross section, right panel doesn't. Still need to add Stream and lensing lines on this plot.}}
 \end{figure}
 
 
@@ -242,7 +243,7 @@ The depth of the gap from a given subhalo mass is calculated using the theoretic
 \begin{figure}
 \centering
 \includegraphics[width=0.85\textwidth]{figures/streamgap_constraint_2.png}
-\caption{Detection limits for gaps formed from subhalos of different masses using photometry from SDSS (blue) or the 10-year LSST stack (green) as a function of the stream surface brightness. Shaded regions correspond to a 10-40 kpc distance range, with the lines representing 20 kpc. For streams with surface brightnesses similar to those found in the Dark Energy Survey, 32-33 $\mathrm{mag}\ \mathrm{arcsec}^{-2}$, LSST is expected to probe halo masses two to three orders of magnitude smaller than SDSS and substantially improve the current constraints from Milky Way satellites \citep{Nadler:2018, Jethwa:2018} and the Lyman $\alpha$ forest \citep{2017PhRvD..96b3522I}. We connect the detected halos to the mass of the warm dark matter particle that would produce a minimum halo of that mass using the relationship determined by \cite{Bullock:2017xww}. The observed surface brighnesses of two DES streams, Indus and ATLAS, are also shown for comparison \citep{2018ApJ...862..114S}. \label{fig:streamsurveys}}
+\caption{Detection limits for gaps formed from subhalos of different masses using photometry from SDSS (blue) or the 10-year LSST stack (green) as a function of the stream surface brightness. Shaded regions correspond to a 10-40 kpc distance range, with the lines representing 20 kpc. For streams with surface brightnesses similar to those found in the Dark Energy Survey, 32-33 $\mathrm{mag}\ \mathrm{arcsec}^{-2}$, LSST is expected to probe halo masses two to three orders of magnitude smaller than SDSS and substantially improve the current constraints from Milky Way satellites \citep{Nadler:2018, Jethwa:2018,Kim:2017iwr} and the Lyman $\alpha$ forest \citep{2017PhRvD..96b3522I}. We connect the detected halos to the mass of the warm dark matter particle that would produce a minimum halo of that mass using the relationship determined by \cite{Bullock:2017xww}. The observed surface brighnesses of two DES streams, Indus and ATLAS, are also shown for comparison \citep{2018ApJ...862..114S}. \label{fig:streamsurveys}}
 \end{figure}
 
 
@@ -256,9 +257,9 @@ The depth of the gap from a given subhalo mass is calculated using the theoretic
 % Similarly, we estimate the background density by applying the same isochrone selection to the mock catalog from Galaxia.
 % Finally, for a given subhalo mass, the relative density between the stream and the gap is calculated using relations from \citet{erkal2016}.
 
-In Figure~\ref{fig:streamsurveys} we show how the lowest-mass dark matter subhalo detectable using the 10 year LSST stack depends on the stream's surface brightness and heliocentric distance. For a stream with a surface brightness of 33 (31.5) $\mathrm{mag}\,\mathrm{arcsec}^{-2}$, LSST is able to detect subhalos down to $2 \times 10^7$ ($1 \times10^6$) $M_\odot$ at 20 kpc. As a comparison, we used the same model to calculate the gap detectability using SDSS DR9 photometry. LSST provides $\sim 3$ orders of magnitude improvement at low surface brightnesses, where most known (and anticipated) streams lie. Crucially, this pushes the minimum detectable halo mass below current constraints from Milky Way satellites \citep[\eg,][]{Jethwa:2018} or the Lyman $\alpha$ forest \citep[\eg,][]{2017PhRvD..96b3522I}.
+In Figure~\ref{fig:streamsurveys} we show how the lowest-mass dark matter subhalo detectable using the 10 year LSST stack depends on the stream's surface brightness and heliocentric distance. For a stream with a surface brightness of 33 (31.5) $\mathrm{mag}\,\mathrm{arcsec}^{-2}$, LSST is able to detect subhalos down to $2 \times 10^7$ ($1 \times10^6$) $M_\odot$ at 20 kpc. As a comparison, we used the same model to calculate the gap detectability using SDSS DR9 photometry. LSST provides $\sim 3$ orders of magnitude improvement at low surface brightnesses, where most known (and anticipated) streams lie. Crucially, this pushes the minimum detectable halo mass below current constraints from Milky Way satellites \citep[\eg,][]{Jethwa:2018,Kim:2017iwr} or the Lyman $\alpha$ forest \citep[\eg,][]{2017PhRvD..96b3522I}.
 
-Given a gap density detection threshold and a subhalo population, this formalism can be used to predict the number of gaps in a given stream as in \citet{erkal2016}. Typically this is $\sim 1$ gap  so the well--studied individual streams (i.e. Palomar 5 and GD-1) are challenging to interpret. LSST is expected to measure dozens of streams as precisely as Palomar 5 and GD-1 have currently been mapped and will therefore provide a much stronger constraint: at the 10 year LSST depth, \LCDM predicts we should observe 17 gaps total in the 13 DES streams reported by \cite{2018ApJ...862..114S}. Observing fewer than 6 gaps would be inconsistent with \LCDM at a 99.9\,\% level. \ADW{Add a few words about power spectra analyses?}
+Given a gap density detection threshold and a subhalo population, this formalism can be used to predict the number of gaps in a given stream as in \citet{erkal2016}. Typically this is $\sim 1$ gap  so the well--studied individual streams (i.e. Palomar 5 and GD-1) are challenging to interpret. LSST is expected to measure dozens of streams as precisely as Palomar 5 and GD-1 have currently been mapped and will therefore provide a much stronger constraint: at the 10 year LSST depth, \LCDM predicts we should observe 17 gaps total in the 13 DES streams reported by \cite{2018ApJ...862..114S}. Observing fewer than 6 gaps would be inconsistent with \LCDM at a 99.9\,\% level. \ADW{Add a few words about power spectra analyses?}\AHGP{Yes, I concur that it would be useful.}
 
 %Depending on the surface brightness and distance of the streams detected with LSST, the corresponding bound on the warm dark matter particle mass may be significantly stronger than those obtained from Milky Way satellites \citep[$\sim 2.95$ keV,][]{2018MNRAS.473.2060J} or the Lyman $\alpha$ forest \citep[5.3 keV,][]{2017PhRvD..96b3522I}. Stream surface brightnesses from \cite{2018ApJ...862..114S}
 
@@ -389,7 +390,7 @@ The study of lensed systems will also require coordination with other facilities
 \begin{figure}
     \centering
     \includegraphics[width=0.75\textwidth]{figures/wdm_constraints_yh.jpg}
-    \caption{Constraints on the WDM particle mass as a function of the number of strong lens systems that achieve a given (sub)halo mass detection threshold, under the assumption that CDM is correct.  Figure courtesy of Y. Hezaveh. \ADW{These LyA constraints are different from the ones in the dwarf and stream section.}}
+    \caption{Constraints on the WDM particle mass as a function of the number of strong lens systems that achieve a given (sub)halo mass detection threshold, under the assumption that CDM is correct.  Figure courtesy of Y. Hezaveh. \ADW{These LyA constraints are different from the ones in the dwarf and stream section.} \AHGP{In the LyA paper, the limit is 3.3keV with the loosest prior on the thermal evolution of the IGM, more like 5.5keV with standard priors. The difference in the two sections almost certainly comes from prior preferences.}}
     \label{fig:lensing_wdmlim_vs_nlens}
 \end{figure}
 
@@ -440,8 +441,7 @@ This analysis relies on an understanding of the lowest mass that can be detected
  
 Nearly all previous inferences on dark matter from gravitational imaging have considered solely the expected and measured effects of subhalos within the main halo of the primary lensing galaxy \citep[e.g.,][]{Vegetti:2009aa, Vegetti_2012, Vegetti2014, Hezaveh_2016ltk}.
 However, an additional perturbation signal is provided by the presence of halos along the line of sight.
-An analysis of simulated data has shown that the signal from line-of-sight structures is significant even for lower redshift lenses and is the dominant contribution to any lensing signal for higher redshifts \citep{Despali++18}.
-\CRK{Cite any of the older literature?}
+An analysis of simulated data has shown that the signal from line-of-sight structures is significant even for lower redshift lenses and is the dominant contribution to any lensing signal for higher redshifts \citep{Keeton:2002ug,Despali++18}.
 The line-of-sight structures may very well be a cleaner probe of dark-matter properties than substructures in the lensing galaxies.
 This is because the line-of-sight halos are unlikely to have been tidally stripped and thus their measured masses reflect their true masses.
 The techniques for including the line-of-sight signal have been developed and applied to recent analyses \citep{Ritondale++18}. 
@@ -456,7 +456,8 @@ For the subset of LSST lenses that are radio loud, VLBI and ALMA observations wi
 
 \vspace{1em} \noindent {\bf Small-scale Structure Power Spectrum}
 
-While gravitational imaging can detect highly significant and well-localized perturbers along lensed arcs and Einstein rings, less massive perturbers or those located further away from lensed images typically lead to observational signatures that are too subtle to be detected individually. However, the large number of such perturbers, both as subhalos within the lens galaxy and as field halos along the line of sight, means that their collective effect might be detectable at the statistical level \citep[\eg,][]{Birrer2017}. The power spectrum of the lense deflection field is a particularly powerful quantity for capturing the aggregate behavior of lensing perturbers. This approach was proposed in \cite{Hezaveh_2014}, and further expanded in \cite{Rivero:2017mao}, \cite{Chatterjee_2017}, and \cite{Cyr-Racine:2018htu}. 
+While gravitational imaging can detect highly significant and well-localized perturbers along lensed arcs and Einstein rings, less massive perturbers or those located further away from lensed images typically lead to observational signatures that are too subtle to be detected individually. However, the large number of such perturbers, both as subhalos within the lens galaxy and as field halos along the line of sight, means that their collective effect might be detectable at the statistical level \citep[\eg,][]{Birrer2017}. The power spectrum of the lensed deflection field is a particularly powerful quantity for capturing the aggregate behavior of lensing perturbers. This approach was proposed in \cite{Hezaveh_2014}, and further expanded in \cite{Rivero:2017mao}, \cite{Chatterjee_2017}, and \cite{Cyr-Racine:2018htu}. 
+Furthermore, \cite{Daylan:2017kfh} proposed a statistical technique to constrain the statistical properties of dark matter subhalos in the lens galaxies by studying the joint perturbations of unresolved subhalos.
 
 A key advantage of this power spectrum approach is that it describe the effect of perturbers in terms of a \emph{spatial fluctuation} basis instead of the more traditionally used \emph{mass} basis. The power spectrum directly captures the spatial scales on which perturbers influence the lensed images without having to invoke the notion of (sub)halo density profile, the latter of which is usually required to map from the perturber mass space to the resulting spatial deflection field. As such, the power spectrum is a natural language to describe the collective effects of small lensing perturbers. 
 
@@ -475,9 +476,9 @@ Thus far, measurement of the lensing power spectrum has been attempted by \cite{
 \subsection{Halo Profiles} 
 
 The standard CDM model predicts that dark matter halos should be cuspy, asymptoting to high central densities.
-This results from the inability of collisionless dark matter to redistribute kinetic energy, and is born out in numerical simulations which give rise to a family of cuspy halo profiles \citep[\eg, the NFW profile,][]{Navarro:1998}.
-If dark matter is able to interact through scattering or the exchange of some light mediator (see \secref{sidm}), then the density of halos could instead flatten out to produce dark matter ``cores''.
-These interactions can also lead to an isotropization of dark matter velocity distribution, leading to more spherical halos.
+This results from the inability of collisionless dark matter to redistribute kinetic energy, and is born out in numerical simulations which give rise to a family of cuspy halo profiles \citep[\eg, the NFW profile,][]{Navarro:1996gj}.
+If dark matter is able to interact through scattering or the exchange of some light mediator (see \secref{sidm}), then the density of halos could instead flatten out to produce dark matter ``cores'' \citep{Spergel:1999mh}.
+These interactions can also lead to an isotropization of dark matter velocity distribution, leading to more spherical halos \citep{Peter:2013}.
 Thus, measurements of the radial density profiles and shapes of dark matter halos are sensitive to the microphysics governing dark matter self-interactions.
 Here we explore the contributions that LSST will make towards measuring the profiles of dark matter halos in isolated small galaxies and clusters of galaxies.
 We highlight these systems because they reside at opposite extremes of the galaxy mass spectrum where dark matter dominates over baryonic processes that can also alter the shapes of halos.
@@ -553,7 +554,7 @@ C^{(DM)}_{\nu}=-C^{(DE)}_{\nu}.
 The coupling between dark matter and dark energy is determined by the function $C^{(DM)}_{\nu}$ which is usually
 written as
 \begin{equation}
-C^{DM)}_{\nu} = (8\pi G)^{1/2} \,\beta\rho_{DM}\nabla_{\nu} \phi,
+C^{(DM)}_{\nu} = (8\pi G)^{1/2} \,\beta\rho_{DM}\nabla_{\nu} \phi,
 \end{equation}
 where $\beta$ is a constant that expresses the coupling strength. In this model dark energy must be dynamical and here it is modelled by a scalar field  $\phi$, such as a quintessence field.
 In this model $\beta$ is the only new parameter in addition to the usual description of the dark energy sector.
@@ -609,18 +610,21 @@ These complementary data could be calibrated and tested by joint null tests in o
 \Contributors{Tony, Vera, Cora, Francis-Yan, Alex, Keith ...}
 \label{sec:discovery}
 
-Cosmology has a long history of probing the fundamental properties of dark matter.
-Neutrinos were long considered a viable dark matter candidate \citep[\eg,][]{Kolb:1988}, and it was through precise cosmological measurements that it became clear that the universe contains multiple invisible components.
-\KB{Alternatively, the rest of this paragraph could go into a footnote.}
-For a case study of the interplay between particle physics experiments and astrophysics observations, consider the 30~eV neutrino dark matter candidate.
+Cosmology has a long history of testing particle models of dark matter.
+%probing the fundamental properties of dark matter.
+For instance, neutrinos were long considered a viable dark matter candidate \citep[\eg,][]{Kolb:1988}, and eventually, precise cosmological measurements made clear that the universe contains multiple invisible components.
+%\KB{Alternatively, the rest of this paragraph could go into a footnote.}
+%For a case study of the interplay between particle physics experiments and astrophysics observations, consider the 30~eV neutrino dark matter candidate.
+The 30~eV neutrino dark matter candidate is an especially interesting case study of the interplay between particle physics experiments and astrophysical observations.
 \citet{Lyubimov:1980un} reported the discovery of a non-zero neutrino rest mass in the range $14 \unit{eV} < m_{\nu} < 46 \unit{eV}$ which was subsequently tested by several other tritium $\beta$-decay experiments over the next decade.
 % See equation 19 of  https://arxiv.org/pdf/1212.6154.pdf
-Neutrinos with this mass would provide a significant fraction of the critical energy density needed to close the universe, and would be relativistic at the time of decoupling (i.e., hot dark matter).
+Neutrinos with this mass would provide a significant fraction of the critical energy density needed to close the universe, but would be relativistic at the time of decoupling (i.e., hot dark matter).
 During the same period, the first stellar velocity dispersion results for dwarf spheroidal galaxies showed that these galaxies are highly dark matter dominated.
-The inferred dark matter density within the compact region of stellar population of the dwarfs was used to place lower limits on the neutrino rest mass that were incompatible with the 30~eV neutrino dark matter candidate \citep{Aaronson:1983,Gerhard:1992}.
+The inferred dark matter density within the central regions of the dwarfs
+%compact region of stellar population of the dwarfs
+was used to place lower limits on the neutrino rest mass that were incompatible with the 30~eV neutrino dark matter candidate \citep{Aaronson:1983,Gerhard:1992}.
 %In 1980, a $\beta$-decay experiment at ITEP reported the discovery of non-zero neutrino mass in the range  \citep{Lyubimov:1980un}.
 %As a specific case study, the tritium $\beta$-decay experiment at ITEP reported a neutrino mass of $\approx30$~eV for much of the 1980s \citep{Lyubimov:1980un}. Neutrinos at this mass would provide a significant fraction of the critical energy density. However, the stellar velocity dispersion of dwarf spheroidal galaxies orbiting the Milky Way, e.g., Draco \citep{Aaronson:1983}, already  }
-
 Similar stories can be told of heavy leptons \citep{Gunn:1978}, \FIXME{and other dark matter candidates}, all of which were excluded by cosmological measurements.
 Cosmology has continually proven that it is impossible to separate the \emph{macroscopic distribution} of dark matter from the \emph{microscopic physics} governing dark matter.
 
@@ -663,8 +667,8 @@ Ironically, the outlook for the WIMP may be stronger in a universe where PBHs ma
 
 We now turn to a more challenging scenario in which dark matter possesses a particle mass or self-interaction cross section that would partially account for observed small-scale structure anomalies.
 There are currently several hints of non-minimal dark matter particle properties arising from comparisons between theoretical predictions and observed galaxy populations at the dwarf galaxy scale, i.e., distances below $1 \Mpc$ and mass scales below $10^{11} \Msun$ \citep[reviewed by][]{BuckleyPeter:2017,Bullock:2017xww}.
-However, the interpretation of these discrepancies in terms of dark matter microphysics has been hindered to a large extent by our present uncertainty in the mapping between visible stellar populations and invisible dark matter halos, which involves both the physics of galaxy formation as well as the connection between observable and intrinsic galaxy properties (see \secref{smallest_galaxies} and \secref{halo_profile_group}).
-In a regime where we are already limited by systematic uncertainty, it is therefore quite reasonable to ask how the increased statistical power of LSST will help to resolve our current small-scale structure quandary.
+However, the interpretation of these discrepancies in terms of dark matter microphysics has been hindered by our present uncertainty in the mapping between visible stellar populations and invisible dark matter halos, which involves both the physics of galaxy formation as well as the connection between observable and intrinsic galaxy properties (see \secref{smallest_galaxies} and \secref{halo_profile_group}).
+In a regime where we are already limited by systematic uncertainties, it is therefore quite reasonable to ask how the increased statistical power of LSST will help to resolve our current small-scale structure quandary.
 
 We argue here that the decisive advantage of LSST is the opportunity to combine an ensemble of astrophysical dark matter probes that offer complementary perspectives on dark matter halo abundances and profile shapes, and which are affected by different sources of systematic uncertainty.
 For the purpose of illustration, we outline a possible ``roadmap to discovery'' for a dark matter model that produces as a cutoff in the matter power spectrum and a suppression of the central dark matter profile just below the current sensitivity limit---i.e., $M_{hm} = 10^{8.5}$.
@@ -685,6 +689,12 @@ We could expect a period of several years to collect and analyze follow-up obser
 
 {\bf Semi-quantitative extraction of particle properties}
 
+\begin{figure}
+\centering
+\includegraphics[width=0.6\columnwidth]{figures/SIDM_WDM_fig_disc.pdf}
+\caption{\label{fig:sidm_wdm_disc} Potential discovery scenario for particle dark matter. }
+\end{figure}
+
 %As a quantitative aspect, we specifically constrain ourselves to the scenario of a dark matter model that manifests itself as a cutoff in the matter power spectrum and a suppression of the central dark matter profile. 
 
 %We assume a maximal model where that cutoff occurs just below the current sensitivity limit---i.e., $M_{hm} = 10^{8.5}$.
@@ -694,16 +704,38 @@ This is the contour figure from Francis-Yan.
 
 {\bf Roadmap to measurement}
 
-In the regime where a ``discovery'' occurs, it is important to examine what ``measurement'' looks like in the context of astrophysical probes with LSST.
+LSST---alone and in synergy with other observations---will deliver a huge leap in sensitivity to dark matter microphysics, through a variety of probes, as discussed previously in this document. 
+This promise of opening a broad new parameter space to detailed exploration implies that a discovery of new physics is a real possibility with arrival of the new data. 
+We now discuss a road map from detecting anomalous signals, that misalign with the minimal CDM model, to establishing a discovery and measuring particle properties of dark matter.
 
-%Using the framework described in \secref{smallest_galaxies}, these observations could be combined to derive contours on the parameter space of WDM mass vs SIDM cross-section.
-%As shown in \figref{sidm_wdm_discovery}, there is some degeneracy between WDM particle mass and SIDM cross section.
-%This degeneracy is reminiscent of similar cosmological contours---e.g., that between $\Omega_m$ and $\sigma_8$.
+Anomalies in various data sets were previously tentatively attributed to new dark matter physics, but have so far never risen to a status of a confirmed discovery. 
+The main reason is presence of large systematic effects that may be confused with dark matter signals, stemming from a limited understanding of processes characterizing astrophysical systems and observational biases and systematic errors. 
+However, the advent of LSST (and similar surveys) offers means to largely circumvent such issues:access to a wide range of observables that may harbor signals of the same dark matter microphysics, but suffer from distinct systematic effects. 
+Combination of orthogonal information from various probes---and measurement of a consistent signal in several of them---will be essential for establishing a discovery. 
 
-Similar to cosmological constraints on dark energy, degeneracies in the fundamental properties of dark matter can be broken through the combination of multiple probes.
-In the simple WDM case of our example, combining measurements from galaxy cluster profiles will help to constrain the SIDM cross section at a scale that is impossible to probe with dwarf galaxies. 
+\FIXME{This paragraph is work in progress}: As an illustration, imagine a scenario where future satellite number counts from LSST return evidence for a missing population of low-luminosity objects. 
+Such measurement could imply presence of a cutoff in the matter power spectrum (as would be produced, for example, by dark matter self-interactions), but it could, alternatively, be a consequence of a lower limit on the dark matter halo mass that can host a galaxy. 
+Another observable: spectroscopic follow-up measurements of the radial density profiles… [VG: someone finish this by telling a story of how the latter measures dark matter only, so it is a direct probe of DM, but may be a lower signal-to-noise measurement; in this case, joint analysis of both observables under the SIDM hypothesis may return conclusive evidence in favor of SIDM vs CDM].
 
-In the LSST era, dark matter science needs to move from a disperate set of communities of 
+Fully utilizing complementary features of different observables requires a probabilistic inference framework that enables joint analysis of multiple measurements probing the same underlying dark-matter physics. 
+Such a likelihood-based framework is already being developed for dark energy studies with LSST data and is commonplace for modern cosmological parameter estimation with data from the cosmic microwave background and current galaxy surveys. 
+Recent studies (\FIXME{Nadler et al, Jethwa et al: needs check}) have already begun paving the path towards probabilistic analyses of relevant data sets, with the aim of robustly probing astrophysical parameters of interest. 
+Extensions of these analyses to include inference of parameters relevant for underlying dark matter physics are underway, and further work is needed in order to formulate frameworks that include other observables. 
+
+Beyond enabling consistent inclusion of all available information and boosting statistical significance of individual measurements, joint likelihood analyses provide a framework for robustly including systematic effects and breaking degeneracy between them and dark matter signals. 
+As illustrated in the above example, a marginal discrepancy with CDM in two complementary observables may amount to high-significance detection that highly favors new physics. 
+If such analysis includes a generous marginalization over all relevant systematic effects, and if the fit of particular non-minimal dark matter model to \textit{all} observables is vastly better than that of CDM, we will be compelled to claim discovery of dark matter. 
+Finally, as we have shown in Section XX on the example of WDM and SIDM, signals of some theoretical scenarios can be partly degenerate with each other; quantifying this degeneracy, within a statistical parameter estimation framework, will be essential approach for detailed dark matter studies in a post-discovery era.
+
+%In the regime where a ``discovery'' occurs, it is important to examine what ``measurement'' looks like in the context of astrophysical probes with LSST.
+%%Using the framework described in \secref{smallest_galaxies}, these observations could be combined to derive contours on the parameter space of WDM mass vs SIDM cross-section.
+%%As shown in \figref{sidm_wdm_discovery}, there is some degeneracy between WDM particle mass and SIDM cross section.
+%%This degeneracy is reminiscent of similar cosmological contours---e.g., that between $\Omega_m$ and $\sigma_8$.
+
+%Similar to cosmological constraints on dark energy, degeneracies in the fundamental properties of dark matter can be broken through the combination of multiple probes.
+%In the simple WDM case of our example, combining measurements from galaxy cluster profiles will help to constrain the SIDM cross section at a scale that is impossible to probe with dwarf galaxies. 
+
+%In the LSST era, dark matter science needs to move from a disperate set of communities of 
 
 \begin{comment}
 %ADW: This comment block contains notes from our discussion at Livermore.
