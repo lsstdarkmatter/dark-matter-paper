@@ -18,6 +18,10 @@
 \usepackage{enumitem}
 \setlist{noitemsep}
 
+\usepackage[firstpage]{draftwatermark}
+\SetWatermarkText{DRAFT}
+\SetWatermarkScale{1}
+
 % Custom commands from LSST DESC, see texmf/styles/lsstdesc_macros.sty
 \usepackage{lsstdesc_macros}
 \graphicspath{{./}{./figures/}}
@@ -56,7 +60,6 @@
 \title{\Large Probing the Fundamental Nature of Dark Matter \\
 with the Large Synoptic Survey Telescope}
 
-\input{authors.tex}
 
 \begin{abstract}
 We present a summary of the astrophysical techniques that can be used to probe the fundamental nature of dark matter with the Large Synoptic Survey Telescope (LSST). 
@@ -71,6 +74,7 @@ Observations with LSST will critically complement and guide other experimental e
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Introduction
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{authors.tex}
 
 \section{Introduction \Contact{Alex}}
 \Contributors{Alex, Annika, Keith ...}
@@ -177,7 +181,7 @@ In the limit of large cores created by self-interactions, the central density of
 \begin{equation}
 \rho_0=\rho_s f(t/t_0)\,
 \end{equation}
-where $t_0 = ab(\sigma/m)\rho_s v_0$ with $v_0^2=4\pi G \rho_s r_s^2$, $a=\sqrt{16/\pi}$ for a hard-sphere interaction~\citep{Balberg:2002ue}, and $b=25\sqrt{\pi}/32$ calculated from Chapman-Enskog theory~\citep{1970mtnu.book.....C}. The function $f$ encodes the evolution of the core density with time in the presence of self-interactions. It depends on the orbital history such that highly stripped halos will evolve faster for the same $\rho_s$ and $r_s$, the NFW density and radial scale parameters. 
+where $t_0 = a(\sigma/m)\rho_s v_0$ with $v_0^2=4\pi G \rho_s r_s^2$ and $a=\sqrt{16/\pi}$ for a hard-sphere interaction~\citep{Balberg:2002ue}. The function $f$ encodes the evolution of the core density with time in the presence of self-interactions. It depends on the orbital history such that highly stripped halos will evolve faster for the same $\rho_s$ and $r_s$, the NFW density and radial scale parameters~\citep{Nishikawa:2019lsc}.
 
 Let us define a core radius by the equation $\rho_{\rm NFW}(r_c) = \rho_0$ where $r_c$ is the core radius. If $r_c < R_h$, then we should modify the relation between $\sigma_\star$ and density. We use the simple modification that $f(t/t_0)$ has a maximum value given by $1/(x_h(1+x_h)^2)$, where $x_h = R_h/r_s$. 
 
