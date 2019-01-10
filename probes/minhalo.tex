@@ -52,66 +52,65 @@ Although we have presented a ``population-based" forecast for dark matter constr
 
 %The number of satellites of the Milky Way and Andromeda is getting close to 100, and corresponding constraints on the theory space is already impressive \FIXME{(refs)}. The discovery of ultra-faint satellites and a measurement of their mean dark matter densities opens up the possibility of discovering the particle physics of dark matter. 
 
-As stated above, the cut-off in the matter power spectrum is related to early universe kinematics of the dark matter particle or the interactions of dark matter particles with light particles. This cut-off directly feeds into the subhalo mass function and hence the luminosity function of the satellites. Moreover, the central densities of these satellites are related to both the cut-off in the matter power spectrum and to dark matter self-interactions. The cut-off in the power spectrum delays halo formation and hence lowers the concentration at fixed halo mass. The self-interaction creates cores in the subhalos, which also lowers the central density. In the limit of large cross sections or significant mass loss, the self-interactions could lead to core collapse and an increase in the subhalo density, which is an exciting possibility that LSST would be sensitive to.
+As stated above, the cut-off in the matter power spectrum is related to early universe kinematics of the dark matter particle or the interactions of dark matter particles with a relativistic species. This cut-off directly feeds into the subhalo mass function and hence the luminosity function of the satellites. Moreover, the central densities of these satellites are related to both the cut-off in the matter power spectrum and to dark matter self-interactions. The cut-off in the power spectrum delays halo formation on mass scales near and smaller than the cut-off, hence lowering the concentration of these objects at fixed halo mass. The self-interaction creates cores in the subhalos, which also lowers the central density. In the limit of large cross sections or significant mass loss, the self-interactions could also lead to core collapse and an increase in the subhalo density, which is an exciting possibility that LSST would be sensitive to.
 
-In order to demonstrate the power of LSST to probe dark matter physics, we focus on two cumulative number counts. The first is the number of satellites above a given luminosity threshold, $N(>L_{lim})$. The second is the number of satellites (above a luminosity threshold) that have densities above a given threshold, $N(L_\star>L_{lim}, \sigma_\star> \sigma_{\star,lim})$. For the density measurement, we use the luminosity-averaged stellar velocity dispersion as the proxy. Specifically, we adopt the following simple model for relating the stellar dispersion $\bar{\sigma}_\star$ to density $\rho_0$:
+In order to demonstrate the power of LSST to probe dark matter physics, we focus on two cumulative number counts. The first is the number of satellites above a given luminosity threshold, $N(>L_{\rm lim})$. The second is the number of satellites (above a luminosity threshold) that have densities above a given threshold, $N(L_\star>L_{\rm lim}, \sigma_\star> \sigma_{\star,\rm lim})$. For the density measurement, we use the luminosity-averaged stellar velocity dispersion as the proxy. Specifically, we adopt the following simple model for relating the stellar dispersion $\bar{\sigma}_\star$ to the central density $\rho_0$:
 \begin{equation}
-\bar{\sigma}_\star = 1 {\rm km}/{\rm s} \sqrt{\frac{\rho_0}{0.1 {\rm M}_\odot/{\rm pc}^3}} \frac{R_h}{50 {\rm pc}}\,,
+\bar{\sigma}_\star = 1 {\rm km}/{\rm s} \sqrt{\frac{\rho_0}{0.1 {\rm M}_\odot/{\rm pc}^3}} \frac{R_{\rm h}}{50 {\rm pc}}\,,
 \end{equation}
-which is valid as long as the core radius is much larger than the project half-light radius $R_h$. 
+which is valid as long as the core radius is much larger than the project half-light radius $R_{\rm h}$. 
 
-The connection between the central density ($\rho_0$) and the self-interaction cross section or cut-off in the power spectrum can be modeled in the following way to isolate some key physics. In the limit where the self-interaction cross section is small, we assume that the core size is negligible. Note that stellar feedback can change this statement, so there is the possibility of degeneracy between feedback and self-interactions. In the limit that the core size is much smaller than the half-light radius $R_h$, we assume that the density profile is of the NFW form with a concentration that only depends on the half-mode mass (given by the power spectrum):
+The connection between the central density ($\rho_0$) and the self-interaction cross section or cut-off in the power spectrum can be modeled in the following way to isolate some key physics. In the limit where the self-interaction cross section is small, we assume that the core size is negligible. Note that stellar feedback can change this statement, so there is the possibility of degeneracy between feedback and self-interactions. In the limit that the core size is much smaller than the half-light radius $R_{\rm h}$, we assume that the density profile is of the NFW form with a concentration that only depends on the half-mode mass (given by the power spectrum):
 \begin{equation}
-c(M;M_{\rm cut}) = c_{\rm cdm}(M)\left(\frac{M_{200}}{10^{12}{\rm M}_\odot}\right)^{\Delta\alpha(M_{\rm WDM})}\,,
+c(M;m_{\rm WDM}) = c_{\rm cdm}(M)\left(\frac{M_{200}}{10^{12}{\rm M}_\odot}\right)^{\Delta\alpha(m_{\rm WDM})}\,,
 \end{equation}
 where $M_{200}$ is the mass of the subhalo at a radius where the density of the subhalo is 200 times the critical density of the universe today. 
 
 In the limit of large cores created by self-interactions, the central density of the subhalo can be written as
 \begin{equation}
-\rho_0=\rho_s f(t/t_0)\,
+\rho_0=\rho_{\rm s} f(t/t_0)\,
 \end{equation}
-where $t_0 = a(\sigma/m)\rho_s v_0$ with $v_0^2=4\pi G \rho_s r_s^2$ and $a=\sqrt{16/\pi}$ for a hard-sphere interaction~\citep{Balberg:2002ue}. The function $f$ encodes the evolution of the core density with time in the presence of self-interactions. It depends on the orbital history such that highly stripped halos will evolve faster for the same $\rho_s$ and $r_s$, the NFW density and radial scale parameters~\citep{Nishikawa:2019lsc}.
+where $t_0 = a(\sigma_{\rm SIDM}/m)\rho_{\rm s} v_0$ with $v_0^2=4\pi G \rho_{\rm s} r_{\rm s}^2$ and $a=\sqrt{16/\pi}$ for a hard-sphere interaction~\citep{Balberg:2002ue}. The function $f$ encodes the evolution of the core density with time in the presence of self-interactions. It depends on the orbital history such that highly stripped halos will evolve faster for the same $\rho_{\rm s}$ and $r_{\rm s}$, the NFW density and radial scale parameters~\citep{Nishikawa:2019lsc}.
 
-Let us define a core radius by the equation $\rho_{\rm NFW}(r_c) = \rho_0$ where $r_c$ is the core radius. If $r_c < R_h$, then we should modify the relation between $\sigma_\star$ and density. We use the simple modification that $f(t/t_0)$ has a maximum value given by $1/(x_h(1+x_h)^2)$, where $x_h = R_h/r_s$. 
+Let us define a core radius by the equation $\rho_{\rm NFW}(r_{\rm c}) = \rho_0$ where $r_{\rm c}$ is the core radius. If $r_{\rm c} < R_{\rm h}$, then we should modify the relation between $\sigma_\star$ and density. We use the simple modification that $f(t/t_0)$ has a maximum value given by $1/(x_{\rm h}(1+x_{\rm h})^2)$, where $x_{\rm h} = R_{\rm h}/r_{\rm s}$. 
 
 To incorporate these results we make the further assumption that the tidal evolution of subhalos is not highly sensitive to dark matter particle physics. Current simulations tend to support this point of view, although it is likely that the stripped mass fraction will be somewhat larger for subhalos that are puffier in the center due to either a cut-off in the power spectrum or self-interactions \citep{Lovell:2013ola,Dooley:2016ajo}. 
 
-To map the present-day mass of our subhalos to their luminosities, we combine the zoom-in simulations presented in \cite{Mao2015} with the subhalo--satellite galaxy model presented in \cite{Nadler:2018} to obtain the probability that a subhalo of present-day mass $M_{\rm{vir}}$ hosts a satellite of luminosity $L_\star$. The mapping from subhalos to satellites includes a prescription for hydrodynamic effects such as enhanced subhalo disruption due to a central galactic disk, the galaxy formation threshold due to reionization, and a flexible model for the relationship between luminosity and subhalo peak circular velocity. To characterize $P(L_\star|M_{\rm{vir}})$, we sample from the posterior distribution of model parameters from the fit to classical and SDSS-detected satellites in \cite{Nadler:2018}, generate a large number of satellite population realizations for each Milky Way host halo, and fit the resulting $(L_\star|M_{\rm{vir}})$ relation with a normal distribution.
+To map the present-day mass of our subhalos to their luminosities, we combine the zoom-in simulations presented in \cite{Mao2015} with the subhalo--satellite galaxy model presented in \cite{Nadler:2018} to obtain the probability that a subhalo of present-day virial mass $M_{\rm{vir}}$ hosts a satellite of luminosity $L_\star$ and stellar dispersion $\sigma_\star$. The mapping from subhalos to satellites includes a prescription for hydrodynamic effects such as enhanced subhalo disruption due to a central galactic disk, the galaxy formation threshold due to reionization, and a flexible model for the relationship between luminosity and subhalo peak circular velocity. To characterize $P(L_\star|M_{\rm{vir}})$, we sample from the posterior distribution of model parameters from the fit to classical and SDSS-detected satellites in \cite{Nadler:2018}, generate a large number of satellite population realizations for each Milky Way host halo, and fit the resulting $P(L_\star|M_{\rm{vir}})$ relation with a log-normal distribution.
 
-Using this mapping from $L_\star$ and halo mass to $M_{200}$, we can write down the observables in the following form \EON{should $M_{200}$ here be $M_{\rm{vir}}$?}:
+Using this mapping from $L_\star$ and halo mass to $M_{\rm vir}$, we can write down the observables in the following form:
 \begin{equation}
     \begin{aligned}
-    N_1 = N(L_\star>L_{lim})= \int_{L_{lim}} dL_\star \int dM_{200} \frac{dn}{d M_{200}} P(L_\star|M_{200}) \\
+    N_1 = N(L_\star>L_{\rm lim})= \int_{L_{\rm lim}} dL_\star \int dM_{\rm vir} \frac{dn}{d M_{\rm vir}} P(L_\star|M_{\rm vir}) \\
     \end{aligned}
 \end{equation}
 
 \begin{equation}
     \begin{aligned}
-N_2 =& N(L_\star>L_{lim}, \sigma_\star> \sigma_{\star,lim}) \\ 
-    =& \int_{L_{lim}} dL_\star \int_{\sigma_{\star,lim}} d\sigma_\star \int dM_{200} \int dc_{200} \frac{dn}{d M_{200}} P(L_\star|M_{200})\\
-    & \times\ P(c_{200}|M_{200}) \delta(\sigma_\star-\bar{\sigma}_\star(\rho_s,r_s))
+N_2 =& N(L_\star>L_{\rm lim}, \sigma_\star> \sigma_{\star,\rm lim}) \\ 
+    =& \int_{L_{\rm lim}} dL_\star \int_{\sigma_{\star,\rm lim}} d\sigma_\star \int dM_{\rm vir} \int dc_{\rm vir} \frac{dn}{d M_{\rm vir}} P(L_\star|M_{\rm vir})\\
+    & \times  \delta(\sigma_\star-\bar{\sigma}_\star(\rho_0,c(M_{\rm vir};m_{\rm WDM})))
     \end{aligned}
 \end{equation}
 
 We require information of this likelihood function:
 \begin{eqnarray}
-L(N_1,N_2|\sigma/m,m_{\rm wdm}) \propto & {\rm Possion}(L_\star>L, \sigma_\star < \sigma_{\star,lim}) \\
+L(N_1,N_2|\sigma/m,m_{\rm wdm}) \propto & {\rm Poisson}(L_\star>L, \sigma_\star < \sigma_{\star,lim}) \\
 & \times\, {\rm Poisson}(L_\star>L, \sigma_\star> \sigma_{\star,lim})
 \end{eqnarray}
-For any LSST-detected satellite dataset, i.e., values of $N(L_\star>L, \sigma_\star < \sigma_{\star,lim})$, $N(L_\star>L,\sigma_\star> \sigma_{\star,lim})$, $L$ and $\sigma_{\star,lim}$, we can draw detection limit contours at fixed likelihood. 
-We choose $L_{lim}=100 {\rm M}_\odot$ and $\sigma_{\star,lim}=3 {\rm km}/{\rm s}$. 
-The $3 {\rm km/s}$ dispersion is chosen because we have order ten satellites that have velocity dispersion values larger than this. 
-The lower limit on $L_\star$ is chosen with the view that LSST will detect many more systems with luminosity similar to Segue 1 \citep[\eg][]{Hargis:2014,Kim:2017iwr}. 
-%EON: if we need to use a specific number for the total number of satellites (or the number of new satellites discovered by LSST), it should be consistent with what Josh cites in the complementarity section.
+For any LSST-detected satellite dataset, i.e., values of $N(L_\star>L, \sigma_\star < \sigma_{\star,\rm lim})$, $N(L_\star>L,\sigma_\star> \sigma_{\star,\rm lim})$, $L$ and $\sigma_{\star,\rm lim}$, we can draw detection limit contours at fixed likelihood. As in the previous section,
+we take $M_V=0$ Mag as our detection threshold for LSST (corresponding to $L_{\rm lim}\simeq 85 \,{\rm L}_\odot$) and $\sigma_{\star,\rm lim}=2.6\, {\rm km}/{\rm s}$. This latter choice is driven by the minimum stellar dispersion value obtained in mock observation of satellite galaxies passing the LSST detection threshold (see \cite{Nadler:2018} and previous section), assuming standard CDM. 
+%The lower limit on $L_\star$ is chosen with the view that LSST will detect many more systems with luminosity similar to Segue 1 \citep[\eg][]{Hargis:2014,Kim:2017iwr}. 
+
 The resulting projected joint constraints on the WDM particle mass and the SIDM cross section are shown in \figref{sidm_wdm}.
 
-To detect even lower-mass subhalos, it will likely be necessary to use gravitational probes. Two examples of such probes are described in the following subsections. \ADW{Can we also make a version of the plot where we make projections for stream/lensing constraints?}\FYCR{Yes}
+To detect even lower-mass subhalos, it will likely be necessary to use gravitational probes. Two examples of such probes are described in the following subsections. 
 
 \begin{figure}
 \centering
-\includegraphics[width=0.49\columnwidth]{figures/SIDM_WDM_figw_coll.pdf}
-\includegraphics[width=0.49\columnwidth]{figures/SIDM_WDM_fig_wo_coll.pdf}
-\caption{\label{fig:sidm_wdm} Warm dark matter mass vs self-interacting dark matter cross section. Two fundamental characteristics of dark matter that are best probed with astrophysics.\FYCR{Left side includes gravothermal collapse at high cross section, right panel doesn't. Still need to add Stream and lensing lines on this plot.}}
+\includegraphics[width=0.6\columnwidth]{figures/SIDM_WDM_figw_coll.pdf}
+%\includegraphics[width=0.49\columnwidth]{figures/SIDM_WDM_fig_wo_coll.pdf}
+\caption{\label{fig:sidm_wdm} Joint projected constraints on the warm dark matter mass and self-interacting dark matter cross section, two fundamental characteristics of dark matter that are best probed with astrophysics. \FYCR{ Still need to add Stream and lensing lines on this plot.}}
 \end{figure}
 
 
