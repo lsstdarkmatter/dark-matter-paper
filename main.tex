@@ -1,20 +1,53 @@
-  % URL for sharing the EDITABLE version :
-% https://v2.overleaf.com/10858269czpqjyyjnbyx
+%  This is the driver file for the CMB-S4 Science Book.
 
-% Yao has written a nice package to automate building the bib file from the citations that are present in the tex.
-% https://github.com/yymao/adstex
-% Valid citation formats are:
-% \citep{1705.03888} % arXiv number
-% \citet{Mao:2018} % first author's last name and year
-% \citealt{10.1093/mnras/stx3111,2017arXiv170909665M} % DOI
+%%% it has been adapted from the Snowmass reports from the Cosmic Frontier  %%%%
+%%% Working Groups to use bibtex. 19Sep15, T. Crawford (orig. 5/13/13 J. Feng) %%%%
 
-\documentclass[modern,linenumbers]{aastex62}
+%  D. Hitlin   9/23/03   derived from the BABAR Physics Book format
+
+%  To use LATEX with this format, you must have the follwing files 
+%  in the same directory as your text source and figure files
+%  tcibook.cls
+%  fancyhea.sty
+%  work.sty
+%  epsfig.sty
+%  workshopsym.tex       This file provides macros for many common symbols
+%                         Using these macros will provide uniformity of notation
+%                         for the basic particle symbols, units, etc.
+%
+%  These provide the page size, type style, headings, etc.
+\documentclass[titlepage]{tcibook}
+\usepackage{fancyhea}
+\usepackage{work}
+\usepackage{bm}       %    enables bold math symbols  e.g.  \bm{\gamma}
+\usepackage{graphicx}
+\usepackage{hyperref}      % hypertext links %%ARXIV
+\usepackage[usenames,dvipsnames]{color} %used for font color
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{chngcntr}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{multicol}
+\counterwithout{figure}{chapter}
+%\usepackage[explicit]{titlesec}
+\usepackage{titlesec}
+
 \usepackage{newtxtext,newtxmath} % this is causing the etoolbox warning
 \usepackage[USenglish]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{comment}
+\usepackage{natbib}
+%\usepackage{deluxetable}
 
+\setlength{\headheight}{14pt}
+
+% subsubsubsections and subsubsections are numbered as well as chapters, sections and subsections.
+\setcounter{secnumdepth}{3}
+
+\DeclareUrlCommand\email{\urlstyle{rm}}
+\graphicspath{{./}{./figures/}}
 \usepackage{enumitem}
 \setlist{noitemsep}
 
@@ -24,7 +57,7 @@
 
 % Custom commands from LSST DESC, see texmf/styles/lsstdesc_macros.sty
 \usepackage{lsstdesc_macros}
-\graphicspath{{./}{./figures/}}
+\usepackage{aas_macros}
 
 % Add your own macros here:
 \newcommand{\Contributors}[1]{ {\footnotesize [\textit{#1}]}}
@@ -53,23 +86,65 @@
 \newcommand{\JGB}[1]{\Comment{red}{JGB}{#1}} % Juan Garcia-Bellido
 \newcommand{\KB}[1]{\Comment{orange}{KB}{#1}} % Keith Bechtol
 
-% ======================================================================
 
 \begin{document}
 
-\title{\Large Probing the Fundamental Nature of Dark Matter \\
-with the Large Synoptic Survey Telescope}
-\input{authors.tex}
+\raggedbottom
 
-\begin{abstract}
-We present a summary of the astrophysical techniques that can be used to probe the fundamental nature of dark matter with the Large Synoptic Survey Telescope (LSST). 
-LSST will inform our understanding of the fundamental properties of dark matter, such as dark matter particle mass, dark matter self-interaction cross section, compact macroscopic dark matter, and axion-like particles.
-Astrophysical observations are currently the only robust, empirical measurements of dark matter, and observations with LSST will provide necessary guidance for the experimental dark matter program.
-Observations with LSST will critically complement and guide other experimental efforts to discovery the fundamental nature of dark matter.
-\end{abstract}
-\keywords{dark matter -- cosmology: observations -- elementary particles}
+\pagenumbering{roman}
+
+\parindent=0pt
+\parskip=8pt
+\setlength{\evensidemargin}{0pt}
+\setlength{\oddsidemargin}{0pt}
+\setlength{\marginparsep}{0.0in}
+\setlength{\marginparwidth}{0.0in}
+\marginparpush=0pt
+
+% The content begins here
+
+\renewcommand{\chapname}{chap:intro_}
+\renewcommand{\chapterdir}{.}
+\renewcommand{\arraystretch}{1.25}
+\addtolength{\arraycolsep}{-3pt}
+
+\pagenumbering{roman} 
+\chapter*{Probing the Fundamental Nature of Dark Matter with the Large Synoptic Survey Telescope}
+\vskip -9.5pt
+\hbox to\headwidth{%
+       \leaders\hrule height1.5pt\hfil}
+\vskip-6.5pt
+\hbox to\headwidth{%
+       \leaders\hrule height3.5pt\hfil}
+
+
+\begin{center}
+  {\Large\bf
+    LSST Dark Matter Group\\
+    \bigskip
+    \date
+  }
+\end{center}
+\eject
+
+\setcounter{page}{1}
+
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Executive Summary
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{exec-sum.tex}
+
+\clearpage
+\input{endorsers.tex}
 
 \tableofcontents 
+
+\eject
+\pagenumbering{arabic} 
+\setcounter{page}{1}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Introduction
@@ -106,8 +181,12 @@ Observations with LSST will critically complement and guide other experimental e
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{acknowledgments.tex}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Bibliography
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% Include both collaboration papers and external citations:
+\def\bibname{References}
+\chaptermark{References}
 \bibliographystyle{yahapj}
 \bibliography{main}
 
