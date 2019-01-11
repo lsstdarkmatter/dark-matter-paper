@@ -1,58 +1,70 @@
 Lastname,Firstname,Authorname,AuthorType,Affiliation,Contribution,Email,ORCID
-Drlica-Wagner,Alex,A.~Drlica-Wagner,Contributor,"Fermi National Accelerator Laboratory, P. O. Box 500, Batavia, IL 60510, USA","Paper organization; dwarf galaxies, indirect detection, and axion sections.",kadrlica@fnal.gov,
-Drlica-Wagner,Alex,A.~Drlica-Wagner,Contributor,"Department of Astronomy and Astrophysics, University of Chicago, IL 60637, USA","Paper organization; dwarf galaxies, indirect detection, and axion sections.",kadrlica@fnal.gov,
-Drlica-Wagner,Alex,A.~Drlica-Wagner,Contributor,"Kavli Institute of Cosmological Physics, University of Chicago, IL 60637, USA","Paper organization; dwarf galaxies, indirect detection, and axion sections.",kadrlica@fnal.gov,
-Mao,Yao-Yuan,Y.-Y.~Mao,Contributor,"Department of Physics and Astronomy and Pittsburgh Particle Physics, Astrophysics and Cosmology Center (PITT PACC), University of Pittsburgh, Pittsburgh, PA 15260, USA",Paper organization; dwarf galaxy lensing,yymao.astro@gmail.com,0000-0002-1200-0820
-Prescod-Weinstein,Chanda,C.~Prescod-Weinstein,Contributor,"Department of Physics, University of New Hampshire, Durham, NH 03824, USA",contributed axion theory discussion; contributed to axions and transients portion,chanda.prescod-weinstein@unh.edu,
-Medford,Michael,M.~Medford,Contributor,"Department of Astronomy, University of California, Berkeley, CA 94720, USA","compact objects and microlensing, methods and systematics, primordial black holes",MichaelMedford@berkeley.gov,0000-0002-7226-0659
-Medford,Michael,M.~Medford,Contributor,"Lawrence Berkeley National Laboratory, Berkeley, CA 94720, USA","compact objects and microlensing, methods and systematics, primordial black holes",MichaelMedford@berkeley.gov,0000-0002-7226-0659
-Hendel,David,D.~Hendel,Contributor,"Department of Astronomy and Astrophysics, University of Toronto, 50 St. George Street, Toronto, ON, M5S 3H4, Canada",Stream gap section,hendel@astro.utoronto.ca,0000-0002-7939-7607
-Li,Ting,T.~S.~Li,Contributor,"Fermi National Accelerator Laboratory, P. O. Box 500, Batavia, IL 60510, USA","streams, dwarfs.",tingli@fnal.gov,
-Li,Ting,T.~S.~Li,Contributor,"Kavli Institute of Cosmological Physics, University of Chicago, IL 60637, USA","streams, dwarfs.",tingli@fnal.gov,
-Pace,Andrew,A.~B.~Pace,Contributor,"George P. and Cynthia Woods Mitchell Institute for Fundamental Physics and Astronomy, and Department of Physics and Astronomy, Texas A\&M University, College Station, TX 77843, USA","annihilation, stream, dwarf?",apace@tamu.edu,0000-0002-6021-8760
-Dawson,William,W.~A.~Dawson,Contributor,Lawrence Livermore National Laboratory,"Paper organization; compact objects, microlensing; galaxy cluster density profile; complementary",willdawson@llnl.gov,0000-0003-0248-6123
-Jee,James,M.~J.~Jee,Contributor,"University of California, Davis",Dwarf GGL introduction,mkjee@yonsei.ac.kr,
-Jee,James,M.~J.~Jee,Contributor,"Yonsei University, Seoul, South Korea",Merging galaxy clusters,mkjee@yonsei.ac.kr,
-Armstrong,Robert,R.~Armstrong,Contributor,Lawrence Livermore National Laboratory,"compact object, clusters",rearmstr@gmail.com,
-Bechtol,Keith,K.~Bechtol,Contributor,"Physics Department, 2320 Chamberlin Hall, University of Wisconsin-Madison, 1150 University Avenue Madison, WI 53706-1390","Milky way satellite galaxies, dwarf galaxy lensing, discovery sections",kbechtol@lsst.org,
-Cyr-Racine,Francis-Yan,F.-Y.~Cyr-Racine,Contributor,"Department of Physics, Harvard University, Cambridge, MA, 02138","WDM vs SIDM figure, strong lensing, theory, discovery sections",fcyrracine@fas.harvard.edu,
-Cyr-Racine,Francis-Yan,F.-Y.~Cyr-Racine,Contributor,"Department of Physics and Astronomy, University of New Mexico, Albuquerque, NM 87131","WDM vs SIDM figure, strong lensing, theory, discovery sections",fcyrracine@fas.harvard.edu,
-Dvorkin,Cora,C.~Dvorkin,Contributor,"Department of Physics, Harvard University, Cambridge, MA, 02138","Scattering with baryons, theory section, strong lensing, paper organization",dvorkin@physics.harvard.edu,
-Banerjee,Arka,A.~Banerjee,Contributor,"Kavli Instutute for Particle Astrophysics and Cosmology, Stanford, CA 94305",WDM vs SIDM figure,arkab@stanford.edu,
-McNanna,Mitch,M.~McNanna,Contributor,"Department of Physics, Univeristy of Wisconsin-Madison, Madison, WI 53706, USA","minimum halo mass, detecting the smallest galaxies",mcnanna@wisc.edu,
-Wittman,David,D.~Wittman,Contributor,"University of California, Davis",merging clusters,dmwittman@ucdavis.edu,
-Nadler,Ethan,E.~O.~Nadler,Contributor,"Kavli Institute for Particle Astrophysics and Cosmology, Stanford, CA 94305","dwarf galaxies/minimum halo mass, SIDM constraints, J-factor prediction",enadler@stanford.edu,
-Polin,Daniel,D.~A.~Polin,Contributor,"University of California, Davis","Cluster Density profiles, Large scale structure",polin@ucdavis.edu,
-Tyson,Tony,J.~A.~Tyson,Contributor,"Physics Department, University of California, Davis","dwarf galaxy GGL, LSS DM-DE correlations, Discovery",tyson@physics.ucdavis.edu,0000-0002-9242-8797
-Gluscevic,Vera,V.~Gluscevic,Contributor,"University of Florida, Gainesville, FL",Dark matter-baryon scattering; Complementarity: Direct detection; Discovery,vera.gluscevic@gmail.com,
-Bonaca,Ana,A.~Bonaca,Contributor,"Harvard-Smithsonian Center for Astrophysics, Cambridge, MA, 02138",text in the stream section,ana.bonaca@cfa.harvard.edu,0000-0002-7846-9787
+Drlica-Wagner,Alex,Alex~Drlica-Wagner,Contributor,"Fermi National Accelerator Laboratory, P. O. Box 500, Batavia, IL 60510, USA","Paper organization; dwarf galaxies, indirect detection, and axion sections.",kadrlica@fnal.gov,
+Drlica-Wagner,Alex,Alex~Drlica-Wagner,Contributor,"Department of Astronomy and Astrophysics, University of Chicago, IL 60637, USA","Paper organization; dwarf galaxies, indirect detection, and axion sections.",kadrlica@fnal.gov,
+Drlica-Wagner,Alex,Alex~Drlica-Wagner,Contributor,"Kavli Institute of Cosmological Physics, University of Chicago, IL 60637, USA","Paper organization; dwarf galaxies, indirect detection, and axion sections.",kadrlica@fnal.gov,
+Mao,Yao-Yuan,Yao-Yuan~Mao,Contributor,"Department of Physics and Astronomy and Pittsburgh Particle Physics, Astrophysics and Cosmology Center (PITT PACC), University of Pittsburgh, Pittsburgh, PA 15260, USA",Paper organization; dwarf galaxy lensing,yymao.astro@gmail.com,0000-0002-1200-0820
+Prescod-Weinstein,Chanda,Chanda~Prescod-Weinstein,Contributor,"Department of Physics, University of New Hampshire, Durham, NH 03824, USA",contributed axion theory discussion; contributed to axions and transients portion,chanda.prescod-weinstein@unh.edu,
+Medford,Michael,Michael~Medford,Contributor,"Department of Astronomy, University of California, Berkeley, CA 94720, USA","compact objects and microlensing, methods and systematics, primordial black holes",MichaelMedford@berkeley.gov,0000-0002-7226-0659
+Medford,Michael,Michael~Medford,Contributor,"Lawrence Berkeley National Laboratory, Berkeley, CA 94720, USA","compact objects and microlensing, methods and systematics, primordial black holes",MichaelMedford@berkeley.gov,0000-0002-7226-0659
+Hendel,David,David~Hendel,Contributor,"Department of Astronomy and Astrophysics, University of Toronto, 50 St. George Street, Toronto, ON, M5S 3H4, Canada",Stream gap section,hendel@astro.utoronto.ca,0000-0002-7939-7607
+Li,Ting,Ting~S.~Li,Contributor,"Fermi National Accelerator Laboratory, P. O. Box 500, Batavia, IL 60510, USA","streams, dwarfs.",tingli@fnal.gov,
+Li,Ting,Ting~S.~Li,Contributor,"Kavli Institute of Cosmological Physics, University of Chicago, IL 60637, USA","streams, dwarfs.",tingli@fnal.gov,
+Pace,Andrew,Andrew~B.~Pace,Contributor,"George P. and Cynthia Woods Mitchell Institute for Fundamental Physics and Astronomy, and Department of Physics and Astronomy, Texas A\&M University, College Station, TX 77843, USA","annihilation, stream, dwarf?",apace@tamu.edu,0000-0002-6021-8760
+Dawson,William,William~A.~Dawson,Contributor,Lawrence Livermore National Laboratory,"Paper organization; compact objects, microlensing; galaxy cluster density profile; complementary",willdawson@llnl.gov,0000-0003-0248-6123
+Jee,James,M.~James~Jee,Contributor,"University of California, Davis",Dwarf GGL introduction,mkjee@yonsei.ac.kr,
+Jee,James,M.~James~Jee,Contributor,"Yonsei University, Seoul, South Korea",Merging galaxy clusters,mkjee@yonsei.ac.kr,
+Armstrong,Robert,Robert~Armstrong,Contributor,Lawrence Livermore National Laboratory,"compact object, clusters",rearmstr@gmail.com,
+Bechtol,Keith,Keith~Bechtol,Contributor,"Physics Department, 2320 Chamberlin Hall, University of Wisconsin-Madison, 1150 University Avenue Madison, WI 53706-1390","Milky way satellite galaxies, dwarf galaxy lensing, discovery sections",kbechtol@lsst.org,
+Cyr-Racine,Francis-Yan,Francis-Yan~Cyr-Racine,Contributor,"Department of Physics, Harvard University, Cambridge, MA, 02138","WDM vs SIDM figure, strong lensing, theory, discovery sections",fcyrracine@fas.harvard.edu,
+Cyr-Racine,Francis-Yan,Francis-Yan~Cyr-Racine,Contributor,"Department of Physics and Astronomy, University of New Mexico, Albuquerque, NM 87131","WDM vs SIDM figure, strong lensing, theory, discovery sections",fcyrracine@fas.harvard.edu,
+Dvorkin,Cora,Cora~Dvorkin,Contributor,"Department of Physics, Harvard University, Cambridge, MA, 02138","Scattering with baryons, theory section, strong lensing, paper organization",dvorkin@physics.harvard.edu,
+Banerjee,Arka,Arka~Banerjee,Contributor,"Kavli Instutute for Particle Astrophysics and Cosmology, Stanford, CA 94305",WDM vs SIDM figure,arkab@stanford.edu,
+McNanna,Mitch,Mitch~McNanna,Contributor,"Department of Physics, Univeristy of Wisconsin-Madison, Madison, WI 53706, USA","minimum halo mass, detecting the smallest galaxies",mcnanna@wisc.edu,
+Wittman,David,David~Wittman,Contributor,"University of California, Davis",merging clusters,dmwittman@ucdavis.edu,
+Nadler,Ethan,Ethan~O.~Nadler,Contributor,"Kavli Institute for Particle Astrophysics and Cosmology, Stanford, CA 94305","dwarf galaxies/minimum halo mass, SIDM constraints, J-factor prediction",enadler@stanford.edu,
+Polin,Daniel,Daniel~A.~Polin,Contributor,"University of California, Davis","Cluster Density profiles, Large scale structure",polin@ucdavis.edu,
+Tyson,Tony,J.~Anthony~Tyson,Contributor,"Physics Department, University of California, Davis","dwarf galaxy GGL, LSS DM-DE correlations, Discovery",tyson@physics.ucdavis.edu,0000-0002-9242-8797
+Gluscevic,Vera,Vera~Gluscevic,Contributor,"University of Florida, Gainesville, FL",Dark matter-baryon scattering section; Complementarity: Direct detection section; Discovery section,vera.gluscevic@gmail.com,
+Bonaca,Ana,Ana~Bonaca,Contributor,"Harvard-Smithsonian Center for Astrophysics, Cambridge, MA, 02138",text in the stream section,ana.bonaca@cfa.harvard.edu,0000-0002-7846-9787
 Bovy,Jo,Jo~Bovy,Contributor,"Department of Astronomy and Astrophysics, University of Toronto, 50 St. George Street, Toronto, ON, M5S 3H4, Canada",Code for stream-gap figure,bovy@astro.utoronto.ca,0000-0001-6855-442X
-Horiuchi,Shunsaku,S.~Horiuchi,Contributor,"Center for Neutrino Physics, Department of Physics, Virginia Tech, VA",Cross correlation with gamma rays,horiuchi@vt.edu,0000-0001-6142-6556
-Bird,Simeon,S.~Bird,Contributor,"University of California, Riverside",Compact objects,sbird@ucr.edu,0000-0001-5803-5490
-Cohen-Tanugi,Johann,J.~Cohen-Tanugi,Contributor,"LUPM, Universit\'{e} de Montpellier and CNRS, Montpellier, France ","indirect detections, halo profiles, local structures, wherever else I can help",,
-Boddy,Kimberly,K.~K.~Boddy,Contributor,"Department of Physics and Astronomy, Johns Hopkins University, Baltimore, MD 21218",Dark matter-baryon scattering; Complementarity: Direct detection; SIDM,kboddy@jhu.edu,0000-0003-1928-4667
-Diaz Rivero,Ana,A.~D\'{i}az Rivero,Contributor,"Department of Physics, Harvard University, Cambridge, MA, 02138",Strong lensing,adiazrivero@g.harvard.edu,
-Shipp,Nora,N.~Shipp,Contributor,"Department of Astronomy and Astrophysics, The University of Chicago, Chicago IL 60637, USA",streams figure,norashipp@uchicago.edu,
-Banik,Nilanjan,N.~Banik,Contributor,"GRAPPA Institute, Institute for Theoretical Physics Amsterdam and Delta Institute for Theoretical Physics, University of Amsterdam, Science Park 904, 1098 XH Amsterdam, The Netherlands",Baryonic effects on stellar streams,banik@lorentz.leidenuniv.nl,
-Banik,Nilanjan,N.~Banik,Contributor,"Lorentz Institute, Leiden University, Niels Bohrweg 2, Leiden, 2333 CA, The Netherlands",Baryonic effects on stellar streams,banik@lorentz.leidenuniv.nl,
-Simon,Josh,J.~D.~Simon,Contributor,"Observatories of the Carnegie Institution for Science, 813 Santa Barbara St., Pasadena, CA 91101",dwarf galaxy spectroscopy,,
-Zaharijas,Gabrijela,G.~Zaharijas,Contributor,"Center for Astrophysics and Cosmology, University of Nova Gorica",Some editing and review of the indirect  detection section,gabrijela.zaharijas@ung.si>,
-Hlozek,Renee,R.~Hlo\v{z}ek,Supporter,"Department of Astronomy \& Astrophysics and Dunlap Institute, University of Toronto, M5S 3H4",Supporter,hlozek@dunlap.utoronto.ca,
-Wang,Mei-Yu,M.~Y.~Wang,Contributor,"Department of Physics, Carnegie Mellon University",WDM vs SIDM figure,meiyuw@andrew.cmu.edu,0000-0002-8226-6237
-Giannotti,Maurizio,M.~Giannotti,Contributor,"Physical Science Department, Barry University",Anomalous Energy Loss Mechanisms,mgiannotti@barry.edu,0000-0001-9823-6262
+Horiuchi,Shunsaku,Shunsaku~Horiuchi,Contributor,"Center for Neutrino Physics, Department of Physics, Virginia Tech, VA",Cross correlation with gamma rays,horiuchi@vt.edu,0000-0001-6142-6556
+Bird,Simeon,Simeon~Bird,Contributor,"University of California, Riverside",Compact objects,sbird@ucr.edu,0000-0001-5803-5490
+Cohen-Tanugi,Johann,Johann~Cohen-Tanugi,Contributor,"LUPM, Universit\'{e} de Montpellier and CNRS, Montpellier, France ","indirect detections, halo profiles, local structures, wherever else I can help",,
+Boddy,Kimberly,Kimberly~K.~Boddy,Contributor,"Department of Physics and Astronomy, Johns Hopkins University, Baltimore, MD 21218",Dark matter-baryon scattering; Complementarity: Direct detection; SIDM,kboddy@jhu.edu,0000-0003-1928-4667
+Diaz Rivero,Ana,Ana~D\'{i}az Rivero,Contributor,"Department of Physics, Harvard University, Cambridge, MA, 02138",Strong lensing,adiazrivero@g.harvard.edu,
+Shipp,Nora,Nora~Shipp,Contributor,"Department of Astronomy and Astrophysics, The University of Chicago, Chicago IL 60637, USA",streams figure,norashipp@uchicago.edu,
+Banik,Nilanjan,Nilanjan~Banik,Contributor,"GRAPPA Institute, Institute for Theoretical Physics Amsterdam and Delta Institute for Theoretical Physics, University of Amsterdam, Science Park 904, 1098 XH Amsterdam, The Netherlands",Baryonic effects on stellar streams,banik@lorentz.leidenuniv.nl,
+Banik,Nilanjan,Nilanjan~Banik,Contributor,"Lorentz Institute, Leiden University, Niels Bohrweg 2, Leiden, 2333 CA, The Netherlands",Baryonic effects on stellar streams,banik@lorentz.leidenuniv.nl,
+Simon,Josh,Joshua~D.~Simon,Contributor,"Observatories of the Carnegie Institution for Science, 813 Santa Barbara St., Pasadena, CA 91101",dwarf galaxy spectroscopy,,
+Zaharijas,Gabrijela,Gabrijela~Zaharijas,Contributor,"Center for Astrophysics and Cosmology, University of Nova Gorica",Some editing and review of the indirect  detection section,gabrijela.zaharijas@ung.si>,
+Hlozek,Renee,Renee~Hlo\v{z}ek,Supporter,"Department of Astronomy \& Astrophysics and Dunlap Institute, University of Toronto, M5S 3H4",Supporter,hlozek@dunlap.utoronto.ca,
+Wang,Mei-Yu,Mei-Yu~Wang,Contributor,"Department of Physics, Carnegie Mellon University",WDM vs SIDM figure,meiyuw@andrew.cmu.edu,0000-0002-8226-6237
+Giannotti,Maurizio,Maurizio~Giannotti,Contributor,"Physical Science Department, Barry University",Anomalous Energy Loss Mechanisms,mgiannotti@barry.edu,0000-0001-9823-6262
 Adhikari,Susmita,Susmita~Adhikari,Contributor,"Kavli Institute for Particle Astrophysics and Cosmology, Stanford University",Clusters contact person,susmita@stanford.edu,
-Fassnacht,Christopher,C.~D.~Fassnacht,Contributor,"Physics Department, University of California, Davis",Strong lensing; complementarity,cdfassnacht@ucdavis.edu,0000-0002-4030-5461
-Necib,Lina,L.~Necib,Contributor,"Walter Burke Institute for Theoretical Physics, California Institute of Technology, Pasadena, CA 91125, USA",Direct Detection of Dark Matter,lnecib@caltech.edu,0000-0003-2806-1414
-Slatyer,Tracy,T.~R.~Slatyer,Contributor,"Center for Theoretical Physics, MIT, Cambridge, MA, 02139",Editing and review of theory section,tslatyer@mit.edu,
-Straniero,Oscar,O.~Straniero,Contributor,INAF-Italian National Institute of Astrophysics,Anomalous Energy loss in stars,oscar.straniero@inaf.it,0000-0002-5514-6125
-Nuss,Eric,E.~Nuss,Contributor,"LUPM, Universit\'{e} de Montpellier and CNRS, Montpellier, France","indirect detections, halo profiles,  dwarfs",eric.nuss@umontpellier.fr,
-Koushiappas,Savvas,S.~M.~Koushiappas,Supporter,"Department of Physics, Brown University",Supporter,,
-Caputo,Regina,R.~Caputo,Supporter,NASA Goddard Space Flight Center,Supporter,regina.caputo@nasa.gov,
-Charles,Eric,E.~Charles,Supporter,"W. W. Hansen Experimental Physics Laboratory, Kavli Institute for Particle Astrophysics and Cosmology, Department of Physics and SLAC National Accelerator Laboratory, Stanford University, Stanford, CA 94305, USA",Supporter,,
-McDermott,Sam,S.~D.~McDermott,Contributor,"Fermi National Accelerator Laboratory, P. O. Box 500, Batavia, IL 60510, USA",Anomalous energy loss,,
-Cuoco,Alessandro,A.~Cuoco,Contributor,"Institute for Theoretical Particle Physics and Cosmology, RWTH Aachen University, 52056 Aachen, Germany;  and   Univ. Grenoble Alpes, USMB, CNRS, LAPTh, F-74940 Annecy, France",Cross correlation with gamma rays,cuoco@fysik.su.se,
+Fassnacht,Christopher,Christopher~D.~Fassnacht,Contributor,"Physics Department, University of California, Davis",Strong lensing; complementarity,cdfassnacht@ucdavis.edu,0000-0002-4030-5461
+Necib,Lina,Lina~Necib,Contributor,"Walter Burke Institute for Theoretical Physics, California Institute of Technology, Pasadena, CA 91125, USA",Direct Detection of Dark Matter,lnecib@caltech.edu,0000-0003-2806-1414
+Slatyer,Tracy,Tracy~R.~Slatyer,Contributor,"Center for Theoretical Physics, MIT, Cambridge, MA, 02139",Editing and review of theory section,tslatyer@mit.edu,
+Straniero,Oscar,Oscar~Straniero,Contributor,INAF-Italian National Institute of Astrophysics,Anomalous Energy loss in stars,oscar.straniero@inaf.it,0000-0002-5514-6125
+Nuss,Eric,Eric~Nuss,Contributor,"LUPM, Universit\'{e} de Montpellier and CNRS, Montpellier, France","indirect detections, halo profiles,  dwarfs",eric.nuss@umontpellier.fr,
+Koushiappas,Savvas,Savvas~M.~Koushiappas,Supporter,"Department of Physics, Brown University",Supporter,,
+Caputo,Regina,Regina~Caputo,Supporter,NASA Goddard Space Flight Center,Supporter,regina.caputo@nasa.gov,
+Charles,Eric,Eric~Charles,Supporter,"W. W. Hansen Experimental Physics Laboratory, Kavli Institute for Particle Astrophysics and Cosmology, Department of Physics and SLAC National Accelerator Laboratory, Stanford University, Stanford, CA 94305, USA",Supporter,,
+McDermott,Sam,Sammuel~D.~McDermott,Contributor,"Fermi National Accelerator Laboratory, P. O. Box 500, Batavia, IL 60510, USA",Anomalous energy loss,,
+Cuoco,Alessandro,Alessandro~Cuoco,Contributor,"Institute for Theoretical Particle Physics and Cosmology, RWTH Aachen University, 52056 Aachen, Germany;  and   Univ. Grenoble Alpes, USMB, CNRS, LAPTh, F-74940 Annecy, France",Cross correlation with gamma rays,cuoco@fysik.su.se,
 Yu,Hai-Bo,Hai-Bo Yu,Contributor,"Department of Physics and Astronomy, University of California, Riverside, CA, 92521","Theory section, particle dark matter",haiboyu@ucr.edu,0000-0002-8421-8597
-Peter,Annika H. G.,A.~H.~G.~Peter,Contributor,"Department of Physics, The Ohio State University, 191 W. Woodruff Ave., Columbus, OH 43210, USA","Paper organization; clusters, overall reviewer",peter.33@osu.edu,0000-0002-8040-6785
-Peter,Annika H. G.,A.~H.~G.~Peter,Contributor,"Center for Cosmology and AstroParticle Physics, The Ohio State University, 191 W. Woodruff Ave., Columbus, OH 43210, USA","Paper organization; clusters, overall reviewer",peter.33@osu.edu,0000-0002-8040-6785
-Peter,Annika H. G.,A.~H.~G.~Peter,Contributor,"Department of Astronomy, The Ohio State University, 140 W. 18th Ave., Columbus, OH 43210, USA ","Paper organization; clusters, overall reviewer",peter.33@osu.edu,0000-0002-8040-6785
-Bulbul,Esra,E.~Bulbul,Contributor,"Center for Astrophysics, Harvard \& Smithsonian","X-rays discussion for clusters and ALPs, review of the clusters section",ebulbul@cfa.harvard.edu,
+Peter,Annika H. G.,Annika~H.~G.~Peter,Contributor,"Department of Physics, The Ohio State University, 191 W. Woodruff Ave., Columbus, OH 43210, USA","Paper organization; clusters, overall reviewer",peter.33@osu.edu,0000-0002-8040-6785
+Peter,Annika H. G.,Annika~H.~G.~Peter,Contributor,"Center for Cosmology and AstroParticle Physics, The Ohio State University, 191 W. Woodruff Ave., Columbus, OH 43210, USA","Paper organization; clusters, overall reviewer",peter.33@osu.edu,0000-0002-8040-6785
+Peter,Annika H. G.,Annika~H.~G.~Peter,Contributor,"Department of Astronomy, The Ohio State University, 140 W. 18th Ave., Columbus, OH 43210, USA ","Paper organization; clusters, overall reviewer",peter.33@osu.edu,0000-0002-8040-6785
+Bulbul,Esra,Esra~Bulbul,Contributor,Center for Astrophysics | Harvard & Smithsonian,"X-rays discussion for clusters and ALPs, review of the clusters section",ebulbul@cfa.harvard.edu,
+Golovich,Nathan,Nathan~Golovich,Contributor,Lawrence Livermore National Laboratory,"Paper organization; compact objects, microlensing; galaxy cluster density profile; complementary",golovich1@llnl.gov,
+Murgia,Simona,Simona~Murgia,Contributor,"Department of Physics and Astronomy, University of California, Irvine, CA 92697, USA","Workshop attendance, microlensing of compact halos",smurgia@uci.edu,
+Kaplinghat,Manoj,Manoj~Kaplinghat,Contributor,"Department of Physics and Astronomy, University of California, Irvine, CA 92697, USA","Self-interacting dark matter, theory",mkapling@uci.edu,
+Wechsler,Risa,Risa~Wechsler,Contributor,"Kavli Institute for Particle Astrophysics and Cosmology, Stanford, CA 94305","Meeting organization, dwarf galaxies, halo mass",rwechsler@stanford.edu,
+Buckley,Matthew,Matthew~Buckley,Contributor,"Department of Physics and Astronomy, Rutgers University",,mbuckley@physics.rutgers.edu,
+Sanchez-Conde,Miguel,Miguel~A.~S\'anchez-Conde,Supporter,"Instituto de F\'i-sica Te\'orica UAM-CSIC, Universidad Aut\'onoma de Madrid, C/ Nicol\'as Cabrera, 13-15, 28049 Madrid, Spain",Supporter,regina.caputo@nasa.gov,
+Sanchez-Conde,Miguel,Miguel~A.~S\'anchez-Conde,Supporter,"Departamento de F\'i-sica Te\'orica, M-15, Universidad Aut\'onoma de Madrid, E-28049 Madrid, Spain",Supporter,regina.caputo@nasa.gov,
+Rosenfeld,Rogerio,Rogerio~Rosenfeld,Contributor,"ICTP South American Institute for Fundamental Research\\ Instituto de F\'{\i}sica Te\'orica, Universidade Estadual Paulista, S\~ao Paulo, Brazil",Large Scale Structure (Theory),rogerio.rosenfeld@unesp.br,
+Rosenfeld,Rogerio,Rogerio~Rosenfeld,Contributor,"Laborat\'orio Interinstitucional de e-Astronomia - LIneA, Rua Gal. Jos\'e Cristino 77, Rio de Janeiro, RJ - 20921-400, Brazil",Large Scale Structure (Theory),rogerio.rosenfeld@unesp.br,
+Keeton,Charles,Charles~R.~Keeton,Contributor,"Department of Physics and Astronomy, Rutgers University",strong lensing,keeton@physics.rutgers.edu,
+Hezaveh,Yashar,Yashar~.D.~Hezaveh,Supporter,"Center for Computational Astrophysics, Flatiron Institute",Supporter,hezaveh@stanford.edu,
+Brooks,Alyson,Alyson~M.~Brooks,Supporter,"Department of Physics and Astronomy, Rutgers University",Supporter,abrooks@physics.rutgers.edu,
