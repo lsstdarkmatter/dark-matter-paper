@@ -60,9 +60,14 @@
 \usepackage{aas_macros}
 
 % Add your own macros here:
-\newcommand{\Contributors}[1]{ {\footnotesize [\textit{#1}]}}
-\newcommand{\Contact}[1]{ {\footnotesize [\textbf{#1}]}}
+% These are commented out for production
+%\newcommand{\Contributors}[1]{ {\footnotesize [\textit{#1}]}}
+%\newcommand{\Contact}[1]{ {\footnotesize [\textbf{#1}]}}
+\newcommand{\Contributors}[1]{}
+\newcommand{\Contact}[1]{}
+
 \newcommand{\Comment}[3]{\textcolor{#1}{(#2: #3)}}
+
 
 \newcommand{\ADW}[1]{\Comment{blue}{ADW}{#1}} % Alex Drlica-Wagner
 \newcommand{\YYM}[1]{\Comment{blue}{YYM}{#1}} % Yao-Yuan Mao
@@ -85,7 +90,7 @@
 \newcommand{\SDM}[1]{\Comment{blue}{SDM}{#1}} % Sam McDermott
 \newcommand{\JGB}[1]{\Comment{red}{JGB}{#1}} % Juan Garcia-Bellido
 \newcommand{\KB}[1]{\Comment{orange}{KB}{#1}} % Keith Bechtol
-
+\newcommand{\ET}[1]{\Comment{blue}{ET}{#1}} % Erik Tollerud
 
 \begin{document}
 
@@ -122,15 +127,12 @@
   {\Large\bf
     LSST Dark Matter Group\\
     \bigskip
-    \date
+    \date{}
   }
 \end{center}
 \eject
 
 \setcounter{page}{1}
-
-\begin{document}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Executive Summary
