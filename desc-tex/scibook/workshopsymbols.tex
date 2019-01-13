@@ -1,0 +1,128 @@
+%%%%   Standard symbols for use in Snowmass Working Group Proceedings%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  basic formatting macros:%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\nc}{\newcommand}  
+
+%   text mode macros
+
+\def\ie{{\it i.e.}}
+\def\eg{{\it e.g.}}
+\def\etc{{\it etc}}
+\def\etal{{\it et al.}}
+\def\ibid{{\it ibid}.}
+
+\def\Acknowledgements{\bigskip  \bigskip \begin{center} \begin{large}
+             \bf ACKNOWLEDGEMENTS \end{large}\end{center}}
+
+
+%  equation display macros
+
+\def\beq{\begin{equation}}
+\def\eeq#1{\label{#1}\end{equation}}
+\def\eeqn{\end{equation}}
+
+%%  multiple-line equations  (use \CR as the carriage return):
+
+\newenvironment{Eqnarray}%
+   {\arraycolsep 0.14em\begin{eqnarray}}{\end{eqnarray}}
+\def\beqa{\begin{Eqnarray}}
+\def\eeqa#1{\label{#1}\end{Eqnarray}}
+\def\eeqan{\end{Eqnarray}}
+\def\CR{\nonumber \\ }
+
+%%  reference to an equation number:
+
+\def\leqn#1{(\ref{#1})}
+
+
+% math mode macros
+
+\nc{\ra}{\rightarrow}  
+\nc{\slsh}{\slash\hspace*{-0.22cm}}
+\def\Re{{\cal R \mskip-4mu \lower.1ex \hbox{\it e}\,}}
+\def\Im{{\cal I \mskip-5mu \lower.1ex \hbox{\it m}\,}}
+
+\nc{\vev}[1]{ \left\langle {#1} \right\rangle }
+\nc{\bra}[1]{ \langle {#1} | }
+\nc{\ket}[1]{ | {#1} \rangle }
+\nc{\fb}{\,{\rm fb}^{-1}}
+\nc{\ev}{{\rm eV}}
+\nc{\kev}{{\rm keV}}
+\nc{\Mev}{{\rm MeV}}
+\nc{\gev}{{\rm GeV}}
+\nc{\tev}{{\rm TeV}}
+\nc{\mev}{{\rm MeV}}
+
+%%  caligraphic letters (for matrix elements, luminosity, etc.)
+
+\def\D{{\cal D}}
+\def\L{{\cal L}}
+\def\M{{\cal M}}
+\def\O{{\cal O}}
+\def\W{{\cal W}}
+
+\def\del{\partial}
+\def\Dslash{\not{\hbox{\kern-4pt $D$}}}
+\def\dslash{\not{\hbox{\kern-2pt $\del$}}}
+\def\pslash{\not{\hbox{\kern-2pt $p$}}}
+\def\ETmiss{ \not{\hbox{\kern-4pt $E$}}_T }
+
+
+%%  matrix operations and fractions:
+
+\def\One{\ensuremath{\bf 1}\xspace}
+\def\hc{\ensuremath{\mbox{\rm h.c.}}\xspace}
+\def\tr{\ensuremath{\mbox{\rm tr}}\xspace}
+\def\half{\ensuremath{\frac{1}{2}}\xspace}
+\def\thalf{\ensuremath{\frac{3}{2}}\xspace}
+\def\third{\ensuremath{\frac{1}{3}}\xspace}
+\def\tthird{\ensuremath{\frac{2}{3}}\xspace}
+
+
+
+%%  HEP terminology:
+
+\def\Pl{{\mbox{\scriptsize Pl}}}
+\def\lum{{\cal L}}
+\def\eff{{\mbox{\scriptsize eff}}}
+\def\CM{{\mbox{\scriptsize CM}}}
+\def\BR{\mbox{\rm BR}}
+\def\ee{e^+e^-}
+\def\ppb{{\mbox{p\bar p}}}
+\def\qqb{{\mbox{q\bar q}}}
+\def\inpb{{\mbox{{\rm pb}^{-1}}}}
+\def\infb{{\mbox{{\rm fb}^{-1}}}}
+\def\sstw{\sin^2\theta_w}
+\def\cstw{\cos^2\theta_w}
+\def\mz{m_Z}
+\def\gz{\Gamma_Z}
+\def\mw{m_W}
+\def\mt{m_t}
+\def\gt{\Gamma_t}
+\def\mh{m_h}
+\def\gmu{G_\mu}
+\def\GF{G_F}
+\def\alphas{\alpha_s}
+\def\msb{{\bar{\ssstyle M \kern -1pt S}}}
+\def\lmsb{\Lambda_{\msb}}
+\def\ELER{e^-_Le^+_R}
+\def\EREL{e^-_Re^+_L}
+\def\ELEL{e^-_Le^+_L}
+\def\ERER{e^-_Re^+_R}
+\def\eps{\epsilon}
+
+%% supersymmetry:
+
+\def\ch#1{\ensuremath{\widetilde\chi^+_{#1}}\xspace}
+\def\chm#1{\ensuremath{\widetilde\chi^-_{#1}}\xspace}
+\def\neu#1{\ensuremath{\widetilde\chi^0_{#1}}\xspace}
+\def\s#1{\ensuremath{\widetilde{#1}}\xspace}
+
+%%   experiment names
+
+\def\babar{\mbox{\sl B\hspace{-0.4em} {\small\sl A}\hspace{-0.37em} \sl B\hspace{-0.4em} {\small\sl A\hspace{-0.02em}R}}}
+
+
+
+
+
+
