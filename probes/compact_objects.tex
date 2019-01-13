@@ -136,12 +136,12 @@ We briefly summarize these systematics and strategies for mitigating their effec
 
 \emph{Blending:} Given the typical scale \WAD{give typical scale range for low and high mass} of the Einstein radius (the approximate region where a microlensing signal is detectable), the odds of any one source star experiencing a microlensing event is approximately $10^{-9}$. Due to the low probability of a microlensing event, most observable microlensing events will be in dense stellar fields (e.g., the Galactic plane, Magellanic Clouds, and M31), driving microlensing surveys to these dense stellar fields.
 
-These dense survey fields, coupled with LSST depth and ground based point spread function (PSF) of $\roughly 0.8''$ \citep{0805.2366}, lead to significant ambiguous blending (i.e., multiple objects within a single PSF).
+These dense survey fields, coupled with LSST depth and ground based PSF with FWHM $\sim 0.8''$ \citep{0805.2366}, lead to significant ambiguous blending (i.e., multiple objects within a single PSF).
 Towards the Galactic center there are $\roughly 50$ stars within an LSST PSF, similarly there are $\roughly 15$ and $\roughly 5$ in the bulge, and disk respectively \citep{1806.06372}.
 LSST can overcome much of the blending problem to detect variations in the brightness of stars, including the detection of microlensing lightcurves, through the process of difference imaging.
 With difference imaging, reference images are built through the coaddition of multiple observation of the same fields, resulting in a deep image of the static sky. Reference images are then scaled and PSF-matched to individual observed science images and subtracted off, resulting in a difference image that only contains the signal that differs from the static sky. 
 
-Difference imaging should reduce many of systematic effects associated with blending. Follow-up high resolution imaging from space or ground-based adaptive optics can mitigate most blending issues for detected microlensing events.
+Difference imaging should reduce many of systematic effects associated with blending. Follow-up high resolution imaging from space or gronud-based adaptive optics can mitigate most blending issues for detected microlensing events.
 %; however, it will still be difficult to characterize the intrinsic source star baseline photometric properties. Crowding can also lead to a secondary chromatic signal with exactly the same duration/shape as the microlensing event, although with different amplitude. 
 
 \emph{Galaxy Model:} While microlensing can be detected independent of any detailed knowledge of Galactic structure, properly incorporating uncertainty in the Galactic dust, stellar velocity distributions, and dark matter halo model is essential to interpret the microlensing signal in the context of dark matter.
@@ -155,7 +155,11 @@ Great improvements have been made on this front since the first microlensing sur
 We estimate the projected sensitivity of an LSST survey optimized for the detection of microlensing signals from PBHs and present the results in \figref{macho_constraints}.
 The LSST M31 microlensing projection is based on extrapolating the \citet{1701.02151} by assuming a ten-day mini-survey of M31 with a 12 second cadence between exposures.
 Such a survey is approximately 10 times longer with an order of magnitude faster cadence than the survey of \citet{1701.02151}.
-The projected LSST Milky Way (MW) microplensing and paralensing constraints are from a Monte Carlo analysis where various PBH lenses were injected into light curves based on LSST OpSim cadence simulations.\footnote{More details can be found at: \url{https://github.com/lsstdarkmatter/dark-matter-paper/issues/8}}
+
+The projected LSST Milky Way (MW) microlensing and paralensing constraints come from a Monte Carlo analysis of injected light curves based on LSST OpSim cadence simulations.\footnote{Details available in: \url{https://github.com/lsstdarkmatter/dark-matter-paper/issues/8}.}
+We inject simulated microlensing signals onto the OpSim lightcurves for 200k PBH lenses in the mass range from $10^{-2}\Msun$ to $10^{8}\Msun$ distributed using a triangular density distribution, where $p(r = 0 \kpc) = 0$ and $p(r = 8\kpc) = 0.25$.
+The sources are assumed to be a $23\magn$ stars located at $8\kpc$ with measurement noise generated from the standard LSST photometric error model \citep{0805.2366}.
+LSST is expected to detect $\roughly 10^{9}$ such stars, with an optical depth of $4.48 \times 10^{-6}$ \citep{2006ApJ...636..240S}.
 The paralensing constraint comes from assuming that only the secondary microlensing parallax signal is used for discovery, and not the primary heliocentric microlensing signal.
 
 \begin{comment}
