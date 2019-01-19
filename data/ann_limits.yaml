@@ -1070,7 +1070,7 @@ pass8_dwarfs_6yr_bb_95cl:
 
   style:
     label : 'Pass 8 Combined dSphs'
-    color : 'k' 
+    color : 'black' 
     marker : 'None'
     linestyle : '-'
 #    dashes : [5,2]
@@ -1089,7 +1089,7 @@ pass8_dwarfs_6yr_tautau_95cl:
 
   style:
     label : 'Pass 8 Combined dSphs'
-    color : 'k' 
+    color : 'black' 
     marker : 'None'
     linestyle : '-'
 #    dashes : [5,2]
@@ -1108,7 +1108,7 @@ pass8_dwarfs_p302_6yr_bb_95cl:
 
   style:
     label : 'Pass 8 Combined dSphs (6 yrs)'
-    color : 'k' 
+    color : 'black' 
     marker : 'None'
     linestyle : '-'
 #    dashes : [5,2]
@@ -1127,7 +1127,7 @@ pass8_dwarfs_p302_6yr_tautau_95cl:
 
   style:
     label : 'Pass 8 Combined dSphs (6 yrs)'
-    color : 'k' 
+    color : 'black' 
     marker : 'None'
     linestyle : '-'
 #    dashes : [5,2]
@@ -1146,7 +1146,7 @@ pass8_dwarfs_5yr_median_bb_95cl:
 
   style:
     label : 'Pass 8 Median Expected Limit (5 years)'
-    color : 'k' 
+    color : 'black' 
     marker : 'None'
     linestyle : '-'
 #    dashes : [5,2]
@@ -1165,7 +1165,7 @@ pass8_dwarfs_10yr_median_bb_95cl:
 
   style:
     label : 'Pass 8 Median Expected Limit (10 years)'
-    color : 'k' 
+    color : 'black' 
     marker : 'None'
     linestyle : '-'
     dashes : [3,2]
@@ -1186,7 +1186,7 @@ pass8_dwarfs_10yr3x_median_bb_95cl:
 
   style:
     label : 'Pass 8 Median Expected Limit (10 years, 3x Dwarfs)'
-    color : 'k' 
+    color : 'black' 
     marker : 'None'
     linestyle : '-'
 #    dashes : [3,2]
@@ -1240,7 +1240,7 @@ ackermann2014_dsph_tautau_95cl:
 
   style:
     label : 'Ackermann+ 2014 Dwarfs (4 years)'
-    color : 'k' 
+    color : 'black' 
     marker : 'None'
     linestyle : '-'
     linewidth : 1.5
@@ -1518,8 +1518,8 @@ veritas_segue1_ww_95cl:
 hess_einasto_bb_95cl:
 
   style:
-    label : 'Abramowski+ 2011 H.E.S.S. GC Halo'
-    color : 'r' 
+    label : 'HESS GC'
+    color : 'black' 
     marker : 'None'
     linestyle : '-'
     dashes : [5,2]
@@ -1558,15 +1558,17 @@ hess_einasto_bb_95cl:
     10.23292992e3     1.274039242e-24 
 
 hess_gc_einasto_abazajian_bb_95cl:
-
+#Abramowski+ 2011 H.E.S.S. GC Halo
   style:
-    label : 'Abramowski+ 2011 H.E.S.S. GC Halo'
-    color : 'black' 
+    label : 'HESS GC'
+    color : 'blue' 
     marker : 'None'
     linestyle : '-'
     #dashes : [5,2]
     linewidth : 1.5
 
+  label_x : 3000
+  label_y : 5e-25
   channel_label : '$b \bar b$'
   conf_label : '95% C.L.'
 
@@ -1605,10 +1607,10 @@ hess_gc_einasto_abazajian_bb_95cl:
     97187.92188     1.74209e-24
 
 hess_gc_nfw_abazajian_tautau_95cl:
-
+#Abramowski+ 2011 H.E.S.S. GC Halo
   style:
-    label : 'Abramowski+ 2011 H.E.S.S. GC Halo'
-    color : 'r' 
+    label : 'HESS GC Halo'
+    color : 'black' 
     marker : 'None'
     linestyle : '-'
     dashes : [5,2]
@@ -1651,10 +1653,10 @@ hess_gc_nfw_abazajian_tautau_95cl:
 
 
 hess_gc_einasto_abazajian_tautau_95cl:
-
+  #Abramowski+ 2011 H.E.S.S. GC Halo
   style:
-    label : 'Abramowski+ 2011 H.E.S.S. GC Halo'
-    color : 'r' 
+    label : 'HESS GC'
+    color : 'black' 
     marker : 'None'
     linestyle : '-'
     dashes : [5,2]
@@ -1698,7 +1700,7 @@ cta_nfw_bb_95cl:
 
   style:
     label : 'Wood+ 2013 CTA GC Halo 500h'
-    color : 'r' 
+    color : 'gray'
     marker : 'None'
     linestyle : '-'
     linewidth : 1.5
@@ -1923,15 +1925,16 @@ silverwood2014_cta_einasto_tautau:
     9834.92480      5.29522e-26
 
 zaharijas2018_cta_bb:
-
+ # Halo (500h)
   style:
-    label : 'Zaharijas+ 2018 CTA GC Halo 500h'
-    color : 'dodgerblue' 
+    label : 'CTA GC'
+    color : 'gray' 
     marker : 'None'
     linestyle : '-'
     #dashes : [5,2,2,5]
     linewidth : 2.0
-
+  label_x : 5000
+  label_y : 5e-26
   channel_label : '$b \bar b$'
   conf_label : '95% C.L.'
 
@@ -1950,6 +1953,54 @@ zaharijas2018_cta_bb:
     66760    1.0360E-25
     91410    1.4419E-25
     98510    1.4702E-25
+
+zaharijas2018_cta_500h_1p_bb:
+  # DM_limits_CTA_GC_500h_bb_Einasto_systematics_1percent.txt
+  style:
+    label : 'CTA GC (500h)'
+    color : 'gray' 
+    marker : 'None'
+    linestyle : '-'
+    #dashes : [5,2,2,5]
+    linewidth : 2.0
+
+  channel_label : '$b \bar b$'
+  conf_label : '95% C.L.'
+
+  xystring: |
+    50.        33.57441576662886
+    80.        11.527304428280761
+    100.       8.710612498025814
+    500.       1.8366473816437905
+    1000.      1.5068080257219434
+    2000.      1.3498267188732747
+    10000.     1.6767343199244213
+    20000.     2.112852627505563
+    100000.    5.539721711689913
+
+zaharijas2018_cta_500h_1p_ww:
+  # DM_limits_CTA_GC_500h_bb_Einasto_systematics_1percent.txt
+  style:
+    label : 'Zaharijas+ 2018 CTA GC Halo 500h'
+    color : 'gray' 
+    marker : 'None'
+    linestyle : '-'
+    #dashes : [5,2,2,5]
+    linewidth : 2.0
+
+  channel_label : '$b \bar b$'
+  conf_label : '95% C.L.'
+
+  xystring: |
+   100.       5.293872625158864
+   500.       0.8068458019714512
+   1000.      0.5591032697705682
+   2000.      0.20511421406227737
+   10000.     0.27898899581991643
+   20000.     0.8750320178089469
+   100000.    2.9137715560932778
+
+
 
 lhc_quarks:
 
@@ -2031,13 +2082,15 @@ dd_quarks:
 ackermann15_bb:
   #https://www-glast.stanford.edu/pub_data/1048/limits_bb.txt
   style:
-    label : 'Ackermann et al. (2015)'
-    color : 'black' 
+    label : 'LAT Dwarfs'
+    color : 'blue' 
     marker : 'None'
 #    linestyle : '-'
 #    dashes : [5,2,2,5]
     linewidth : 2.0
 
+  label_x : 200
+  label_y : 6e-26
   channel_label : '$q \bar q$'
   conf_label : '95% C.L.'
 
@@ -2056,13 +2109,15 @@ ackermann15_bb:
 
 gc_summary_bb_1s:
   style:
-    label : 'GC + Systematics'
+    label : 'GCE'
     color : 'red' 
     marker : 'None'
 #    linestyle : '-'
 #    dashes : [5,2,2,5]
     linewidth : 2.0
 
+  label_x : 40.
+  label_y : 1.5e-25
   channel_label : '$q \bar q$'
   conf_label : '95% C.L.'
 

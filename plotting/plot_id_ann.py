@@ -7,6 +7,8 @@ import numpy as np
 import yaml
 from StringIO import StringIO
 from matplotlib.patches import Ellipse
+import matplotlib
+matplotlib.rcParams['text.usetex'] = True
 
 def plot_limit(section):
     data = limits[section]
@@ -15,6 +17,28 @@ def plot_limit(section):
     kwargs['lw'] = 2
     #plt.plot(np.log10(mass),np.log10(limit),**kwargs)
     plt.plot(mass,limit,**kwargs)
+    plt.text(float(data['label_x']),
+             float(data['label_y']),
+             data['style']['label'],
+             horizontalalignment='center',
+             verticalalignment='top')
+
+def plot_limit_fill(section):
+    data = limits[section]
+    mass,limit = np.genfromtxt(StringIO(data['xystring'])).T
+    kwargs = dict(**data['style'])
+    kwargs['lw'] = 2
+    #plt.plot(np.log10(mass),np.log10(limit),**kwargs)
+    #plt.plot(mass,limit,**kwargs)
+    plt.fill_between(mass, limit, y2=1.0,
+                     edgecolor='tab:%s'%kwargs['color'],
+                     facecolor='tab:%s'%kwargs['color'],
+                     alpha=0.3)
+    plt.text(float(data['label_x']),
+             float(data['label_y']),
+             data['style']['label'],
+             horizontalalignment='center',
+             verticalalignment='top')
 
 def plot_projection():
     data = limits['ackermann15_bb']
@@ -34,8 +58,11 @@ def plot_projection():
     proj_factor = proj_factor**(-fn(mass))
     proj = proj_factor * limit
 
-    kwargs=dict(ls='-',lw=2,color='dodgerblue')
+    kwargs=dict(ls='-',lw=2,color='orange')
     plt.plot(mass, proj, **kwargs)
+    plt.text(300,5e-27,'LSST + LAT Dwarfs',
+             horizontalalignment='center',
+             verticalalignment='top')
 
 fig,ax = plt.subplots()
 ax.set_yscale('log')
@@ -44,19 +71,22 @@ plt.axhline(3e-26,ls='--',lw=2,color='gray')
 
 limits = yaml.load(open('data/ann_limits.yaml'))
 
-plot_limit('ackermann15_bb')
+#plot_limit('ackermann15_bb')
+plot_limit_fill('ackermann15_bb')
 #plot_limit('gordon2013_bb_1s')
 #plot_limit('abazajian2014_contour_bb_1s')
 #plot_limit('calore2014_bb_1s')
 #plot_limit('daylan2014_bb_1s')
 #plot_limit('hess_gc_einasto_abazajian_bb_95cl')
-#plot_limit('zaharijas2018_cta_bb')
+plot_limit_fill('hess_gc_einasto_abazajian_bb_95cl')
+plot_limit_fill('zaharijas2018_cta_bb')
+#plot_limit_fill('zaharijas2018_cta_500h_1p_bb')
 plot_limit('gc_summary_bb_1s')
 
 plot_projection()
 
 plt.xlim(1,1e4)
-plt.ylim(5e-28,1e-22)
+plt.ylim(5e-28,1e-23)
 plt.xlabel(r'$m_{\rm DM}$ (GeV)',fontsize=18)
 plt.ylabel(r'$\langle \sigma_{\rm ann} v \rangle {\rm (cm^3 s^{-1})}$',fontsize=18)
 plt.subplots_adjust(top=0.95,bottom=0.12)
