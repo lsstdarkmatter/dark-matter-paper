@@ -37,11 +37,9 @@ LSST observations of Milky Way satellites therefore offer an exciting testing gr
 To relate these questions to LSST observations, we have analyzed simulated ultra-faint galaxies as they would appear in LSST WFD coadd object catalogs to quantify LSST's ability to detect nearby satellite galaxies. %, and we have developed a theoretical framework to connect observations of the Milky Way satellite population to the underlying dark matter subhalo population. 
 We detect ultra-faint galaxies as arcminute-scale statistical overdensities of individually resolved stars; in ground-based optical imaging surveys, it is often challenging to classify low signal-to-noise catalog objects near the detection threshold as either foreground stars or unresolved background galaxies. LSST will reach depths at which the galaxy counts far outnumber stellar counts, so the search sensitivity for ultra-faint galaxies will largely be determined by our ability to accurately perform star-galaxy separation at magnitudes $24 < r < 27.5$; importantly, our sensitivity analyses include these effects. 
 In detail, we inject many simulated stellar populations into the center of the LSST DESC DC2 simulated data set and encapsulate the results of a satellite search algorithm run on these stellar populations using a surface brightness detection threshold of $\mu = 32\ \rm{mag\ arcsec}^{-2}$ \citep{0912.0201} and an absolute magnitude cutoff of $M_V = 0\magn$ for all satellites within $300\kpc$.
-%\ET{This value of 32 isn't justified for the reader. This is the same number as used in Nadler et al. I'm guessing that's DES? But I think it could use at least a parenthetical stating its origin given that published results on the SDSS are more like 30} 
-%\ADW{This is coming from the LSST Science Book}
-%or just quote the results? ADW: probably need some detail because we haven't published the DES search yet.
 
-\figref{satellite_mmin} shows the minimum subhalo mass that LSST can probe via observations of Milky Way satellites, obtained by folding our search sensitivity estimates through a cosmological model of the MW satellite population that predicts satellite luminosity functions, radial distributions, and size distributions that agree well with current observations. In particular, we generate many mock MW satellite populations using the model presented in \cite{Nadler:2018} given a ``true" value of the minimum peak subhalo virial mass necessary for galaxy formation, $\mathcal{M}_{\rm{min,true}}$, marginalizing over the relevant galaxy--halo connection parameters. We then perform mock observations of these generated satellite populations using the LSST selection function, and we compare these to the true satellite populations by MCMC sampling $\mathcal{M}_{\rm{min}}$ and the remaining galaxy--halo connection parameters assuming that satellite number counts are Poisson distributed in bins of absolute magnitude (see \citealt{Nadler:2018} for details on the fitting procedure). For each value of $\mathcal{M}_{\rm{min,true}}$, this procedure yields a posterior distribution over the minimum halo mass inferred by LSST observations. The red band in \figref{satellite_mmin} illustrates the recovered $95\%$ confidence interval as a function of $\mathcal{M}_{\rm{min,true}}$, and the blue dot-dashed line indicates the minimum halo mass inferred from known classical and SDSS-detected MW satellites. %LSST observations recover the true minimum halo mass at large values of $\mathcal{M}_{\rm{min,true}}$, since all of the predicted satellites are observable in this regime, while smaller values of $\mathcal{M}_{\rm{min,true}}$ yield satellites that do not pass our detection criteria, which prevents the lowest-mass subhalos that host satellites to be detected. 
+\figref{satellite_mmin} shows the minimum subhalo mass that LSST can probe via observations of Milky Way satellites, obtained by folding our search sensitivity estimates through a cosmological model of the MW satellite population that predicts satellite luminosity functions, radial distributions, and size distributions that agree well with current observations. In particular, we generate many mock MW satellite populations using the model presented in \cite{Nadler:2018} given a ``true" value of the minimum peak subhalo virial mass necessary for galaxy formation, $\mathcal{M}_{\rm{min,true}}$, marginalizing over the relevant galaxy--halo connection parameters. We then perform mock observations of these generated satellite populations using the LSST selection function, and we compare these to the true satellite populations by MCMC sampling $\mathcal{M}_{\rm{min}}$ and the remaining galaxy--halo connection parameters assuming that satellite number counts are Poisson distributed in bins of absolute magnitude (see \citealt{Nadler:2018} for details on the fitting procedure). For each value of $\mathcal{M}_{\rm{min,true}}$, this procedure yields a posterior distribution over the minimum halo mass inferred by LSST observations. The red band in \figref{satellite_mmin} illustrates the recovered $95\%$ confidence interval as a function of $\mathcal{M}_{\rm{min,true}}$, and the blue dot-dashed line indicates the minimum halo mass inferred from known classical and SDSS-detected MW satellites. 
+%LSST observations recover the true minimum halo mass at large values of $\mathcal{M}_{\rm{min,true}}$, since all of the predicted satellites are observable in this regime, while smaller values of $\mathcal{M}_{\rm{min,true}}$ yield satellites that do not pass our detection criteria, which prevents the lowest-mass subhalos that host satellites to be detected. 
 For small $\mathcal{M}_{\rm{min,true}}$, the $95\%$ confidence level upper bound on the lowest detectable subhalo mass improves by a factor of $\sim 5$ with LSST, from $\sim 5 \times 10^{8}\ \Msun$ to $\sim 10^{8}\ \Msun$; this translates to a lower bound of $\sim 7\ \rm{keV}$ on WDM particle mass (see \secref{combine_probes} for details).
 
 Although we have presented a ``population-based'' forecast for dark matter constraints from LSST-detected ultra-faint satellites, we note that kinematic data obtained by follow-up spectroscopy of newly discovered satellites also offers a powerful probe of dark matter microphysics. We estimate the number of LSST-detected MW satellites that can be spectroscopically confirmed in \secref{spectroscopy}, and we forecast the constraints offered by these stellar velocity dispersion measurements for WDM and SIDM in \secref{combine_probes}.
@@ -79,126 +77,27 @@ The depth of the gap from a given subhalo mass is calculated using the theoretic
 \caption{\label{fig:streamsurveys} Detection limits for gaps formed from subhalos of different masses using photometry from SDSS (blue) or the 10-year LSST stack (green) as a function of the stream surface brightness.
 Shaded regions correspond to a 10-40 kpc distance range, with the lines representing 20 kpc. For streams with surface brightnesses similar to those found in DES, 32--$33 \magn \asec^{-2}$, LSST is expected to probe halo masses two to three orders of magnitude smaller than SDSS and substantially improve the current constraints from Milky Way satellites \citep{Nadler:2018, Jethwa:2018,Kim:2017iwr} and the Lyman-$\alpha$ forest \citep{2017PhRvD..96b3522I}. 
 We connect the detected halos to the mass of the warm dark matter particle that would produce a minimum halo of that mass using the relationship determined by \cite{Bullock:2017xww}. Note that the halo mass definition used here is the $z=0$ virial mass; to relate this quantity to the peak subhalo mass used in our warm dark matter constraints, we have assumed the best-case scenario of no tidal mass loss.
-%The observed surface brightness of two DES streams, Indus and ATLAS, are also shown for comparison \citep{2018ApJ...862..114S}.
 }
 \end{figure}
 
-
-% In a nutshell: for a stream of a given surface brightness and heliocentric distance, we calculate the density level $5\,\sigma$ above the noise as the threshold for gap detection, and infer the corresponding subhalo mass under sensible assumptions regarding the encounter age and impact parameter.
-% We consider a stream that is old (12\,Gyr), metal-poor ($Z = 0.0002$), thin (20\,pc) and cold (velocity dispersion 1\,km\,s$^{-1}$).
-% In the fiducial case, this stream encountered a dark matter subhalo 0.5\,Gyr ago moving at 150\,km\,s$^{-1}$, which triggered gap formation.
-% The final depth and size of the gap are a function of the perturber's mass, impact parameter (we assume it equals the perturber's scale radius), and time after the impact \citep{erkal2016}.
-% The stream is mock-observed in a stellar field based on the \code{Galaxia} model of the Milky Way \citep{sharma2011}, assuming a galactic latitude of $b=-60^\circ$.
-% Both the stream synthetic photometry (after assuming a distance to the stream) and the contamination from \code{Galaxia} have been convolved with the LSST error model.
-% To estimate the density of stream stars, we sample the theoretical luminosity function to match the assumed surface brightness, and then select stars in the color-magnitude diagram that are within $2\,\sigma$ of the theoretical isochrone of the stream's age and metallicity ($\sigma$ are the color- and magnitude-dependent photometric uncertainties).
-% Similarly, we estimate the background density by applying the same isochrone selection to the mock catalog from \code{Galaxia}.
-% Finally, for a given subhalo mass, the relative density between the stream and the gap is calculated using relations from \citet{erkal2016}.
 
 In \figref{streamsurveys} we show how the lowest-mass dark matter subhalo detectable using the 10-year LSST data depends on the stream's surface brightness and heliocentric distance. For a stream with a surface brightness of 33 (31.5) $\mathrm{mag}\,\mathrm{arcsec}^{-2}$, LSST is able to detect subhalos down to $2 \times 10^7$ ($1 \times10^6$) $M_\odot$ at 20 kpc. As a comparison, we used the same model to calculate the gap detectability using SDSS DR9 photometry. LSST provides $\sim 3$ orders of magnitude improvement at low surface brightnesses, where most known (and anticipated) streams lie. Crucially, this pushes the minimum detectable halo mass below current constraints from Milky Way satellites \citep[\eg,][]{Jethwa:2018,Kim:2017iwr} or the Lyman-$\alpha$ forest \citep[\eg,][]{2017PhRvD..96b3522I}.
 
 Given a gap density detection threshold and a subhalo population, this formalism can be used to predict the number of gaps in a given stream \citep{erkal2016}. Typically, this predicts $\roughly 1$ gap per stream, making it difficult to interpret well-studied individual streams (i.e. Palomar 5 and GD-1). LSST is expected to measure dozens of streams as precisely as Palomar 5 and GD-1 have currently been mapped and will therefore provide a much stronger constraint: at the 10-year LSST depth, \LCDM predicts we should observe 17 gaps total in the 13 DES streams reported by \cite{2018ApJ...862..114S}. Observing fewer than 6 gaps would be inconsistent with \LCDM at a 99.9\,\% level. 
 
-%Analyzing individual stream gap density gives us vital information on the likely perturber, studying the one-dimensional stream density and track power spectra allows us to be sensitive to the subhalo mass function. 
-A stellar stream is expected to experience several subhalo impacts over its dynamical lifetime, each of which leaves an imprint on the stream density and track even after the gap has closed. 
-Studying the full one-dimensional stream density and track power spectra allows us to be sensitive to the subhalo mass function. 
-Imapcts from higher mass subhalos introduce power on large scales, while lower mass subhalo impacts introduce power at small scales. 
-Statistical analyses of the stream density power spectrum have been used to constrain the properties of dark matter \citep{bovy:2017, 2018JCAP...07..061B}. 
-LSST will allow us to measure the stream density and stream track power spectrum at small angular scales that were previously dominated by noise, and \citet{bovy:2017} project that the power spectrum method will be sensitive to subhalos down to mass $10^5 \Msun$. 
+A stellar stream is expected to experience several subhalo impacts over its dynamical lifetime, each of which leaves an imprint on the stream density and track. 
+While the effects of ancient impacts will be gradually erased due to the internal velocity dispersion of the sream member stars, it is possible to extract statistical information about the impact history of the stream by studying the linear density and track power spectra.
+%Studying the full one-dimensional stream density and track power spectra allows us to be sensitive to the subhalo mass function. 
+Impacts from higher mass subhalos introduce power on large scales, while lower mass subhalo impacts introduce power at small scales. 
+Statistical analyses of the stream density power spectrum have been used to constrain the subhalo mass function and properties of dark matter \citep{bovy:2017, 2018JCAP...07..061B}. 
+LSST will allow us to measure the stream density and stream track power spectra at small angular scales that were previously dominated by noise, and \citet{bovy:2017} project that the power spectrum method will be sensitive to subhalos down to mass $10^5 \Msun$. 
 In addition, precise measurement of the densities and tracks of multiple streams will allow us to combine their statistics and put tighter constraints on the properties of dark matter.
 
-%Depending on the surface brightness and distance of the streams detected with LSST, the corresponding bound on the warm dark matter particle mass may be significantly stronger than those obtained from Milky Way satellites \citep[$\sim 2.95$ keV,][]{2018MNRAS.473.2060J} or the Lyman $\alpha$ forest \citep[5.3 keV,][]{2017PhRvD..96b3522I}. Stream surface brightnesses from \cite{2018ApJ...862..114S}
-
-%\EON{Might consider adding a band for the satellites constraint between $3 \times 10^{8}$ at the low end (the best-case result from Nadler+18, which also makes the constraint shown here consistent with Fig.\ 5) and the Jethwa+18 result at the high end. I would prefer not to include the satellite bounds in the sentence about WDM, since the theoretical uncertainties underlying the WDM constraint for satellites are large. After quoting the minimum mass streams can probe, I'd compare to the satellite bound in terms of Mmin.} \DAH{I believe I have dealt with this}.
-
-
-%\begin{figure}
-%\centering
-%\includegraphics[width=\textwidth]{figures/lcd_limits_DES_LSST10.pdf}
-%\caption{At the 10 year LSST depth, $\Lambda$CDM predicts we should observe 17 gaps in the 13 DES streams reported by \cite{2018ApJ...862..114S}. Observing fewer than 6 gaps would be inconsistent with $\Lambda$CDM at a 99.9\,\% level. %\EON{I'm curious how the disk model for subhalo disruption was implemented -- if the amount of subhalo disruption is radially dependent (which is the case in hydro simulations, e.g. Garrison-Kimmel+2017), the lower end of the constraint here might be weaker.} \DAH{An important point but there are a huge number of worse assumptions than that already, I think this is infeasible until we write a proper paper.}
-%\label{fig:gapcounts}}
-%\end{figure}
 
 Depending on their orbit, stellar streams can also be perturbed by the baryonic structures such as the Galactic bar \citep[e.g.][]{erkal2017,pearson2017}, spiral arms \citep{Banik2018}, or giant molecular clouds \citep{amorisco2016}. The resulting gaps in may be indistinguishable from gap induced by dark matter subhalos and can therefore wrongly lead us in overestimating the number of subhalo impacts on a stellar stream. The only recourse is to carefully examine the streams' orbits to assess these possible confounding factors. Streams with pericenters of $\gtrsim 14\kpc$ should be relatively unaffected by these baryonic factors, and streams on retrograde orbits even less so. In addition, subhalos may also experience extra tidal shocks from the disk, which can alter the number of expected impacts in a given cosmological model \citep[e.g.][]{DOnghia2010,Garrison-Kimmel2017}. LSST will mitigate both of these issues by examining streams farther out into the Galactic halo where the effects are lessened.
 
 In this summary we have only considered the density structure of the stream. However, the perturbation that creates the gap necessarily affects the other phase space dimensions as well. The inclusion of these phase space dimensions allows for an almost unique determination of both the subhalo's internal and impact properties for each gap \citep{erkal2015b}. Furthermore, the perturber's effect produces a correlated signal across observables, improving the precision with which the statistical properties of the stream (e.g. power spectrum and cross-correlation of observables) can be used to measure subhalo properties \citep{bovy:2017}. This provides an exciting opportunity for synergy with current and future spectroscopic and astrometric surveys in addition to precise photometric distances and proper motions from LSST itself. Such efforts will greatly aid in the removal of foreground and background contamination as well as tightening constraints on the stream progenitor's orbit and providing a better measurement of the perturbers mass and size. See Section~4 for a discussion of some complementary science programs.
 
-% - minimum subhalo mass that can be detected by a stream w lsst 10yr depth photometry
-% - assume surface brightness of a stream, long enough to detect a gap, assume distance
-% - perturber creates an underdensity using erkal equation for gap width, depth as a function of time, for a given mass
-% - fixed encounter to 0.5Gyr ago, fixed b, dispersion 1km/s (refills stream easier if larger)
-% - based on the surface brightness, populate cmd from metal-poor gc -- assign stars w colors, get number of stars per deg 
-% - there is a contamination galaxia model at a fixed location on the sky (b=-60), so there is the noise model at different magnitudes
-% - add lsst projected uncertainties for magnitudes
-% - define detection as snr=5 (delta density in gap >=5 noise in the)
-% - find min perturber mass for snr=5 at a given surface brightness, distance to the stream
-
-% * caveats:
-% \begin{itemize}
-% \item perfect star galaxy separation
-% \item assumption on the gap age
-% \item gap growth equation -- theoretical
-% \item encounter parameters fixed
-% \item stream parameters fixed
-% \end{itemize}
-
-% * limitations of the method
-% \begin{itemize}
-% \item wouldn't identify large gaps, instead see 2 streams
-% \item only variations due to subhalos; GMCs, disk, spiral arms, etc. all known to cause similar gaps
-% \end{itemize}
-
-% * possibly could do better
-% \begin{itemize}
-% \item now selection done in 2 photometric bands (also assuming gr same for all of the surveys)
-% \item try different sigma for isochrone match - trade for s/n?
-% \item only considering density variation, not changes in the track
-% \item proper motion selection should improve contrast too
-% \end{itemize}
-
-% * future:
-% - better selection of members w additional bands, say u
-% - astrometric selection
-% - can we move to a more empirical framework of creating a forward model of the stream (perturbed w some powerspectrum of perturbers), analyze the power-spectrum
-% -- observe jo's stream
-
-% * david's test:
-% - change noise model to sdss
-% - isochrones w lsst filters (before used des gr)
-
-% * to do:
-% - vary magnitude limit to emulate star-galaxy separation issues
-% - vary magnitude uncertainties: 1 epoch \& full lsst stack
-% - emulate sdss, cfht, des, ...
-% - vary time, impact parameter (lookup cosmologically sensible values)
-% - vary progenitor parameters
-% - vary different b
-% - vary distance from the isochrone
-% - add surface brightness for existing streams. e.g. ATLAS = 33, Phoenix = 32.6
-
-% * assignments:
-% - david: different latitudes in galaxies
-% - nora: distribution of impact parameters, times
-% - ting: validation w other surveys
-% - ana: write + comb the code
-
-% CFHT and SDSS survey condition added:
-
-% For CFHT, we take the Pal 5 data from Ibata+2016 paper and calculate the median uncertainty in g and r band as a function of g-/r-band magnitude.
-
-% For SDSS, we take SDSS DR9 data in the area of Pal 5 (1 deg radius) and calculate the median uncertainty in g and r band as a function of g-/r-band magnitude.
-
-% For LSST, we take the estimation from LSST DM (?) and we set two cases, one for 1 year of LSST coadd and one for 10 year of LSST coadd.
-
-%We then determine the survey to be at uncertainty  = 0.1 mag for both g and r band. This corresponds to g = 22.4, 24.X, 25.3, 26.6 for SDSS, CFHT, LSST-1yr, LSST-10yr, respectively.
-
-%TODO:
-%As we did not include any contamination from the background galaxies, we assess how the star galaxy separate would change the minimal detectable halo mass by changing the survey depth. Based on the error model, the limiting magnitude at $\sigma$ = 0.1 mag is at $g=26.6$ for LSST-10yr stack. We change to depth at $g = XX$ and $g = XX$ and ....
-
-%Also, we did not consider the power of the astrometry from LSST. For example, proper motion info from LSST can remove part of the background star and improve the detectability.
-
-%We should also mention that the track of stream will also get purtubed by the subhalo flyby. We did  not do a projection here, but in principle that is another component that LSST could use to detect the minimal subhalo mass.
-
-%(Similarly, RV perturbation could be measured by  spectroscopic follow-up. Details in Sec 4.1.2.
 
 
 \subsection{Strong Lensing: Substructure and Line-of-Sight Halos\Contact{Chris F.} }
