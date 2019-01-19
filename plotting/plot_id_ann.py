@@ -26,6 +26,8 @@ def plot_limit(section):
 def plot_limit_fill(section):
     data = limits[section]
     mass,limit = np.genfromtxt(StringIO(data['xystring'])).T
+    if data.get('mass_unit') == 'tev':
+        mass *= 1e3
     kwargs = dict(**data['style'])
     kwargs['lw'] = 2
     #plt.plot(np.log10(mass),np.log10(limit),**kwargs)
@@ -78,7 +80,8 @@ plot_limit_fill('ackermann15_bb')
 #plot_limit('calore2014_bb_1s')
 #plot_limit('daylan2014_bb_1s')
 #plot_limit('hess_gc_einasto_abazajian_bb_95cl')
-plot_limit_fill('hess_gc_einasto_abazajian_bb_95cl')
+#plot_limit_fill('hess_gc_einasto_abazajian_bb_95cl')
+plot_limit_fill('hess_gc_einasto_2016_bb_95cl')
 plot_limit_fill('zaharijas2018_cta_bb')
 #plot_limit_fill('zaharijas2018_cta_500h_1p_bb')
 plot_limit('gc_summary_bb_1s')
