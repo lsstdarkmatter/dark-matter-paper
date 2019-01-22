@@ -126,27 +126,32 @@ plt.fill_betweenx(yval, x1=0,x2=xval,
 plt.xlim(0.5,30)
 plt.ylim(0.01,10)
 
-#import pdb; pdb.set_trace()
-
 mhalo_ticks = np.array([ 2.6e8, 2.6e7, 6.7e6, 2.5e6, 1.2e6, 6.6e5 ])
 ticklabels = [latex_float(x) for x in mhalo_ticks]
 
-#mhalo_ticks = np.array([1e6, 1e7, 1e8, 1e9, 1e10])[::-1]
-#ticklabels = [r'$10^{%i}$'%i for i in np.log10(mhalo_ticks)]
 xticks = mhalo2mwdm(mhalo_ticks)
 ax2.set_xlim(ax.get_xlim())
 ax2.set_xticks(xticks)
 ax2.set_xticklabels(ticklabels)
 
-#labels = [r'$%.2f$' % t for t in wdm]
-#ax2.set_yticklabels(labels)
-
-#ax2.set_xticks(mwdm2mhalo(ax.get_xticks()[1:]))
-#ax2.set_xlim(mwdm2mhalo(np.array(ax.get_xlim())))
-
 plt.xlabel(r'$m_{\rm WDM}\ {\rm (keV)}$',fontsize=20)
 plt.ylabel(r'$\sigma_{\rm SIDM}/m_\chi\ {\rm (cm^2 g^{-1})}$',fontsize=20)
 ax2.set_xlabel(r'${\rm M_{hm}\ (M_\odot)}$',fontsize=20)
+
+plt.annotate(r'Probed by LSST Sats. + Spec',(17,0.4),ha='center',va='center')
+plt.annotate(r'Probed by LSST Streams',(17,0.025),ha='center',va='center',)
+plt.annotate(r'Probed by LSST Streams',(17,5.0),ha='center',va='center',)
+
+plt.annotate(r'Approx. sensitivity of MW Sats. w/core collapse',(17,2.7),
+             ha='center',va='center',fontsize=10)
+
+plt.annotate(r'Excluded by Classical + SDSS MW Sats.',(1.5,0.3),ha='center',va='center',
+             rotation=90.)
+
+plt.annotate(r'Lyman-$\alpha$ (95\% CL)',(4.7,0.05),ha='center',va='center',
+             rotation=90.,fontsize=10)
+plt.annotate(r'Substructure Lensing (100 lenses)',(7.5,0.4),ha='center',va='center',
+             rotation=90.,fontsize=10)
 
 # This is "necessary" to get the ax2 labels...
 plt.savefig('wdm_sidm.pdf')
@@ -154,3 +159,12 @@ plt.savefig('wdm_sidm.pdf')
 #ticklabels = ['' if i%2 else t.get_text() for i,t in enumerate(ax2.get_xticklabels())]
 #ax2.set_xticklabels(ticklabels)
 #plt.savefig('wdm_sidm.pdf')
+
+#labels = [r'$%.2f$' % t for t in wdm]
+#ax2.set_yticklabels(labels)
+
+#ax2.set_xticks(mwdm2mhalo(ax.get_xticks()[1:]))
+#ax2.set_xlim(mwdm2mhalo(np.array(ax.get_xlim())))
+
+#mhalo_ticks = np.array([1e6, 1e7, 1e8, 1e9, 1e10])[::-1]
+#ticklabels = [r'$10^{%i}$'%i for i in np.log10(mhalo_ticks)]
