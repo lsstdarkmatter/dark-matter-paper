@@ -5,6 +5,17 @@ Plot warm dark matter mass vs self-interaction scattering cross section.
 import pylab as plt
 import numpy as np
 from matplotlib.ticker import MaxNLocator, LogLocator
+import matplotlib
+matplotlib.rcParams['text.usetex'] = True
+
+def latex_float(f):
+    # https://stackoverflow.com/a/13490601
+    float_str = "{0:.2g}".format(f)
+    if "e" in float_str:
+        base, exponent = float_str.split("e")
+        return r"${0} \times 10^{{{1}}}$".format(base, int(exponent))
+    else:
+        return r"$%s$"%(float_str)
 
 def mwdm2mhalo(mwdm):
     """
@@ -41,32 +52,105 @@ ax2 = ax.twiny()
 plt.sca(ax)
 
 ax.set_yscale('log')
-ax.set_xscale('log')
-ax2.set_xscale('log')
+ax.set_xscale('linear')
+ax2.set_xscale('linear')
 
 ##########################################
 # Plot the data
 
-plt.axvline(3,ls='--',lw=2,color='r')
-plt.axhline(1,ls='--',lw=2,color='r')
+plt.axvline(5.3,dashes=(5,2),lw=0.5,color='k')
+plt.axvline(8.0,dashes=(5,2),lw=0.5,color='k')
+plt.axvline(25.,dashes=(5,2),lw=0.5,color='k')
 
 # This is just an example for illustration...
-mwdm = np.logspace(np.log10(3),2,100)
-plt.plot(mwdm, -1.0/(mwdm-2)**0.5 + 1, color='dodgerblue', lw=3)
+data = np.array([
+    [0, 1e-2, 1e1],
+    [1, 1e-2, 1e1],
+    [5, 1e-2, 1e1],
+    [7.672, 1e-2, 1e1],
+    [7.672, 0.05929, 2.57658],
+    [9.7198, 0.06186, 2.31756],
+    [12.9567, 0.0631, 2.31756],
+    [25, 0.0631, 2.317],
+    [30,  0.0631, 2.317],
+]).T
+
+mass   = data[0]
+bottom = data[1]
+top    = data[2]
+
+plt.fill_between(mass, bottom, y2=top,
+                 edgecolor='tab:blue',
+                 facecolor='tab:blue',
+                 alpha=0.3)
+plt.plot(mass,bottom,'-k',lw=1)
+plt.plot(mass,top,'--k',lw=1)
+
+mass = np.linspace(0,25,100)
+plt.fill_between(mass, y1=1e-2, y2=1e1,
+                 edgecolor='tab:gray',
+                 facecolor='tab:gray',
+                 alpha=0.3)
+
+data = np.array([
+   [ 2.71754, 0.010000  ],
+   [ 2.71754, 0.107319  ],
+   [ 3.24601, 0.182279  ],
+   [ 4.10478, 0.296751  ],
+   [ 4.63326, 0.374645  ],
+   [ 5.02961, 0.443853  ],
+   [ 5.29385, 0.49346   ],
+   [ 5.49203, 0.525846  ],
+   [ 5.55809, 0.572359  ],
+   [ 5.62415, 0.609924  ],
+   [ 5.62415, 0.678092  ],
+   [ 5.55809, 0.770022  ],
+   [ 5.16173, 0.931805  ],
+   [ 4.5672 , 1.28045   ],
+   [ 3.84055, 1.91518   ],
+   [ 3.31207, 2.80448   ],
+   [ 2.98178, 3.8538    ],
+   [ 2.71754, 4.56572   ],
+   [ 2.71754, 10        ],
+]).T
+
+xval = data[0]
+yval = data[1]
+plt.fill_betweenx(yval, x1=0,x2=xval,
+                 edgecolor='black',
+                 facecolor='red'
+              )
 
 ##########################################
 
-plt.xlim(0.1,100)
+plt.xlim(0.5,30)
 plt.ylim(0.01,10)
-ax2.set_xlim(mwdm2mhalo(np.array(ax.get_xlim())))
 
-plt.xlabel(r'${\rm Particle\ Mass\ (keV)}$',fontsize=20)
-plt.ylabel(r'$\sigma_{\rm SIDM}\ {\rm (cm^2 g^{-1})}$',fontsize=20)
-ax2.set_xlabel(r'${\rm Halo\ Mass\ (M_\odot)}$',fontsize=20)
+#import pdb; pdb.set_trace()
+
+mhalo_ticks = np.array([ 2.6e8, 2.6e7, 6.7e6, 2.5e6, 1.2e6, 6.6e5 ])
+ticklabels = [latex_float(x) for x in mhalo_ticks]
+
+#mhalo_ticks = np.array([1e6, 1e7, 1e8, 1e9, 1e10])[::-1]
+#ticklabels = [r'$10^{%i}$'%i for i in np.log10(mhalo_ticks)]
+xticks = mhalo2mwdm(mhalo_ticks)
+ax2.set_xlim(ax.get_xlim())
+ax2.set_xticks(xticks)
+ax2.set_xticklabels(ticklabels)
+
+#labels = [r'$%.2f$' % t for t in wdm]
+#ax2.set_yticklabels(labels)
+
+#ax2.set_xticks(mwdm2mhalo(ax.get_xticks()[1:]))
+#ax2.set_xlim(mwdm2mhalo(np.array(ax.get_xlim())))
+
+plt.xlabel(r'$m_{\rm WDM}\ {\rm (keV)}$',fontsize=20)
+plt.ylabel(r'$\sigma_{\rm SIDM}/m_\chi\ {\rm (cm^2 g^{-1})}$',fontsize=20)
+ax2.set_xlabel(r'${\rm M_{hm}\ (M_\odot)}$',fontsize=20)
 
 # This is "necessary" to get the ax2 labels...
 plt.savefig('wdm_sidm.pdf')
 
-ticklabels = ['' if i%2 else t.get_text() for i,t in enumerate(ax2.get_xticklabels())]
-ax2.set_xticklabels(ticklabels)
-plt.savefig('wdm_sidm.pdf')
+#ticklabels = ['' if i%2 else t.get_text() for i,t in enumerate(ax2.get_xticklabels())]
+#ax2.set_xticklabels(ticklabels)
+#plt.savefig('wdm_sidm.pdf')
