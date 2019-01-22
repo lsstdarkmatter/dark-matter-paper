@@ -153,18 +153,5 @@ plt.annotate(r'Lyman-$\alpha$ (95\% CL)',(4.7,0.05),ha='center',va='center',
 plt.annotate(r'Substructure Lensing (100 lenses)',(7.5,0.4),ha='center',va='center',
              rotation=90.,fontsize=10)
 
-# This is "necessary" to get the ax2 labels...
 plt.savefig('wdm_sidm.pdf')
 
-#ticklabels = ['' if i%2 else t.get_text() for i,t in enumerate(ax2.get_xticklabels())]
-#ax2.set_xticklabels(ticklabels)
-#plt.savefig('wdm_sidm.pdf')
-
-#labels = [r'$%.2f$' % t for t in wdm]
-#ax2.set_yticklabels(labels)
-
-#ax2.set_xticks(mwdm2mhalo(ax.get_xticks()[1:]))
-#ax2.set_xlim(mwdm2mhalo(np.array(ax.get_xlim())))
-
-#mhalo_ticks = np.array([1e6, 1e7, 1e8, 1e9, 1e10])[::-1]
-#ticklabels = [r'$10^{%i}$'%i for i in np.log10(mhalo_ticks)]
