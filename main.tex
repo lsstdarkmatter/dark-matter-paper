@@ -21,8 +21,16 @@
 \usepackage{work}
 \usepackage{bm}       %    enables bold math symbols  e.g.  \bm{\gamma}
 \usepackage{graphicx}
-\usepackage{hyperref}      % hypertext links %%ARXIV
-\usepackage[usenames,dvipsnames]{color} %used for font color
+\usepackage[usenames,dvipsnames]{xcolor} %used for font color
+\definecolor{xlinkcolor}{cmyk}{1,1,0,0}
+\usepackage[
+     colorlinks=true,    % false: boxed links; true: colored links
+     linkcolor=xlinkcolor,     % color of internal links
+     citecolor=xlinkcolor,     % color of links to bibliography
+     filecolor=xlinkcolor,  % color of file links
+     urlcolor=xlinkcolor,      % color of external links
+     final=true
+]{hyperref}
 \usepackage{amssymb}
 \usepackage{amsmath}
 \usepackage{chngcntr}
