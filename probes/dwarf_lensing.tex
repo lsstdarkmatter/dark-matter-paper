@@ -35,13 +35,13 @@ To predict the abundance of the dwarf  galaxy sample, we assume the mass-to-ligh
 We use this predicted galaxy luminosity to estimate the limiting redshift for dwarf galaxy detection as a function of galaxy halo mass for two LSST limiting magnitudes: $r \sim 25$ and $r \sim 27$. 
 \figref{dwarf_redshift} shows that to probe dark matter halos with mass $\lesssim 10^9 \Msun$, it will be necessary to select galaxies at $z < 0.01$. 
 While selecting very low-$z$ galaxies with photometric data is challenging, current projects like the SAGA Survey \citep{Geha:2017} have shown that it is possible using data from SDSS. 
-Future large, multi-object spectrographs (\eg DESI) will greatly expand the spectroscopic data for training these selections. 
+Future large, multi-object spectrographs (\eg, DESI) will greatly expand the spectroscopic data for training these selections. 
 It will also be possible to use morphological information to select nearby dwarf galaxies.
 LSST will be able to distinguish a dwarf galaxy with $M_V=-14$ from background galaxies of the same apparent magnitude out to a distance of $\roughly 100 \Mpc$ \citep[Section 9 of][]{0912.0201}.
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\columnwidth]{halo_mass_redshift_log}
+\includegraphics[width=0.6\columnwidth]{halo_mass_redshift_log}
 \caption{\label{fig:dwarf_redshift} Limiting redshift for detecting a dwarf galaxy that lives in a dark matter halo of certain masses, assuming a luminosity--halo mass relation from abundance matching.}
 \end{figure}
 
@@ -64,7 +64,7 @@ Source galaxies are placed at $z = 1.2$ with a density of $50 \hbox{ arcmin}^{-2
 We model the mass distribution in each dwarf galaxy with an NFW halo assuming the concentration--mass relation from \citet{1809.07326}.
 We calculate the shear from the stacked dwarf galaxy lens sample using \code{colossus} \citep{2018ApJS..239...35D}, assuming that each lens is placed at the limiting detectable redshift.
 The results are shown in \figref{dwarf_sn}, where we find that LSST has the potential to measure the lensing shear with ${\rm S/N} \gtrsim 10$ for halos with $M \gtrsim 3 \times 10^9\,h^{-1}\Msun$.
-Note that some of our assumptions are clearly optimistic. In particular, the number density of the source we assumed is high, and the assumption of perfect lens selection is also unlikely to hold. Nevertheless, since the S/N ratio goes $\sim 1/\sqrt{N_\text{lens} N_\text{src}}$, lowering these numbers by a factor of $\sim 2$ would still yield a very high S/N ratio.
+Note that some of our assumptions are clearly optimistic. In particular, the number density of the source galaxies we assumed is high, and the assumption of perfect lens galaxy selection is also unlikely to hold. Nevertheless, since the S/N ratio goes $\sim 1/\sqrt{N_\text{lens} N_\text{src}}$, lowering these numbers by a factor of $\sim 2$ would still yield a very high S/N ratio.
 
 \begin{figure}
 \centering
