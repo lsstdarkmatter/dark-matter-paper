@@ -75,9 +75,13 @@ The calculation assumes perfect selection of dwarf galaxies within the redshift 
 Source galaxies are assumed to be at $z=1.2$, with a surface number density of $50\,\amin^{-2}$, and a shear uncertainty of $\sigma_\gamma = 0.25$ per component.}
 \end{figure}
 
-As mentioned earlier, a cored density profile is a signature of SIDM, hence we also calculate the shear signal for a modified NFW profile (with a core at the center,
-$$ \rho_\text{core}(r) = \rho_\text{NFW}(r) \times (1 -  e^{-3r/r_s}),$$
+As mentioned earlier, a cored density profile is a signature of SIDM, hence we also calculate the shear signal for a modified NFW profile with a central core,
+\begin{equation}
+\rho_\text{core}(r) = \rho_\text{NFW}(r) \times (1 -  e^{-3r/r_s})\,,
+\end{equation}
 where $\rho_\text{NFW}(r)$ is a standard NFW profile and $r_s$ is the scale radius of the NFW profile. 
-We show its shear signal in \figref{dwarf_sn} to be compared with the signal from NFW profile. We see that the overall signal-to-noise does not change much with the profile.  
-However, to statistically distinguish the different profiles, one needs to measure the shear at very small scales ($< 10$\,kpc), which is the regime where the systematics of the PSF dominate. In other words, the numbers of source and lens galaxies that LSST can find will be high enough to distinguish the difference between the two profiles provided ideal shape measurement. 
+We show the predicted shear signal from the cored profile in \figref{dwarf_sn} to be compared with the signal from NFW profile. 
+We see that the overall signal-to-noise does not change much with the profile.  
+However, to statistically distinguish the different profiles, one needs to measure the shear at very small angular scales ($< 10\kpc$), which is the regime where PSF systematics dominate. 
+In other words, the numbers of source and lens galaxies that LSST can find will be high enough to distinguish the difference between the two profiles provided ideal shape measurement. 
 \YYM{more discussion on PSF?}
