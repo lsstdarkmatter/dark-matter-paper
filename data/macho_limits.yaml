@@ -1067,8 +1067,8 @@ plank_ali-haimoud_2016_loose:
     linestyle : '-'
     linewidth : 1.5
 
-  label_x : 1e6
-  label_y : 6e-5
+  label_x : 1e5
+  label_y : 2e-4
   channel_label : ''
   conf_label : ''
   mass_unit: 'msun'
@@ -1117,8 +1117,8 @@ plank_ali-haimoud_2016_tight:
     linestyle : '-'
     linewidth : 1.5
 
-  label_x : 1e6
-  label_y : 4e-5
+  label_x : 1e5
+  label_y : 2e-4
   channel_label : ''
   conf_label : ''
   mass_unit: 'msun'
