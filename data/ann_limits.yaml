@@ -2195,6 +2195,7 @@ gc_summary_bb_1s:
   style:
     label : 'GCE'
     color : '#FA0303' 
+    alpha : 0.6
     marker : 'None'
 #    linestyle : '-'
 #    dashes : [5,2,2,5]

@@ -6,7 +6,7 @@ import pylab as plt
 import numpy as np
 import yaml
 
-from lsstplot import plot_limit,plot_limit_fill, plot_limit_patch,get_mass_limit
+from lsstplot import plot_limit,plot_limit_fill,plot_limit_patch,get_mass_limit,get_datafile
 
 def create_projection():
     mass,limit = get_mass_limit(limits['ackermann15_bb'])
@@ -27,15 +27,14 @@ def create_projection():
     proj = proj_factor * limit
     return mass, proj
 
-
-
 fig,ax = plt.subplots()
 ax.set_yscale('log')
 ax.set_xscale('log')
 plt.axhline(3e-26,ls='--',lw=2,color='gray')
 
-limits = yaml.load(open('data/ann_limits.yaml'))
+limits = yaml.load(open(get_datafile('ann_limits.yaml')))
 
+## Print the projected sensitivity
 #for m,l in zip(*create_projection()):
 #    print('%-10i %12.8g'%(m, l))
 
