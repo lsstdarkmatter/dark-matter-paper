@@ -1563,7 +1563,7 @@ hess_gc_einasto_abazajian_bb_95cl:
 #Abramowski+ 2011 H.E.S.S. GC Halo
   style:
     label : 'HESS GC'
-    color : 'blue' 
+    color : '#1F77B4' 
     marker : 'None'
     linestyle : '-'
     #dashes : [5,2]
@@ -1703,7 +1703,7 @@ hess_gc_einasto_2016_bb_95cl:
   #arXiv:1607.08142
   style:
     label : 'HESS GC'
-    color : 'blue' 
+    color : '#1F77B4' 
     marker : 'None'
     linestyle : '-'
     #dashes : [5,2]
@@ -2167,7 +2167,7 @@ ackermann15_bb:
   #https://www-glast.stanford.edu/pub_data/1048/limits_bb.txt
   style:
     label : 'LAT Dwarfs'
-    color : 'blue' 
+    color : '#1F77B4' 
     marker : 'None'
 #    linestyle : '-'
 #    dashes : [5,2,2,5]
@@ -2194,7 +2194,7 @@ ackermann15_bb:
 gc_summary_bb_1s:
   style:
     label : 'GCE'
-    color : 'red' 
+    color : '#FA0303' 
     marker : 'None'
 #    linestyle : '-'
 #    dashes : [5,2,2,5]

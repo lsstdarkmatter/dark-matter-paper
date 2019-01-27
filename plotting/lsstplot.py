@@ -3,8 +3,9 @@
 Generic python script.
 """
 __author__ = "Alex Drlica-Wagner"
-
+import os
 from StringIO import StringIO
+from collections import OrderedDict as odict
 import numpy as np
 import pylab as plt
 import matplotlib
@@ -12,6 +13,40 @@ import matplotlib
 from matplotlib.patches import Ellipse, PathPatch
 from matplotlib.path import Path
 matplotlib.rcParams['text.usetex'] = True
+
+COLORS = odict([
+    ('blue','#1F77B4'),  # This is original T10 "tab:blue"
+    ('gray','#7F7F7F'),  # This is original T10 "tab:gray"
+    ('orange','orange'),
+    ('gold','orange'),
+    ('red','#FA0303'),   # T10 color is #D62728
+])
+ALPHA = 0.3
+LINEWIDTH = 2
+
+DEFAULTS = dict(color=COLORS['blue'],alpha=ALPHA,linewidth=LINEWIDTH)
+
+def get_datadir():
+    """Get the data directory. Could live here or up one level."""
+    if os.path.exists('./data'):
+        return './data'
+    elif os.path.exists('../data'):
+        return '../data'
+    else:
+        raise IOError("Data directory not found.")
+
+def get_datafile(filename):
+    """Get a data file."""
+    datadir = get_datadir()
+    path = os.path.join(datadir,filename)
+    if not os.path.exists(path):
+        raise IOError("Data file not found: %s"%path)
+    return path
+
+def setdefaults(kwargs,defaults):
+    for k,v in defaults.items():
+        kwargs.setdefault(k,v)
+    return kwargs
 
 def get_mass_limit(data):
     mass,limit = np.genfromtxt(StringIO(data['xystring'])).T
@@ -38,24 +73,22 @@ def plot_limit_fill(data, low=False):
     mass,limit = get_mass_limit(data)
 
     kwargs = dict(**data['style'])
-    kwargs.setdefault('lw', 2)
-    kwargs.setdefault('alpha', 0.3)
+    setdefaults(kwargs,DEFAULTS)
 
     plt.fill_between(mass, limit, y2 = 1 if not low else 0,
-                     edgecolor='tab:%s'%kwargs['color'],
-                     facecolor='tab:%s'%kwargs['color'],
+                     edgecolor=kwargs['color'],
+                     facecolor=kwargs['color'],
                      alpha=kwargs['alpha'])
     plot_text(data)
 
 def plot_limit_patch(data):
     mass,limit = get_mass_limit(data)
     kwargs = dict(**data['style'])
-    kwargs.setdefault('lw',2)
-    kwargs.setdefault('alpha',0.3)
+    setdefaults(kwargs,DEFAULTS)
 
     patch = PathPatch(Path(zip(mass, limit)),
-                      edgecolor='tab:%s'%kwargs['color'],
-                      facecolor='tab:%s'%kwargs['color'],
+                      edgecolor=kwargs['color'],
+                      facecolor=kwargs['color'],
                      alpha=kwargs['alpha'])
     plt.gca().add_artist(patch)
     plot_text(data)
@@ -64,9 +97,11 @@ def plot_one(data):
     mass,limit = get_mass_limit(data)
 
     kwargs = dict(**data['style'])
+    setdefaults(kwargs,DEFAULTS)
+
     plt.fill_between(mass, limit, y2=1.0,
-                     edgecolor='tab:blue',
-                     facecolor='tab:blue',
+                     edgecolor=COLORS['blue'],
+                     facecolor=COLORS['blue'],
                      alpha=0.3)
     plot_text(data)
 
@@ -82,8 +117,8 @@ def plot_two(data_loose, data_tight):
     limit_tight_interp = np.interp(x, mass_tight, limit_tight)
 
     plt.fill_between(mass_loose, limit_loose, y2=1.0,
-                     edgecolor='tab:blue',
-                     facecolor='tab:blue',
+                     edgecolor=COLORS['blue'],
+                     facecolor=COLORS['blue'],
                      alpha=0.3)
     plt.fill_between(x, limit_tight_interp, limit_loose_interp,
                      edgecolor='k',

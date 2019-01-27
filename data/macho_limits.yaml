@@ -147,7 +147,7 @@ ns_capture_loose_capela_2013:
   
   style:
     label : 'NS'
-    color : 'blue' 
+    color : '#1F77B4' 
     marker : 'None'
     linestyle : '-'
     linewidth : 1.5

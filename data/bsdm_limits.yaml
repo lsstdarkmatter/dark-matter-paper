@@ -23,7 +23,7 @@ gluscevic2018_planck:
 
   style:
     label : 'CMB'
-    color : 'blue' 
+    color : '#1F77B4' 
     marker : 'None'
     linestyle : '-'
     linewidth : 1.5
@@ -93,7 +93,7 @@ emken2018_cresst3_dd:
 
   style:
     label : 'Direct Detection'
-    color : 'blue' 
+    color : '#1F77B4' 
     marker : 'None'
     linestyle : '-'
     linewidth : 1.5
@@ -245,7 +245,7 @@ erickcek2007_xqc:
   #https://arxiv.org/pdf/0704.0794.pdf
   style:
     label : 'XQC'
-    color : 'blue' 
+    color : '#1F77B4' 
     marker : 'None'
     linestyle : '-'
     linewidth : 1.5
