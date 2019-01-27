@@ -88,10 +88,6 @@ ax2.callbacks.connect("xlim_changed", convert_ax_c_to_l)
 # Stellar stream region
 #ax2.axvspan(0.5,18,color='gray',alpha=0.3)
 
-#x,y = cs.collections[0].get_paths()[0].vertices.T
-#plt.fill_between(x,y,y2=10,alpha=0.6,facecolor="none", hatch="/", edgecolor='#85C1E9',zorder=0,lw=0)
-#plt.fill_between(x,y,y2=10,alpha=0.3,facecolor='tab:blue')
-
 # LSST projected sensitivity
 level_LSST = 92
 ax2.contour(WDM_array_LSST[19:],som_array_LSST[35:],N_sat_LSST.T[35:,19:],[level_LSST],colors=['k'],linestyles='dashed',linewidths=1)
@@ -100,6 +96,11 @@ ax2.contourf(WDM_array_LSST[19:,],som_array_LSST,N_sat_LSST.T[:,19:],[0,level_LS
 ax2.contour(WDM_array_LSST[19:],som_array_LSST[:35],N_sat_LSST.T[:35,19:],[level_LSST],colors=['k'],linewidths=1)
 # Upper collapse region (som > 1 cm2/g)
 ax2.contourf(WDM_array_LSST[19:,],som_array_LSST[46:],N_sat_LSST.T[46:,19:],[level_LSST,np.inf],colors=BLUE,alpha=ALPHA/2.)
+
+# Can get contour lines with...
+#x,y = cs.collections[0].get_paths()[0].vertices.T
+#plt.fill_between(x,y,y2=10,alpha=0.6,facecolor="none", hatch="/", edgecolor='#85C1E9',zorder=0,lw=0)
+#plt.fill_between(x,y,y2=10,alpha=0.3,facecolor='tab:blue')
 
 # SDSS limits
 ax2.contour(WDM_array_SDSS,som_array_SDSS,N_sat_SDSS.T,[43],colors=['k'],linewidths=1)
@@ -137,24 +138,6 @@ ticklabels = [latex_float(x) for x in mwdm2mhalo(xticks)]
 ax2.set_xticks(xticks)
 ax_c.set_xticks(xticks)
 ax_c.set_xticklabels(ticklabels)
-
-#mhalo_ticks = np.array([ 2.6e8, 2.6e7, 6.7e6, 2.5e6, 1.2e6, 6.6e5 ])
-#ticklabels = [latex_float(x) for x in mhalo_ticks]
-
-#xticks = mhalo2mwdm(mhalo_ticks)
-#ax_c.set_xticks(xticks)
-#ax_c.set_xticklabels(ticklabels)
-
-
-#ax2.set_xlim(None,22)
-#
-#ax_c.set_xticklabels([r'$10^10$',r'$2.6\times10^8$',r'$2.6\times10^7$',r'$6.7\times10^6$',r'$2.5\times10^6$'],fontdict = {'fontsize':15})
-
-
-#ax2.set_xticks([5,10,15,20,25,30])
-#ax_c.set_xticklabels([r'$10^10$',r'$2.6\times10^8$',r'$2.6\times10^7$',r'$6.7\times10^6$',r'$2.5\times10^6$',r'$1.2\times10^6$',r'$6.6\times10^5$'],fontdict = {'fontsize':15})
-
-
 
 ticklabels = ax2.get_xticklabels()
 ticklabels.extend(ax2.get_yticklabels())
