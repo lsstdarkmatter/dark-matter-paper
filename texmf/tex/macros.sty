@@ -1,0 +1,119 @@
+% {% raw %}
+%
+%  Commands to facilitate LaTeX and physics formatting.
+%
+%  author: Alex Drlica-Wagner
+
+\usepackage{amsmath}
+\usepackage{xspace}
+\usepackage{xcolor}
+
+% General formatting
+\newcommand{\ie}{i.e.\xspace}
+\newcommand{\eg}{e.g.\xspace}
+\newcommand{\etc}{etc.\xspace}
+\newcommand{\etal}{et al.\xspace}
+\newcommand{\vs}{vs.\xspace}
+\newcommand{\super}[1]{\ensuremath{^{\textrm{#1}}}}
+\newcommand{\sub}[1]{\ensuremath{_{\textrm{#1}}}}
+
+% Math
+\mathchardef\mhyphen="2D
+\newcommand{\vect}[1]{\boldsymbol{#1}}
+\newcommand{\roughly}{\ensuremath{ {\sim}\,} }
+\newcommand{\gtr}{\ensuremath{ {>}\,} }
+\newcommand{\less}{\ensuremath{ {<}\,} }
+\newlength{\dhatheight}
+\newcommand{\doublehat}[1]{%
+    \settoheight{\dhatheight}{\ensuremath{\hat{#1}}}%
+    \addtolength{\dhatheight}{-0.35ex}%
+    \hat{\vphantom{\rule{1pt}{\dhatheight}}%
+    \smash{\hat{#1}}}}
+\newcommand{\code}[1]{\texttt{#1}\xspace}
+\newcommand{\dd}{\ensuremath{\rm d}}
+\newcommand{\var}[1]{\ensuremath{#1}\xspace}
+
+% Referencing
+\newcommand{\secref}[1]{Section~\ref{sec:#1}}
+\newcommand{\appref}[1]{Appendix~\ref{app:#1}}
+\newcommand{\tabref}[1]{Table~\ref{tab:#1}}
+\newcommand{\tabrefs}[2]{Tables~\ref{tab:#1} and \ref{tab:#2}}
+\newcommand{\figref}[1]{Figure~\ref{fig:#1}}
+\newcommand{\figrefs}[2]{Figures~\ref{fig:#1} and \ref{fig:#2}}
+\newcommand{\eqnref}[1]{Equation~\ref{eqn:#1}}
+
+% Units
+\newcommand{\unit}[1]{\ensuremath{\mathrm{\,#1}}\xspace}
+\newcommand{\Myr}{\unit{Myr}}
+\newcommand{\Gyr}{\unit{Gyr}}
+\newcommand{\eV}{\unit{eV}}
+\newcommand{\keV}{\unit{keV}}
+\newcommand{\MeV}{\unit{MeV}}
+\newcommand{\GeV}{\unit{GeV}}
+\newcommand{\TeV}{\unit{TeV}}
+\newcommand{\barn}{\unit{barn}}
+\newcommand{\g}{\unit{g}}
+\newcommand{\kg}{\unit{kg}}
+\newcommand{\degree}{\ensuremath{{}^{\circ}}\xspace}
+\providecommand{\arcmin}{\ensuremath{'}\xspace}
+\providecommand{\arcsec}{\ensuremath{''}\xspace}
+\newcommand{\mas}{\unit{mas}}
+\newcommand{\amin}{\unit{arcmin}}
+\newcommand{\asec}{\unit{arcsec}}
+\newcommand{\magasec}{\mag\asec^{-2}}
+\newcommand{\angstrom}{\unit{\AA}}
+\newcommand{\pix}{\unit{pix}}
+\newcommand{\um}{\unit{$\mu$m}}
+\newcommand{\cm}{\unit{cm}}
+\newcommand{\km}{\unit{km}}
+\newcommand{\pc}{\unit{pc}}
+\newcommand{\kpc}{\unit{kpc}}
+\newcommand{\Mpc}{\unit{Mpc}}
+\newcommand{\Gpc}{\unit{Gpc}}
+\newcommand{\second}{\unit{s}}
+\newcommand{\us}{\unit{$\mu$s}}
+\newcommand{\photons}{\unit{ph}}
+\newcommand{\photon}{\unit{ph}}
+\newcommand{\sr}{\unit{sr}}
+\newcommand{\Msolar}{\ensuremath{M_\odot}}
+\newcommand{\Msun}{\ensuremath{M_\odot}}
+\newcommand{\Mstar}{\ensuremath{M_{*}}}
+\newcommand{\Lsolar}{\ensuremath{L_\odot}}
+\newcommand{\Lsun}{\ensuremath{L_\odot}}
+\newcommand{\Lstar}{\ensuremath{L_{*}}}
+\newcommand{\Lum}{\ensuremath{ L }\xspace}
+\newcommand{\cmcubes}{\ensuremath{\cm^{3}\second^{-1}}\xspace}
+\newcommand{\magn}{\unit{mag}}
+\newcommand{\mmag}{\unit{mmag}}
+\providecommand{\deg}{}
+\renewcommand{\deg}{\unit{deg}}
+\newcommand{\kms}{\unit{\km\,\second^{-1}}}
+\newcommand{\cmg}{\unit{\cm^2\unit{g}^{-1}}}
+
+% Astronomy
+\newcommand{\LCDM}{\ensuremath{\rm \Lambda CDM}\xspace}
+\newcommand{\mWDM}{\ensuremath{m_{\rm WDM}}\xspace}
+\newcommand{\Mhm}{\ensuremath{M_{\rm hm}}\xspace}
+\newcommand{\ra}{{\ensuremath{\alpha_{2000}}}\xspace}
+\newcommand{\dec}{{\ensuremath{\delta_{2000}}}\xspace}
+\newcommand{\glon}{{\ensuremath{\ell}}\xspace}
+\newcommand{\glat}{{\ensuremath{b}}\xspace}
+
+\newcommand{\Jfactor}{\ensuremath{\mathrm{J\mhyphen factor}}\xspace}
+\newcommand{\Jfactors}{\ensuremath{\mathrm{J\mhyphen factors}}\xspace}
+\newcommand{\Dfactor}{\ensuremath{\mathrm{D\mhyphen factor}}\xspace}
+\newcommand{\PhiPP}{\ensuremath{\Phi_{\rm PP}}\xspace}
+\newcommand{\DM}{\ensuremath{\mathrm{DM}}}
+\newcommand{\sigmav}{\ensuremath{\langle \sigma v \rangle}\xspace}
+\newcommand{\Gaia}{{\it Gaia}\xspace}
+
+\newcommand{\photoz}{photo-$z$\xspace}
+\newcommand{\pz}{\photoz}
+\newcommand{\Photoz}{Photo-$z$\xspace}
+\newcommand{\Lya}{Lyman-$\alpha$\xspace}
+\newcommand{\LyA}{Lyman-$\alpha$\xspace}
+
+\newcommand{\sigmam}{\ensuremath{\sigma/m_\chi}\xspace}
+\newcommand{\sm}{\sigmam}
+% {% endraw %}
+
