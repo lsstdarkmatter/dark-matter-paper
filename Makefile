@@ -1,3 +1,4 @@
+SHELL=/bin/bash
 filename=main
 out=lsst-dark-matter
 
