@@ -10,7 +10,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib import rcParams
 import matplotlib
-print matplotlib.__version__
 from lsstplot import get_datafile, COLORS, ALPHA
 
 # Generic properties from matplotlib
@@ -95,7 +94,7 @@ ax2.contourf(WDM_array_LSST[:20],som_array_LSST,N_sat_LSST.T[:,:20],[0,106],colo
 ax2.contourf(WDM_array_LSST[19:,],som_array_LSST,N_sat_LSST.T[:,19:],[0,level_LSST],colors=BLUE,alpha=ALPHA)
 ax2.contour(WDM_array_LSST[19:],som_array_LSST[:35],N_sat_LSST.T[:35,19:],[level_LSST],colors=['k'],linewidths=1)
 # Upper collapse region (som > 1 cm2/g)
-ax2.contourf(WDM_array_LSST[19:,],som_array_LSST[46:],N_sat_LSST.T[46:,19:],[level_LSST,np.inf],colors=BLUE,alpha=ALPHA/2.)
+ax2.contourf(WDM_array_LSST[19:,],som_array_LSST[46:],N_sat_LSST.T[46:,19:],[level_LSST,np.inf],colors=BLUE,alpha=ALPHA/3.)
 
 # Can get contour lines with...
 #x,y = cs.collections[0].get_paths()[0].vertices.T
