@@ -80,11 +80,11 @@
 \newcommand{\NEW}[1]{{#1}}
 
 % These are commented out for production
-%\newcommand{\Contributors}[1]{ {\footnotesize [\textit{#1}]}}
+\newcommand{\Contributors}[1]{ \large \textit{#1} }
 %\newcommand{\Contact}[1]{ {\footnotesize [\textbf{#1}]}}
 %\newcommand{\Comment}[3]{\textcolor{#1}{(#2: #3)}}
 
-\newcommand{\Contributors}[1]{}
+%\newcommand{\Contributors}[1]{}
 \newcommand{\Contact}[1]{}
 \newcommand{\Comment}[3]{}
 
@@ -209,6 +209,7 @@
 \chaptermark{References}
 
 \begingroup
+  \small
   \setlength{\bibsep}{0pt plus 0.5ex}
   \bibliographystyle{yahapj}
   \bibliography{main}

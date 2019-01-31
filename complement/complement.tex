@@ -1,7 +1,9 @@
 \chapter{Complementarity with Other Experiments}
-\Contributors{Josh S., Ting L., Will, Andrew P. Manuel, Chanda, Alex, many others ...}
 \label{sec:complementarity}
 \bigskip
+
+\Contributors{Kimberly Boddy, Esra Bulbul, Johann Cohen-Tanugi, Alessandro Cuoco, William A.\ Dawson, Alex Drlica-Wagner, Cora Dvorkin, Christopher D.\ Fassnacht, Vera Gluscevic, Shunsaku Horiuchi,  Charles R.\ Keeton, Ting S.\ Li, Manuel Meyer, Lina Necib, Jeffrey A.\ Newman, Andrew Pace, Ethan Nadler, Eric Nuss, Justin Read, Joshua D.\  Simon, Erik Tollerud, David Wittman, Gabrijela Zaharijas}
+
 
 LSST will uniquely complement several other experimental studies of dark matter.
 Below we summarize some of these complementary probes, with a specific focus on spectroscopic observations, high resolution imaging, indirect detection experiments, and direct detection experiments.
@@ -10,8 +12,8 @@ This section is not intended to be comprehensive, but rather serves to demonstra
 
 % Spectroscopy
 \section{Spectroscopy \Contact{Ting}}
- \Contributors{Josh S., Ting L., Erik T., ...}
- \label{sec:spectroscopy}
+\label{sec:spectroscopy}
+\Contributors{Joshua D.\  Simon, Ting Li, William A.\ Dawson, Denis Erkal, David Wittman, Erik Tollerud, Jeffrey A.\ Newman}
 
 The power of photometric and astrometric measurements from LSST will be significantly augmented by additional spectroscopic observations.
 In particular, spectroscopic follow-up studies will provide kinematic and redshift information for many of the objects studied by LSST.
@@ -27,7 +29,8 @@ The latter category is populated by new facilities such as Thirty Meter Telescop
 In this section, we illustrate several examples of how complementary spectroscopy will improve the measurement of dark matter properties with LSST.
 
 \subsection{Milky Way Satellite Galaxies \Contact{Josh}}
-\Contributors{Josh, Ting, Erik, ...}
+%\Contributors{Josh, Ting, Erik, ...}
+
 In \secref{smallest_galaxies} we discussed the derivation of an upper limit on the minimum dark matter halo mass based only on the observed luminosity function of satellites discovered by LSST. \ET{Should we mention the fact that confirmation of the LSST discoveries *also* may require spectroscopy at least for some of the ambiguous cases?}  An alternative approach is to obtain spectroscopy of individual stars in each satellite to measure its velocity dispersion, from which the central mass and density can be inferred.  Then one can compare either the densities or the circular velocity function directly with theoretical predictions without assumptions about the subhalo mass function or the stellar mass-halo mass relation.
 
 Spectroscopy of individual stars in the faint Milky Way satellites that will be identified with LSST will require deep observations with multiplexed spectrographs on large telescopes.  Measurements of the stellar velocity dispersions of these systems can be obtained either with 8--10-meter-class telescopes or with the next generation of 25--30-meter telescopes.  As illustrated in \figref{specfollowup_distance}, spectroscopy of a nearly complete sample of satellites can be pushed $\roughly 2$~mag fainter in luminosity and a factor of $\roughly 2$ farther in distance with plausible investments of observing time on a GSMT than with existing facilities.
@@ -43,35 +46,33 @@ In additional to inferring the minimum dark matter halo mass, kinematics from st
 \end{figure}
 
 \subsection{Stellar Streams \Contact{Ting}}
-\Contributors{Ting, Denis ...}
+%\Contributors{Ting, Denis ...}
 
 As discussed in \secref{stream_gaps}, subhalo encounters with cold stellar streams will induce density perturbations that will be detectable by LSST, constraining the minimum dark matter halo mass and the mass function of dark matter halos from $\roughly10^5$--$10^9 \Msun$. In addition, these flybys cause velocity perturbations that correlate with the density variations.  The velocity signal near stream gaps can be measured either via line-of-sight velocity measurements from spectroscopy or tangential velocity measurements from astrometry, improving the precision with which the perturber mass can be determined.
 The velocity variation (peak to peak) from these flybys will be small. To estimate the amplitude of the perturbation, we consider a stream orbiting the Milky Way at a distance of 14 kpc and compute the typical maximum velocity kick expected over its lifetime of 5 Gyr using the formalism from \citet{erkal2016}.  The velocity change is $\roughly \{0.6, 0.3, 0.1\} \kms$ for subhalos in the range $\{ 10^{7.5}, 10^{6.5}, 10^{5.5} \} \Msun$, respectively. %$\{ 10^7-10^8, 10^6-10^7, 10^5-10^6\} \Msun$
 Due to the low density of the stream stars, a massively multiplexed, wide field-of-view spectroscopic facility such as PFS on Subaru or MSE is needed. Furthermore, given the expected small velocity kick amplitude, the velocity accuracy for each star determined from the spectroscopic observations should be at or better than $1 \kms$ to unambiguously detect the signal with an ensemble of stream stars. 
 
 \subsection{Galaxy Clusters \Contact{Will}}
-\Contributors{Will, ...}
+%\Contributors{Will, ...}
+
 As noted in \secref{merging_clusters} one of largest systematics associated with merging galaxy cluster constraints on SIDM is modeling the merger. The more complex the merger, the more severe the systematics will be.
 The best means of constraining merging galaxy cluster substructure is with spectroscopic measurement of as many galaxy cluster member galaxies as possible \citep[\eg,][]{Golovich:2018}.
 As noted in \citet{2016arXiv161001661N}, perhaps the best spectroscopic follow-up facilities are large telescopes with slitmask-like multi-object spectrographs, or fiber-based multiplex spectrometers with low ($\mathcal{O}(\unit{arcsec})$) fiber collision regions, due to the density of cluster members.
 
-\begin{comment}
-\subsection{Lyman-$\alpha$ Forest \Contact{Francis-Yan}}
-\ADW{This is expected to be one paragraph from Francis-Yan.}
-\end{comment}
-
 % High-resolution imaging
 \section{High-Resolution Imaging \Contact{Will}}
-\Contributors{Will, ...}
 \label{sec:highres}
+
+\Contributors{William A.\ Dawson, Christopher D.\ Fassnacht, Charles R.\ Keeton, David Wittman}
 
 Since the LSST point spread function (PSF) is limited to an angular resolution of $\roughly 0.8\arcsec$ by a combination of instrumental and  atmospheric effects \citep{0805.2366}, there are many dark matter science cases where higher resolution imaging from space or ground-based adaptive optics (AO) facilities, which can reach $\roughly 0.01\arcsec$ in some cases, can be highly complementary. We briefly summarize some of these cases in this subsection and relate them to the dark matter science capabilities of LSST.
 \WAD{This section currently focuses on high resolution optical imaging, however it is worth considering other wavelengths, especially radio.}
 
 % Astrometric microlensing of compact dark matter
 \subsection{Astrometric Microlensing of Compact Dark Matter \Contact{Will}}
-\Contributors{Will, ...}
 \label{sec:astrometric_microlens}
+%\Contributors{Will, ...}
+
 Related to photometric microlensing (\secref{microlensing}), astrometric microlensing relies on the fact that the two images generated during a compact object lensing event will be of differing brightness, and the brightness ratio of these two images will vary throughout the duration of the lensing event.
 The two images will be of most similar brightness when the projected lens-source separation is at its minimum.
 By precisely measuring the astrometry of these blended images as a function of time and combining with the LSST photometric microlensing measurement one can break the lens mass-distance degeneracy and precisely measure the mass and location of individual black holes \citep{2015ApJ...814L..11Y}.
@@ -88,7 +89,7 @@ Such efforts are planned as part of the LSST Alert Stream \citep{0805.2366}.
 %http://www.planet-legacy.org/
 
 % Strong-microlensing
-\subsection{Strong-Microlensing of Compact Dark Matter \Contributors{Will, ...}}
+\subsection{Strong-Microlensing of Compact Dark Matter \Contact{Will Dawson}}
 Strong-microlensing is related to astrometric microlensing.
 The Einstein radius of a given lens, which is approximately the separation of the multiple images in a compact object lensing scenario, scales as $\sqrt{M_\mathrm{lens}}$.
 In the intermediate mass black hole range, the separation of the two images approaches that of the resolution of various optical ground and spaced-based telescopes, see \figref{strong_microlensing}.
@@ -103,7 +104,7 @@ If the multiple images can be resolved and their flux ratio measured it enables 
 
 % Merging Galaxy Clusters
 \subsection{Merging Galaxy Clusters and Cluster Subhalos}
-\Contributors{Will D., Dave W., ...}
+%\Contributors{Will D., Dave W., ...}
 
 Most dark matter constraints from merging galaxy clusters (\secref{halo_profile_clusters}) and cluster subhalos (\secref{halo_profile_clusters}) rely on accurately measuring the distribution of dark matter in (sub)clusters via gravitational lensing.
 Strong and weak gravitational lensing both benefit from high resolution imaging.
@@ -114,7 +115,7 @@ Historically Hubble Space Telescope (HST) has provided this higher resolution im
 % Strong gravitational lensing
 \subsection{Strong Gravitational Lensing}
 \label{sec:SLcomplement}
-\Contributors{Chris F.} 
+%\Contributors{Chris F.} 
 
 All three approaches to use strong gravitational lens systems to make inferences on the nature of dark matter  described in \secref{stronglens} utilize LSST as a lens-finding facility.
 Once the lenses are found, the dark matter science requires follow-up observations with other facilities.
