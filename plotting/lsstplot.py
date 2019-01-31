@@ -21,7 +21,7 @@ COLORS = odict([
     ('gold','orange'),
     ('red','#FA0303'),   # T10 color is #D62728
 ])
-ALPHA = 0.3
+ALPHA = 0.35
 LINEWIDTH = 2
 
 DEFAULTS = dict(color=COLORS['blue'],alpha=ALPHA,linewidth=LINEWIDTH)
@@ -84,21 +84,29 @@ def plot_limit_fill(data, low=False):
     plot_text(data)
 
 
-
 def plot_lsst_limit(data, low=False):
-    plot_limit_fill(data, low)
-    mass,limit = get_mass_limit(data)
-
     kwargs = dict(**data['style'])
+    setdefaults(kwargs,DEFAULTS)
+
+    mass,limit = get_mass_limit(data)
+    kwargs['alpha'] = 0.15
+    plt.fill_between(mass, limit, y2 = 1 if not low else 0,
+                     edgecolor=kwargs['color'],
+                     facecolor=kwargs['color'],
+                     #facecolor='none', hatch = '/',
+                     alpha=kwargs['alpha'],
+    )
+    plot_text(data)
+
     kwargs['alpha'] = 1
     plt.plot(mass, limit, **kwargs)
 
 
 def plot_limit_patch(data):
-    mass,limit = get_mass_limit(data)
     kwargs = dict(**data['style'])
     setdefaults(kwargs,DEFAULTS)
 
+    mass,limit = get_mass_limit(data)
     patch = PathPatch(Path(zip(mass, limit)),
                       edgecolor=kwargs['color'],
                       facecolor=kwargs['color'],
@@ -107,18 +115,20 @@ def plot_limit_patch(data):
     plot_text(data)
 
 def plot_one(data):
-    mass,limit = get_mass_limit(data)
-
     kwargs = dict(**data['style'])
     setdefaults(kwargs,DEFAULTS)
 
+    mass,limit = get_mass_limit(data)
     plt.fill_between(mass, limit, y2=1.0,
                      edgecolor=COLORS['blue'],
                      facecolor=COLORS['blue'],
-                     alpha=0.3)
+                     alpha=kwargs['alpha'])
     plot_text(data)
 
 def plot_two(data_loose, data_tight):
+    kwargs = dict(**data_loose['style'])
+    setdefaults(kwargs,DEFAULTS)
+
     mass_loose,limit_loose = get_mass_limit(data_loose)
     mass_tight,limit_tight = get_mass_limit(data_tight)
 
@@ -132,10 +142,10 @@ def plot_two(data_loose, data_tight):
     plt.fill_between(mass_loose, limit_loose, y2=1.0,
                      edgecolor=COLORS['blue'],
                      facecolor=COLORS['blue'],
-                     alpha=0.3)
+                     alpha=kwargs['alpha'])
     plt.fill_between(x, limit_tight_interp, limit_loose_interp,
                      edgecolor='k',
                      linewidth=0,
                      facecolor='k',
-                     alpha=0.05)
+                     alpha=0.07)
     plot_text(data_loose)

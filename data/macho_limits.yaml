@@ -357,7 +357,7 @@ eros_tisserand_2007:
     linewidth : 1.5
 
   label_x : 2e-3
-  label_y : 2.5e-2
+  label_y : 1.1e-1
   channel_label : ''
   conf_label : ''
   mass_unit: 'msun'
@@ -1292,8 +1292,8 @@ lsst_paralensing:
     linestyle : '-'
     linewidth : 3
 
-  label_x : 1e3
-  label_y : 1e-3
+  label_x : 3e4
+  label_y : 7e-4
   channel_label : ''
   conf_label : ''
   mass_unit: 'msun'

@@ -20,6 +20,7 @@ plot_lsst_limit(limits['lsst_dwarfs'])
 plot_limit_fill(limits['gluscevic2018_planck'])
 plot_limit_patch(limits['emken2018_cresst3_dd'])
 plot_limit_patch(limits['erickcek2007_xqc'])
+#plot_limit_patch(limits['mahdawi2019_xqc_e1'])
 plot_limit_patch(limits['bringmann2018_xenon1t'])
 plot_limit_patch(limits['bringmann2018_miniboone'])
 

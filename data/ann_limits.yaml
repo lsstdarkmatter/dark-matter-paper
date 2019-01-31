@@ -1526,6 +1526,7 @@ hess_einasto_bb_95cl:
     linestyle : '-'
     dashes : [5,2]
     linewidth : 1.5
+    alpha : 0.2
 
   channel_label : '$b \bar b$'
   conf_label : '95% C.L.'
@@ -1991,6 +1992,8 @@ zaharijas2018_cta_bb:
     linestyle : '-'
     #dashes : [5,2,2,5]
     linewidth : 2.0
+    alpha : 0.2
+
   label_x : 5000
   label_y : 5e-26
   channel_label : '$b \bar b$'
