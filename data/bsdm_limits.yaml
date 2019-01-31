@@ -5,11 +5,11 @@ lsst_dwarfs:
     color : 'orange'
     marker : 'None'
     linestyle : '-'
-    linewidth : 2.0
+    linewidth : 3.0
 
-  label_x : 3e-3
-  label_y : 3e-30
-
+  label_x : 5e-3
+  label_y : 5e-29
+  rotation : 6
   xystring: |
     1.000000e-05 1.645191e-30
     1.000000e-04 3.167067e-30
@@ -286,7 +286,7 @@ bringmann2018_xenon1t:
     alpha  : 0.2
 
   label_x : 7e-5
-  label_y : 4e-29
+  label_y : 4e-31
 
   xystring: |
     1.0e-5	1.17914e-31	    

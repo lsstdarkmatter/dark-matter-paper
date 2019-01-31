@@ -6,7 +6,8 @@ import pylab as plt
 import numpy as np
 import yaml
 
-from lsstplot import plot_limit,plot_limit_fill,plot_limit_patch,get_mass_limit,get_datafile
+from lsstplot import plot_limit,plot_limit_fill,plot_limit_patch,plot_lsst_limit
+from lsstplot import get_mass_limit,get_datafile
 
 def create_projection():
     mass,limit = get_mass_limit(limits['ackermann15_bb'])
@@ -38,11 +39,12 @@ limits = yaml.load(open(get_datafile('ann_limits.yaml')))
 #for m,l in zip(*create_projection()):
 #    print('%-10i %12.8g'%(m, l))
 
+plot_lsst_limit(limits['lsst_dwarfs_bb'])
+
 plot_limit_fill(limits['ackermann15_bb'])
 plot_limit_fill(limits['hess_gc_einasto_2016_bb_95cl'])
 plot_limit_fill(limits['zaharijas2018_cta_bb'])
 plot_limit_patch(limits['gc_summary_bb_1s'])
-plot_limit(limits['lsst_dwarfs_bb'])
 
 plt.xlim(1,1e4)
 plt.ylim(5e-28,1e-23)
