@@ -6,7 +6,7 @@ import pylab as plt
 import numpy as np
 import yaml
 
-from lsstplot import plot_one, plot_two, plot_limit
+from lsstplot import plot_one, plot_two, plot_limit, plot_lsst_limit
 
 fig,ax = plt.subplots()
 ax.set_yscale('log')
@@ -15,8 +15,11 @@ ax.set_xscale('log')
 limits = yaml.load(open('./data/macho_limits.yaml'))
 
 #plot_limit(limits['lsst_m31_microlensing'])
-plot_limit(limits['lsst_paralensing'])
-plot_limit(limits['lsst_microlensing'])
+#plot_limit(limits['lsst_paralensing'])
+#plot_limit(limits['lsst_microlensing'])
+
+plot_lsst_limit(limits['lsst_paralensing'])
+plot_lsst_limit(limits['lsst_microlensing'])
 
 plot_two(limits['gammaray_background_loose_carr_2016'],
          limits['gammaray_background_tight_carr_2016'])

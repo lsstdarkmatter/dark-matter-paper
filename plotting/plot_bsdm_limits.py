@@ -7,7 +7,7 @@ import pylab as plt
 import numpy as np
 import yaml
 
-from lsstplot import plot_limit, plot_limit_fill, plot_limit_patch
+from lsstplot import plot_limit, plot_limit_fill, plot_limit_patch, plot_lsst_limit
 
 limits = yaml.load(open('data/bsdm_limits.yaml'))
 
@@ -15,13 +15,14 @@ fig,ax = plt.subplots()
 ax.set_yscale('log')
 ax.set_xscale('log')
 
+plot_lsst_limit(limits['lsst_dwarfs'])
+
 plot_limit_fill(limits['gluscevic2018_planck'])
 plot_limit_patch(limits['emken2018_cresst3_dd'])
 plot_limit_patch(limits['erickcek2007_xqc'])
 plot_limit_patch(limits['bringmann2018_xenon1t'])
 plot_limit_patch(limits['bringmann2018_miniboone'])
 
-plot_limit(limits['lsst_dwarfs'])
 
 plt.xlim(1e-5,1e1)
 plt.ylim(1e-34,1e-24)

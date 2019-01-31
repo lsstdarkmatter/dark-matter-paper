@@ -57,11 +57,12 @@ def get_mass_limit(data):
     return mass, limit
 
 def plot_text(data):
-    plt.text(float(data['label_x']),
-             float(data['label_y']),
-             data['style']['label'],
-             horizontalalignment='center',
-             verticalalignment='top')
+    kwargs = dict(ha='center',  va='top', rotation=data.get('rotation',0))
+    return plt.text(float(data['label_x']),
+                    float(data['label_y']),
+                    data['style']['label'],
+                    **kwargs
+                    )
 
 def plot_limit(data):
     mass,limit = get_mass_limit(data)
@@ -78,8 +79,20 @@ def plot_limit_fill(data, low=False):
     plt.fill_between(mass, limit, y2 = 1 if not low else 0,
                      edgecolor=kwargs['color'],
                      facecolor=kwargs['color'],
-                     alpha=kwargs['alpha'])
+                     alpha=kwargs['alpha'],
+    )
     plot_text(data)
+
+
+
+def plot_lsst_limit(data, low=False):
+    plot_limit_fill(data, low)
+    mass,limit = get_mass_limit(data)
+
+    kwargs = dict(**data['style'])
+    kwargs['alpha'] = 1
+    plt.plot(mass, limit, **kwargs)
+
 
 def plot_limit_patch(data):
     mass,limit = get_mass_limit(data)

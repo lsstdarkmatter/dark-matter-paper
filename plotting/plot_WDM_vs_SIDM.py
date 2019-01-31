@@ -94,7 +94,7 @@ ax2.contourf(WDM_array_LSST[:20],som_array_LSST,N_sat_LSST.T[:,:20],[0,106],colo
 ax2.contourf(WDM_array_LSST[19:,],som_array_LSST,N_sat_LSST.T[:,19:],[0,level_LSST],colors=BLUE,alpha=ALPHA)
 ax2.contour(WDM_array_LSST[19:],som_array_LSST[:35],N_sat_LSST.T[:35,19:],[level_LSST],colors=['k'],linewidths=1)
 # Upper collapse region (som > 1 cm2/g)
-ax2.contourf(WDM_array_LSST[19:,],som_array_LSST[46:],N_sat_LSST.T[46:,19:],[level_LSST,np.inf],colors=BLUE,alpha=ALPHA/3.)
+ax2.contourf(WDM_array_LSST[19:,],som_array_LSST[46:],N_sat_LSST.T[46:,19:],[level_LSST,np.inf],colors=BLUE,alpha=ALPHA)
 
 # Can get contour lines with...
 #x,y = cs.collections[0].get_paths()[0].vertices.T
@@ -121,7 +121,8 @@ ax2.text(1.3,4.7,r'Excluded by classical + SDSS MW Sats.',fontsize=16,rotation='
 #ax2.text(10,5.1,r'Probed by LSST Streams',fontsize=16)
 ax2.text(12,0.45,r'Probed by LSST',fontsize=16,ha='center')
 ax2.text(12,0.32,r'MW Sats. + Spec.',fontsize=16,ha='center')
-ax2.text(9,2.45,r'Approx. sensitivity of MW Sats. w/ core collapse',fontsize=10)
+#ax2.text(9,2.45,r'Approx. sensitivity of MW Sats. w/ core collapse',fontsize=10)
+ax2.text(9,2.45,r'MW Sats. Core Collapse',fontsize=10)
 
 # axes, ticks, and labels
 ax2.set_yscale('log')
