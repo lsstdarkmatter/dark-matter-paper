@@ -18,8 +18,9 @@ limits = yaml.load(open('./data/macho_limits.yaml'))
 #plot_limit(limits['lsst_paralensing'])
 #plot_limit(limits['lsst_microlensing'])
 
-plot_lsst_limit(limits['lsst_paralensing'])
 plot_lsst_limit(limits['lsst_microlensing'])
+plot_limit(limits['lsst_paralensing'])
+
 
 plot_two(limits['gammaray_background_loose_carr_2016'],
          limits['gammaray_background_tight_carr_2016'])
