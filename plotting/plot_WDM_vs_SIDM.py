@@ -89,7 +89,7 @@ ax2.callbacks.connect("xlim_changed", convert_ax_c_to_l)
 
 # LSST projected sensitivity
 level_LSST = 92
-ax2.contour(WDM_array_LSST[19:],som_array_LSST[35:],N_sat_LSST.T[35:,19:],[level_LSST],colors=['k'],linestyles='dashed',linewidths=1)
+ax2.contour(WDM_array_LSST,som_array_LSST[35:],N_sat_LSST.T[35:,:],[level_LSST],colors=['k'],linestyles='dashed',linewidths=1)
 ax2.contourf(WDM_array_LSST[:20],som_array_LSST,N_sat_LSST.T[:,:20],[0,106],colors=BLUE,alpha=ALPHA)
 ax2.contourf(WDM_array_LSST[19:,],som_array_LSST,N_sat_LSST.T[:,19:],[0,level_LSST],colors=BLUE,alpha=ALPHA)
 ax2.contour(WDM_array_LSST[19:],som_array_LSST[:35],N_sat_LSST.T[:35,19:],[level_LSST],colors=['k'],linewidths=1)
@@ -102,14 +102,15 @@ ax2.contourf(WDM_array_LSST[19:,],som_array_LSST[46:],N_sat_LSST.T[46:,19:],[lev
 #plt.fill_between(x,y,y2=10,alpha=0.3,facecolor='tab:blue')
 
 # SDSS limits
-ax2.contour(WDM_array_SDSS,som_array_SDSS,N_sat_SDSS.T,[43],colors=['k'],linewidths=1)
+ax2.contour(WDM_array_SDSS,som_array_SDSS[41:],N_sat_SDSS.T[41:,:],[43],colors=['k'],linewidths=1,linestyles='dashed')
+ax2.contour(WDM_array_SDSS,som_array_SDSS[:42],N_sat_SDSS.T[:42,:],[43],colors=['k'],linewidths=1)
 ax2.contourf(WDM_array_SDSS,som_array_SDSS,N_sat_SDSS.T,[0,43],colors=[RED],alpha=1)
 
 # Other limits and sensitivities
 ax2.axvline(5.3,c='k',dashes=(5,2),lw=0.6) #Lyman-alpha
 ax2.axvline(8,c='k',dashes=(5,2),lw=0.6) #lensing
 ax2.axvline(18,c='k',dashes=(5,2),lw=0.6) #streams
-ax2.axvline(7.59,0.805,1,c='k',ls='--',lw=1) #minimum halo mass
+#ax2.axvline(7.59,0.805,1,c='k',ls='--',lw=1) #minimum halo mass
 ax2.axvline(7.59,0,.257,c='k',lw=1) #minimum halo mass
 
 # Text labels
@@ -121,8 +122,8 @@ ax2.text(1.3,4.7,r'Excluded by classical + SDSS MW Sats.',fontsize=16,rotation='
 #ax2.text(10,5.1,r'Probed by LSST Streams',fontsize=16)
 ax2.text(12,0.45,r'Probed by LSST',fontsize=16,ha='center')
 ax2.text(12,0.32,r'MW Sats. + Spec.',fontsize=16,ha='center')
-#ax2.text(9,2.45,r'Approx. sensitivity of MW Sats. w/ core collapse',fontsize=10)
-ax2.text(9,2.45,r'MW Sats. Core Collapse',fontsize=10)
+ax2.text(11,2.45,r'MW Sats. core collapse',fontsize=10)
+
 
 # axes, ticks, and labels
 ax2.set_yscale('log')
@@ -141,8 +142,9 @@ ax_c.set_xticklabels(ticklabels)
 
 ticklabels = ax2.get_xticklabels()
 ticklabels.extend(ax2.get_yticklabels())
+ticklabels.extend(ax_c.get_xticklabels())
 for label in ticklabels:
     label.set_color('k')
     label.set_fontsize(20)
 
-fig2.savefig('SIDM_WDM_figw_coll.pdf',bbox_inches='tight')
+fig2.savefig('../figures/SIDM_WDM_figw_coll.pdf',bbox_inches='tight')
