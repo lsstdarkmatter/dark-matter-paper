@@ -13,7 +13,7 @@ This section is not intended to be comprehensive, but rather serves to demonstra
 % Spectroscopy
 \section{Spectroscopy \Contact{Ting}}
 \label{sec:spectroscopy}
-\Contributors{Joshua D.\  Simon, Ting Li, William A.\ Dawson, Denis Erkal, David Wittman, Erik Tollerud, Jeffrey A.\ Newman}
+\Contributors{Joshua D.\  Simon, Ting S. Li, William A.\ Dawson, Denis Erkal, David Wittman, Erik Tollerud, Jeffrey A.\ Newman}
 
 The power of photometric and astrometric measurements from LSST will be significantly augmented by additional spectroscopic observations.
 In particular, spectroscopic follow-up studies will provide kinematic and redshift information for many of the objects studied by LSST.
@@ -28,7 +28,7 @@ The latter category is populated by new facilities such as the Thirty Meter Tele
 
 In this section, we illustrate several examples of how complementary spectroscopy will improve the measurement of dark matter properties with LSST.
 
-\subsection{Milky Way Satellite Galaxies \Contact{Josh}}
+\subsection{Milky Way Satellite Galaxies \Contact{Josh}}\label{sec:MW_sats_spec}
 %\Contributors{Josh, Ting, Erik, ...}
 In \secref{smallest_galaxies} we discussed the derivation of an upper limit on the minimum dark matter halo mass based on the observed luminosity function of satellites discovered by LSST. 
 %\ET{Should we mention the fact that confirmation of the LSST discoveries *also* may require spectroscopy at least for some of the ambiguous cases?}  
@@ -53,23 +53,23 @@ In additional to inferring the minimum dark matter halo mass, kinematics from st
 
 As discussed in \secref{stream_gaps}, subhalo encounters with cold stellar streams will induce density perturbations that will be detectable by LSST, constraining the minimum dark matter halo mass and the mass function of dark matter halos from $\roughly10^5$--$10^9 \Msun$. In addition, these flybys cause velocity perturbations that correlate with the density variations.  The velocity signal near stream gaps can be measured either via line-of-sight velocity measurements from spectroscopy or tangential velocity measurements from astrometry, improving the precision with which the perturber mass can be determined.
 The velocity variation (peak to peak) from these flybys will be small. To estimate the amplitude of the perturbation, we consider a stream orbiting the Milky Way at a distance of 14 kpc and compute the typical maximum velocity kick expected over its lifetime of 5 Gyr using the formalism from \citet{erkal2016}.  The velocity change is $\roughly \{0.6, 0.3, 0.1\} \kms$ for subhalos in the range $\{ 10^{7.5}, 10^{6.5}, 10^{5.5} \} \Msun$, respectively. %$\{ 10^7-10^8, 10^6-10^7, 10^5-10^6\} \Msun$
-Due to the low density of the stream stars, a massively multiplexed, wide field-of-view spectroscopic facility such as PFS on Subaru or MSE is needed. Furthermore, given the expected small velocity kick amplitude, the velocity accuracy for each star determined from the spectroscopic observations should be at or better than $1 \kms$ to unambiguously detect the signal with an ensemble of stream stars. 
+
+Due to the low density of the stream stars, a massively multiplexed, wide field-of-view spectroscopic facility such as PFS on Subaru or MSE is needed. 
+Furthermore, given the expected small velocity kick amplitude, the velocity for each star determined from the spectroscopic observation need to be extremely precise.
+%Furthermore, given the expected small velocity kick amplitude, the velocity accuracy for each star determined from the spectroscopic observations should be at or better than $1 \kms$ to unambiguously detect the signal with an ensemble of stream stars. 
+Considering that the typical gap size for a $10^6 M_\odot$ subhalo is a few degrees, and the typical known streams has 10--100 stars/degree at $r\lesssim23$\citep[see, e.g.,][]{pal5_gaps, gd1_deboer}, a velocity precision of $\sim1\,\mathrm{km\,s}^{-1}$ per star would allow an unambiguously detection on the signal with an ensemble of stream stars.  
+
 
 \subsection{Galaxy Clusters \Contact{Will}}
-<<<<<<< HEAD
 %\Contributors{Will, ...}
 
-As noted in \secref{merging_clusters} one of largest systematics associated with merging galaxy cluster constraints on SIDM is modeling the merger. The more complex the merger, the more severe the systematics will be.
-=======
-\Contributors{Will, ...}
-As noted in \secref{merging_clusters}, one of largest systematics associated with merging galaxy cluster constraints on SIDM is modeling the merger. The more complex the merger, the more severe the systematics will be.
->>>>>>> 4b04adf0bd26e732d4017622702c3eeafca9d5fd
-The best means of constraining merging galaxy cluster substructure is with spectroscopic measurement of as many galaxy cluster member galaxies as possible \citep[\eg,][]{Golovich:2018}.
-As noted in \citet{2016arXiv161001661N}, perhaps the best spectroscopic follow-up facilities are large telescopes with slitmask-like multi-object spectrographs, or fiber-based multiplex spectrometers with low ($\mathcal{O}(\unit{arcsec})$) fiber collision regions, due to the density of cluster members.
-
+%As noted in \secref{merging_clusters}, one of largest systematics associated with merging galaxy cluster constraints on SIDM is modeling the merger. The more complex the merger, the more severe the systematics will be.
+%The best means of constraining merging galaxy cluster substructure is with spectroscopic measurement of as many 
+%galaxy cluster member galaxies as possible \citep[\eg,][]{Golovich:2018}.
+%As noted in \citet{2016arXiv161001661N}, perhaps the best spectroscopic follow-up facilities are large telescopes with slitmask-like multi-object spectrographs, or fiber-based multiplex spectrometers with low ($\mathcal{O}(\unit{arcsec})$) fiber collision regions, due to the density of cluster members.
 
 As noted in \secref{merging_clusters} one of largest systematics associated with merging galaxy cluster constraints on SIDM is modeling the merger dynamics, most importantly the relative speed at the time of
-pericenter. This can be inferred from the observed line-of-sight speed by correcting for the viewing angle and evolving the equations of motion back to the time of pericenter. Therefore, a minimal requirement is a good measurement of the systemic line-of-sight speed of each subcluster, which implies spectroscopic redshifts for hundreds of members of each subcluster \citep[\eg,][]{Golovich:2018}. In addition, a thorough spectroscopic survey of the surrounding $\sim$10' region is required to test for the presence of additional substructures that could affect reconstruction of the merger scenario. 10-m class collecting area is sufficient for most known mergers, but because member galaxies can be packed quite closely in their respective subclusters, fiber collision avoidance is a limiting factor for many instruments designed for wide-field highly multiplexed spectroscopy.  As noted in  \citet{2016arXiv161001661N}, perhaps the best spectroscopic follow-up facilities are large telescopes with slitmask-like multi-object spectrometers, or fiber-based multiplex spectrometers with low ($\mathcal{O}(\unit{arcsec})$) fiber collision regions.
+pericenter. This can be inferred from the observed line-of-sight speed by correcting for the viewing angle and evolving the equations of motion back to the time of pericenter. Therefore, a minimal requirement is a good measurement of the systemic line-of-sight speed of each subcluster, which implies spectroscopic redshifts for hundreds of members of each subcluster \citep[\eg,][]{Golovich:2018}. In addition, a thorough spectroscopic survey of the surrounding $\sim$10 arcmin region is required to test for the presence of additional substructures that could affect reconstruction of the merger scenario. 10-m class collecting area is sufficient for most known mergers, but because member galaxies can be packed quite closely in their respective subclusters, fiber collision avoidance is a limiting factor for many instruments designed for wide-field highly multiplexed spectroscopy.  As noted in \citet{2016arXiv161001661N}, perhaps the best spectroscopic follow-up facilities are large telescopes with slitmask-like multi-object spectrographs, or fiber-based multiplex spectrographs with low ($\mathcal{O}(\unit{arcsec})$) fiber collision regions.
 
 % High-resolution imaging
 \section{High-Resolution Imaging \Contact{Will}}
