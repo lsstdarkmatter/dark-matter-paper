@@ -6,29 +6,29 @@ Dwarf galaxies ($M_\star \lesssim 10^{9} \Msun$) provide the best visible tracer
 The relatively low baryonic content makes dwarf galaxies sensitive probes of  dark matter physics through the shape of their dark matter halo profiles. 
 In particular, the ``core-cusp'' problem in dwarf galaxies has been cited as one of the most significant challenges to CDM \citep[\eg,][]{2010AdAst2010E...5D,Bullock:2017xww}.
 The standard CDM model predicts that dark matter halos should have steeply rising (``cuspy'') central densities in contrast to the shallower (``cored'') mass profiles that are observationally inferred for many dwarf galaxies.  
-Evidence for cored profiles exists for Milky Way satellite galaxies from kinematic and theoretical studies \citep[\eg][]{Walker:2009, 2012ApJ...759L..42P}, and is stronger when one studies the inner density profiles of dwarf galaxies based on high-resolution neutral hydrogen surveys \citep[\eg][]{Begum:2008,Hunter:2012,Cannon:2011,Oh:2015}. 
+Evidence for cored profiles exists for Milky Way satellite galaxies from kinematic and theoretical studies \citep[\eg,][]{Walker:2009, 2012ApJ...759L..42P}, and is stronger when one studies the inner density profiles of dwarf galaxies based on high-resolution neutral hydrogen surveys \citep[\eg,][]{Begum:2008,Hunter:2012,Cannon:2011,Oh:2015}. 
 Many of these observations show inferred central slopes of the dark matter density profile, $\rho(r) \sim r^{-\gamma}$, that are significantly shallower ($\gamma \approx 0$--$0.5$) than the CDM prediction $\gamma \approx 0.8$--1.4 \citep{Navarro:2010}.
 
 A wide range of solutions to the core-cusp problem have been proposed including observational, astrophysical, and dark matter explanations.
 From a dark matter perspective, SIDM can significantly suppress the the central density of halos.
-A self-interaction cross-section of $\sigma / m_\chi \sim 1 \cmg$ can explain the diversity of rotation curves seen in low-mass spiral galaxies \citep[\eg][]{1504.01437,2017PhRvL.119k1102K,Tulin:2017ara}.
-In addition, ultra-light or fuzzy dark matter has also been suggested as a possible solution to the core-cusp problem through the formation of uniform density solitonic cores \citep[\eg][]{1502.03456,Hui:2017}. 
+A self-interaction cross-section of $\sigma / m_\chi \sim 1 \cmg$ can explain the diversity of rotation curves seen in low-mass spiral galaxies \citep[\eg,][]{1504.01437,2017PhRvL.119k1102K,Tulin:2017ara}.
+In addition, ultra-light or fuzzy dark matter has also been suggested as a possible solution to the core-cusp problem through the formation of uniform density solitonic cores \citep[\eg,][]{1502.03456,Hui:2017}. 
 However, baryonic feedback remains a major complication for interpreting central density profile measurements in a dark matter context \citep{1996MNRAS.283L..72N,2005MNRAS.356..107R,2008Sci...319..174M,2012MNRAS.421.3464P,Madau:2014,Read:2016}. 
 If dwarf galaxies form enough stars, energy from SN explosions can flatten the profiles of dark matter and baryons; however, if too many stars are formed, the excess baryonic mass can have the opposite effect of steepening the slope of the central density profile \citep{Bullock:2017}.
 Technical challenges in implementing multi-phase gas and baryonic physics make it difficult to directly address and calibrate baryonic predictions based on hydrodynamical simulations \citep{Tollet:2016,1611.02281,Sawala:2016}.
-However, one key prediction is that the creation of cores will be sensitive to the exact star formation history \citep[\eg][]{governato2012,dicintio2014,onorbe2015,Read:2016,read2018,1811.11768,2019MNRAS.tmp....3R}.
+However, one key prediction is that the creation of cores will be sensitive to the exact star formation history \citep[\eg,][]{governato2012,dicintio2014,onorbe2015,Read:2016,read2018,1811.11768,2019MNRAS.tmp....3R}.
 Thus, robust measurements of both the stellar and dark matter mass of dwarf galaxies is essential to investigate the effect of baryonic feedback on the central dark matter density.
-In addition, it has been argued that significant observational and astrophysical systematics, such as beam smearing, center offsets, inclinations, and non-circular motions can bias central density measurements toward flatter profiles \citep[\eg][]{astro-ph/0006048,2004ApJ...617.1059R,2008AJ....136.2761O,2016MNRAS.462.3628R}. 
+In addition, it has been argued that significant observational and astrophysical systematics, such as beam smearing, center offsets, inclinations, and non-circular motions can bias central density measurements toward flatter profiles \citep[\eg,][]{astro-ph/0006048,2004ApJ...617.1059R,2008AJ....136.2761O,2016MNRAS.462.3628R}. 
 Thus, accurate independent measurements of dwarf galaxy density profiles are critical.
 
 LSST can provide joint statistical measurements of both the central density and stellar content of dwarf galaxies. 
 The stacked gravitational weak lensing signal from a large sample of dwarf galaxies will provide the most direct measurement of the amount and distribution of dark matter.  
-In this section we predict LSST's sensitivity to a stacked weak lensing signal from dwarf galaxies.
+In this section we predict the sensitivity of LSST to a stacked weak lensing signal from dwarf galaxies.
 
 \vspace{1em} \noindent {\bf Dwarf galaxy lenses}
 
 We are interested in estimating the number of isolated dwarf galaxies accessible to LSST as a function of dark matter halo mass.
-To predict the abundance of the dwarf  galaxy sample, we assume the mass-to-light ratio derived from the subhalo abundance matching and the global galaxy luminosity function \citep{2015MNRAS.451.1540L}.
+To predict the abundance of the dwarf galaxy sample, we assume the mass-to-light ratio derived from the subhalo abundance matching technique, which links the global galaxy luminosity function with (sub)halo mass function by their respective abundance \citep[\eg,][]{2004ApJ...609...35K,2013ApJ...771...30R}. We use \code{colossus} \citep{2018ApJS..239...35D} to obtain the halo mass function and adopt the global galaxy luminosity function measured by GAMA \citep{2015MNRAS.451.1540L}. We match galaxy luminosity to current halo mass with the definition of $M_{200c}$. We also assume the mass-to-light ratio does not evolve significantly in this low-redshfit regime. 
 We use this predicted galaxy luminosity to estimate the limiting redshift for dwarf galaxy detection as a function of galaxy halo mass for two LSST limiting magnitudes: $r \sim 25$ and $r \sim 27$. 
 \figref{dwarf_redshift} shows that to probe dark matter halos with mass $\lesssim 10^9 \Msun$, it will be necessary to select galaxies at $z < 0.01$. 
 While selecting very low-$z$ galaxies with photometric data is challenging, current projects like the SAGA Survey \citep{Geha:2017} have shown that it is possible using data from SDSS. 
@@ -39,7 +39,7 @@ LSST will be able to distinguish a dwarf galaxy with $M_V=-14$ from background g
 \begin{figure}
 \centering
 \includegraphics[width=0.6\columnwidth]{halo_mass_redshift_log}
-\caption{\label{fig:dwarf_redshift} Limiting redshift for detecting a dwarf galaxy that lives in a dark matter halo of certain masses, assuming a luminosity--halo mass relation from abundance matching.}
+\caption{\label{fig:dwarf_redshift} Limiting redshift for detecting a dwarf galaxy that lives in a dark matter halo of certain masses, assuming a luminosity--halo mass relation derived from the  subhalo abundance matching technique, which matches galaxy luminosity from the GAMA luminosity function to present-day halo mass ($M_{200c}$) by their respective abundance.}
 \end{figure}
 
 \vspace{1em} \noindent {\bf Source galaxies}
@@ -82,4 +82,4 @@ We see that the overall signal-to-noise does not change much with the profile.
 However, to statistically distinguish the different profiles, one needs to measure the shear at very small angular scales ($< 10\,h^{-1}\kpc$, which corresponds to 2.9\,arcsec at $z=0.35$ and 10\,arcsec at $z=0.07$). This small-scale regime is where the systematics due to PSF modeling and blending would dominate. 
 In other words, while the numbers of source and lens galaxies that LSST can find will be high enough to distinguish the difference between the two profiles, shear measurement systematics may present the major obstacle. 
 
-The median seeing of LSST is about 0.7\,arcsec (LSST SRD, \cite{LPM-17}). Since the dwarf galaxy lenses are at very low redshift ($z=0.07$ for the $M_\text{halo}=3\times10^9\,h^{-1}\Msun$ sample), the angular scale ($\sim$10\,arcsec) that we would use to distinguish the cored profile is still well above a few times the median seeing. However, the uncertainty in PSF models can affect the shape measurement up to the scale of 3\,arcmin \citep{2012MNRAS.427.2572C}. We believe that, with improved PSF models and marginalization over model uncertainty, it will still be feasible to  utilize dwarf galaxy lenses to distinguish different halo profiles at small scales. 
+The median seeing of LSST is about 0.7\,arcsec \citep[LSST SRD,][]{LPM-17}. Since the dwarf galaxy lenses are at very low redshift ($z=0.07$ for the $M_\text{halo}=3\times10^9\,h^{-1}\Msun$ sample), the angular scale ($\sim$10\,arcsec) that we would use to distinguish the cored profile is still well above a few times the median seeing. However, the uncertainty in PSF models can affect the shape measurement up to the scale of 3\,arcmin \citep{2012MNRAS.427.2572C}. We believe that, with improved PSF models and marginalization over model uncertainty, it will still be feasible to  utilize dwarf galaxy lenses to distinguish different halo profiles at small scales. 
