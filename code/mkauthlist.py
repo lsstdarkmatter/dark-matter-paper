@@ -317,7 +317,10 @@ if __name__ == "__main__":
     data = np.rec.fromrecords(rows[1:],names=rows[0])
 
     if args.sort:
-        data = data[np.argsort(np.char.upper(data['Lastname']))]
+        idx = np.lexsort((np.char.upper(data['Firstname']),
+                          np.char.upper(data['Lastname'])))
+        data = data[idx]
+
     if args.sort_builder:
         build = get_builders(data)
         builder = data[build]
@@ -379,7 +382,7 @@ if __name__ == "__main__":
             raw = raw[~match]
         order = np.vstack([order,raw])
         data = data[order[:,-1].astype(int)]
-                    
+
     ### REVTEX ###
     if cls in ['revtex','aastex61']:
         if cls == 'revtex':

@@ -1,3 +1,8 @@
+## Compiled document
+main.pdf
+lsst-dark-matter.pdf
+lsst-dark-matter.tar.gz
+
 ## Backup files
 *~
 *.bak
@@ -14,7 +19,6 @@
 ## Intermediate documents:
 *.dvi
 *-converted-to.*
-main.pdf
 # these rules might exclude image files for figures etc.
 # *.ps
 # *.eps
