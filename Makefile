@@ -24,7 +24,7 @@ tarball: #main
 	cp -r $(source) $(tardir)
 	cp $(filename).pdf $(tardir)
 	cd $(tardir) && tar -czf ../$(out).tar.gz . && cd ..
-	rm -rf $(tardir)
+	#rm -rf $(tardir)
 
 
 clean:
