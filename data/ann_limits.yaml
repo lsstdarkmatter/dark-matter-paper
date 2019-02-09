@@ -1755,7 +1755,7 @@ hess_gc_einasto_2016_bb_95cl:
     68.5322875946    6.79819179533e-25
 
 
-cta_nfw_bb_95cl:
+wood2013_cta_nfw_bb_95cl:
 
   style:
     label : 'Wood+ 2013 CTA GC Halo 500h'
@@ -2015,40 +2015,48 @@ zaharijas2018_cta_bb:
     91410    1.4419E-25
     98510    1.4702E-25
 
-zaharijas2018_cta_500h_1p_bb:
+eckner2018_cta_500h_1p_sys_bb:
   # DM_limits_CTA_GC_500h_bb_Einasto_systematics_1percent.txt
+  # https://indico.desy.de/indico/event/18204/session/12/contribution/51
   style:
-    label : 'CTA GC (500h)'
+    label : 'CTA GC'
     color : 'gray' 
     marker : 'None'
     linestyle : '-'
     #dashes : [5,2,2,5]
     linewidth : 2.0
 
+  label_x : 5000
+  label_y : 5e-26
   channel_label : '$b \bar b$'
   conf_label : '95% C.L.'
 
   xystring: |
-    50.        33.5744157666288E-26 
-    80.        11.5273044282807E-26 
-    100.       8.71061249802581E-26 
-    500.       1.83664738164379E-26 
-    1000.      1.50680802572194E-26 
-    2000.      1.34982671887327E-26 
-    10000.     1.67673431992442E-26 
-    20000.     2.11285262750556E-26 
-    100000.    5.53972171168991E-26 
+    5.0e+01   1.00723247e-24
+    8.0e+01   3.45819133e-25
+    1.0e+02   2.61318375e-25
+    5.0e+02   5.50994214e-26
+    1.0e+03   4.52042408e-26
+    2.0e+03   4.04948016e-26
+    1.0e+04   5.03020296e-26
+    2.0e+04   6.33855788e-26
+    1.0e+05   1.66191651e-25
 
-zaharijas2018_cta_500h_1p_bb_stats:
-  # DM_limits_CTA_GC_500h_bb_Einasto_systematics_1percent.txt
+
+eckner2018_cta_500h_stat_bb:
+  #DM_limits_CTA_GC_500h_bb_Einasto_statistical_reach.txt
+  # https://indico.desy.de/indico/event/18204/session/12/contribution/51
   style:
-    label : 'CTA GC (500h)'
+    label : 'CTA GC'
     color : 'gray' 
     marker : 'None'
     linestyle : '-'
     #dashes : [5,2,2,5]
     linewidth : 2.0
+    alpha : 0.2
 
+  label_x : 1200
+  label_y : 1.2e-26
   channel_label : '$b \bar b$'
   conf_label : '95% C.L.'
 
@@ -2063,7 +2071,8 @@ zaharijas2018_cta_500h_1p_bb_stats:
     20000.0  2.7895341723540004e-26
     100000.0 9.281641037580001e-26
 
-zaharijas2018_cta_500h_1p_ww:
+eckner2018_cta_500h_1p_ww:
+  # https://indico.desy.de/indico/event/18204/session/12/contribution/51
   # DM_limits_CTA_GC_500h_bb_Einasto_systematics_1percent.txt
   style:
     label : 'Zaharijas+ 2018 CTA GC Halo 500h'
@@ -2073,17 +2082,19 @@ zaharijas2018_cta_500h_1p_ww:
     #dashes : [5,2,2,5]
     linewidth : 2.0
 
+  label_x : 5000
+  label_y : 5e-26
   channel_label : '$b \bar b$'
   conf_label : '95% C.L.'
 
   xystring: |
-   100.       5.293872625158864E-26 
-   500.       0.806845801971451E-26 
-   1000.      0.559103269770568E-26 
-   2000.      0.205114214062277E-26 
-   10000.     0.278988995819916E-26 
-   20000.     0.875032017808946E-26 
-   100000.    2.913771556093277E-26 
+   1.0e+02   1.58816179e-25
+   5.0e+02   2.42053741e-26
+   1.0e+03   1.67730981e-26
+   2.0e+03   6.15342642e-27
+   1.0e+04   8.36966987e-27
+   2.0e+04   2.62509605e-26
+   1.0e+05   8.74131467e-26
 
 lhc_quarks:
 
@@ -2169,9 +2180,9 @@ lsst_dwarfs_bb:
     linestyle : '-'
     linewidth : 3.0
 
-  label_x : 300
-  label_y : 2e-26
-  rotation : 27
+  label_x : 40
+  label_y : 5e-27
+  rotation : 18
   channel_label : '$q \bar q$'
   conf_label : '95% C.L.'
 
@@ -2199,9 +2210,9 @@ ackermann15_bb:
 #    dashes : [5,2,2,5]
     linewidth : 2.0
 
-  label_x : 200
-  label_y : 1e-25
-  rotation : 27
+  label_x : 12
+  label_y : 1.4e-26
+  rotation : 13
   channel_label : '$q \bar q$'
   conf_label : '95% C.L.'
 

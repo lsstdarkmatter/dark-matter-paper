@@ -31,7 +31,7 @@ def create_projection():
 fig,ax = plt.subplots()
 ax.set_yscale('log')
 ax.set_xscale('log')
-plt.axhline(3e-26,ls='--',lw=2,color='gray')
+plt.axhline(3e-26,dashes=(5,2),lw=1,color='gray')
 
 limits = yaml.load(open(get_datafile('ann_limits.yaml')))
 
@@ -43,10 +43,14 @@ plot_lsst_limit(limits['lsst_dwarfs_bb'])
 
 plot_limit_fill(limits['ackermann15_bb'])
 plot_limit_fill(limits['hess_gc_einasto_2016_bb_95cl'])
-plot_limit_fill(limits['zaharijas2018_cta_bb'])
+#plot_limit_fill(limits['zaharijas2018_cta_bb'])
+#plot_limit_fill(limits['zaharijas2018_cta_500h_stat_bb'])
+#plot_limit_fill(limits['eckner2018_cta_500h_1p_sys_bb'])
+plot_limit_fill(limits['eckner2018_cta_500h_stat_bb'])
+
 plot_limit_patch(limits['gc_summary_bb_1s'])
 
-plt.xlim(1,1e4)
+plt.xlim(6,1e4)
 plt.ylim(5e-28,1e-23)
 #plt.xlabel(r'$m_{\rm DM}$ (GeV)',fontsize=18)
 #plt.ylabel(r'$\langle \sigma_{\rm ann} v \rangle {\rm (cm^3 s^{-1})}$',fontsize=18)
