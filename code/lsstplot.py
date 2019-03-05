@@ -20,6 +20,7 @@ COLORS = odict([
     ('orange','orange'),
     ('gold','orange'),
     ('red','#FA0303'),   # T10 color is #D62728
+    ('black','k'),   # T10 color is #D62728
 ])
 ALPHA = 0.35
 LINEWIDTH = 2

@@ -21,9 +21,11 @@ plot_limit_fill(limits['gluscevic2018_planck'])
 plot_limit_patch(limits['emken2018_cresst3_dd'])
 plot_limit_patch(limits['erickcek2007_xqc'])
 #plot_limit_patch(limits['mahdawi2019_xqc_e1'])
+
 plot_limit_patch(limits['bringmann2018_xenon1t'])
 plot_limit_patch(limits['bringmann2018_miniboone'])
-
+#plot_limit_patch(limits['bringmann2018_v2_xenon1t'])
+#plot_limit_patch(limits['bringmann2018_v2_miniboone'])
 
 plt.xlim(1e-5,1e1)
 plt.ylim(1e-34,1e-24)

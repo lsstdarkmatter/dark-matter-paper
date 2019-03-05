@@ -48,7 +48,8 @@ plot_limit_fill(limits['hess_gc_einasto_2016_bb_95cl'])
 #plot_limit_fill(limits['eckner2018_cta_500h_1p_sys_bb'])
 plot_limit_fill(limits['eckner2018_cta_500h_stat_bb'])
 
-plot_limit_patch(limits['gc_summary_bb_1s'])
+#plot_limit_patch(limits['gc_summary_bb_1s'])
+plot_limit_patch(limits['gc_summary_bb_1s_v2'])
 
 plt.xlim(6,1e4)
 plt.ylim(5e-28,1e-23)
@@ -62,3 +63,30 @@ plt.annotate(r'$\chi \chi \rightarrow b \bar b$', xy=(2e3,1e-27),fontsize=24)
 
 plt.savefig('annih_limits.pdf')
 plt.ion()
+
+"""
+# Creating the ellipse
+xcenter, ycenter = 1.6, -25.45
+width, height = 0.37, 0.88
+angle = 0
+
+theta = np.radians(np.linspace(0, 360))
+x = width/2. * np.cos(theta)
+y = height/2. * np.sin(theta)
+
+rtheta = np.radians(angle)
+R = np.array([
+    [np.cos(rtheta), -np.sin(rtheta)],
+    [np.sin(rtheta),  np.cos(rtheta)],
+    ])
+
+x, y = np.dot(R, np.array([x, y]))
+x += xcenter
+y += ycenter
+
+x = 10**x
+y = 10**y
+for _x,_y in zip(x,y):
+    print("  %-12.8g    %-12.8g"%(_x,_y))
+
+"""
