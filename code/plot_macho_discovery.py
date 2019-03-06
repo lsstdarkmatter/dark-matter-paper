@@ -46,7 +46,8 @@ for i,(color,frac) in enumerate(zip(colors,fracs)):
   data_frac = copy.deepcopy(data)
 
   idx = np.random.choice(np.squeeze(np.where(data['rem_id_L']==3)),N,replace=False)
-  data_frac['t_E'][idx] *= np.sqrt(data_frac['mass_L'][idx]*10)
+  #data_frac['t_E'][idx] *= np.sqrt(data_frac['mass_L'][idx]*10)
+  data_frac['t_E'][idx] *= np.sqrt(10)
 
   draw_hist(data_frac['t_E'],color=color,label=r'All Events + %d\%% PBHs'%(frac*100),zorder=1-0.1*i,alpha=0.3,**kwargs)
   del data_frac
