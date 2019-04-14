@@ -19,7 +19,7 @@ In each scenario, a critical question is whether the systematic uncertainties as
 
 \section{Compact Object Discovery}
 \label{sec:pbh_discovery}
-\Contributors{William A.\ Dawson, Alex Drlica-Wagner, Casey Lam, Jessica Lu, Michael Medford}
+\Contributors{William A.\ Dawson, Jessica Lu, Casey Lam, Michael Medford, Alex Drlica-Wagner}
 
 While current constraints make it unlikely that all of dark matter is composed of compact objects with a monochromatic mass function and a uniform spatial distribution, it is nearly certain that LSST will measure the mass spectrum of Galactic black holes (\figref{macho_discovery}).
 In this regime, it will be necessary to test whether the observed black hole population statistics can be explained through stellar evolution, or if a novel black hole production mechanism is required (\ie, PBHs).
@@ -31,25 +31,28 @@ Preferred regions of WIMP parameter space that are excluded under the assumption
 Somewhat counter-intuitively, the outlook for the WIMP may be stronger in a universe where PBHs make up some fraction of the dark matter density.
 
 \NEW{
-In \figref{macho_discovery}, we present a cartoon illustrating the discovery of a high-mass PBH population. 
-We simulate the underlying population of astrophysically produced microlensing events in a $0.34\deg^2$ bulge field according to {\bf \textcolor{red}{help here Casey...}}. 
-The astrophysical black hole population was created assuming a solar metallicity progenitor population without a significant binary fraction. 
-We then scale these rates to a $10\degrees \times 10\degrees$ Galactic bulge field that could be observed as part of a devoted LSST mini-survey.
- We model the effects of a significant PBH population by randomly re-injecting a subsample of the astrophysical black hole population ($f = {5\%,15\%,30\%}$) after increasing each black hole mass by an order of magnitude.
-Astrometric microlensing described in \secref{complement} will be important for breaking the mass-distance degeneracy of the lens.
+In \figref{macho_discovery}, we follow the analysis of \citet{Lu:2019} to present an illustration of the LSST discovery potential for a population of high-mass black holes.
+Following \citet{Lu:2019}, the expected microlensing event rate from astrophysical sources (stars and stellar-mass compact objects) was generated for a $3.74 \deg^2$ field towards the Galactic bulge.
+In addition, a population of high-mass black holes is injected with a Gaussian mass distribution centered at $30\Msun$ with a standard deviation of $20\Msun$.
+For simplicity, the injected population is assumed to have the same spatial and velocity distribution as Milky Way halo stars.
+The mass density (and hence number density) of injected black holes is scaled to match 5\%, 15\%, and 30\% of the Milky Way dark matter halo.
+The microlensing rates are scaled to a $10\deg \times 10\deg$ Galactic bulge field, which could be observed as part of a devoted LSST mini-survey.
+The resulting total microlensing event rates are shown in \figref{macho_discovery}.
+The number of detectable microlensing events will be scaled by the LSST microlensing detection efficiency, which is expected to be $\gtrsim 1\%$ for events with $t_{\rm E} > 100$\,days.
+This analysis does not include the added sensitivity from the parallax signal described in \secref{microlensing}. 
+Astrometric microlensing described in \secref{astrometric_microlens} will be important for breaking the mass-distance degeneracy of the lens.
 }
-n
+
 \begin{figure}[t]
 \centering
 %\includegraphics[width=0.6\columnwidth]{nevents_vs_t.pdf}
 \includegraphics[width=0.6\columnwidth]{macho_discovery.pdf}
 \caption{\label{fig:macho_discovery}
-  The expected number of $\NEW{<}\,2\theta_\mathrm{E}$ microlensing events \NEW{scaled to} a $10\times10\,\mathrm{deg}^2$ bulge field (blue histogram), with the fraction due to black holes resulting from stellar evolution shown by the red histogram (for these events our detection efficiency is $\roughly 0.1\%$ at low-$t_\mathrm{E}$ and $\roughly 1\%$ at high-$t_\mathrm{E}$).
-  Other colored histograms show the event rate assuming different fractions of dark matter composed of LIGO-mass black holes (an order of magnitude more massive than the stellar remnant population).
-  The gray vertical dashed lines show the published sensitivity ranges of the MOA and OGLE microlensing surveys (insensitive to the high-mass/long-$t_\mathrm{E}$ tail).
-  The shaded green region shows the sensitivity range for LSST.
-  It includes the peak of the distribution (yellow dot), and enables us to accurately calibrate the slope (yellow dot-dashed line), which is necessary to provide accurate constraints on intermediate mass black holes.  
-  \WAD{Need to come up with better estimates for the number of expected event, i.e., how to scale the y-axis for LSST, especially considering different regions of the sky and potentially different cadences in each of these regions. Could just present a conservative estimate for $10\times10\,\mathrm{deg}^2$ bulge field.}
+  The expected number of $\NEW{<}\,2\theta_\mathrm{E}$ microlensing events \NEW{scaled to} a $10 \deg \times 10 \deg$ bulge field.
+  The microlensing rate from astrophysical source (stars and compact objects resulting from stellar evolution) is shown in black.
+  Blue histograms show the expected microlensing rate assuming different fractions of dark matter composed of LIGO-mass black holes (see text for details).
+ The LSST detection efficiency is expected to be $\gtrsim 1\%$ for $t_{\rm E} > 100$\,days.
+  %\WAD{Need to come up with better estimates for the number of expected event, i.e., how to scale the y-axis for LSST, especially considering different regions of the sky and potentially different cadences in each of these regions. Could just present a conservative estimate for $10\times10\,\mathrm{deg}^2$ bulge field.}
 }
 \end{figure}
 

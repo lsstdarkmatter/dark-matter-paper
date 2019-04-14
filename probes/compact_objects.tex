@@ -24,12 +24,13 @@ has motivated a renewed interest in PBH dark matter with larger masses than have
     Existing constraints include: lack of extragalactic gamma-rays from PBH evaporation \citep[EGR;][]{0912.5297, 1604.05349}, gamma-ray femtolensing \citep[GF;][]{1204.2056}, neutron star capture \citep[NS][]{1301.4984}, M31 microlensing \citep[M31ML][]{1701.02151}, Milky Way microlensing \citep[MWML;][]{2007A&A...469..387T, 2001ApJ...550L.169A, 2009MNRAS.397.1228W}, lensing of supernovae \citep[LSN;][]{1712.02240,1712.06574}, Eridanus II and other dwarf-galaxy constraints \citep[EII;][]{2016ApJ...824L..31B, 1611.05052}, wide binary stars \citep[WB;][]{2009MNRAS.396L..11Q, 2004ApJ...601..311Y}, cosmic microwave background \citep[CMB;][]{2017PhRvD..95d3534A, 2008ApJ...680..829R}, and disk stability \citep[DS;][]{1985ApJ...299..633L, 1994ApJ...437..184X}.
     %To improve figure clarity we have not shown some astrophysical constraints where they are less sensitive than a presented constraint; see \citet{2016PhRvD..94h3504C} for a more complete review.
     There are a range of constraints for most astrophysical probes in the literature due to varying assumptions within a single work (EGR, NS, and EII) and reanalysis/disagreements between groups (WB, CMB).
-    We present the most conservative constraints in blue and the most aggressive constraints in gray.
+    We present \NEW{more} conservative constraints in blue and \NEW{more} aggressive constraints in gray.
     %The LSST M31 microlensing projection is based on extrapolating HSC constraints \citep{1701.02151} assuming a 10-day mini-survey of M31 with a $12\second$ cadence between exposures.
     %% Such a survey is approximately 10 times longer with an order of magnitude faster cadence than the existing HSC survey.
-    The projected LSST Milky Way (MW) microlensing and paralensing constraints are from a Monte Carlo analysis where lenses were injected into light curves based on LSST OpSim cadence simulations. 
+    The projected LSST Milky Way (MW) microlensing and paralensing constraints come from a Monte Carlo analysis where lenses were injected into light curves based on LSST OpSim cadence simulations. 
     %% (see \url{https://github.com/lsstdarkmatter/dark-matter-paper/issues/8} for details).
-    The paralensing constraint comes from assuming that only the secondary microlensing parallax signal is used for discovery, and not the primary heliocentric microlensing signal.
+    The paralensing constraint \NEW{assumes} that the secondary microlensing parallax signal is used for discovery without incorporating the primary heliocentric microlensing signal.
+    \NEW{The LSST projected sensitivity does not include contamination from astrophysical microlensing events.}
 }
 \end{figure}
 
@@ -143,5 +144,5 @@ We inject simulated microlensing signals onto the OpSim lightcurves for 200k PBH
 The sources are assumed to be $23\magn$ stars located at $8\kpc$ with measurement noise generated from the standard LSST photometric error model \citep{0805.2366}.
 LSST is expected to detect $\roughly 10^{9}$ such stars, with an optical depth of $4.48 \times 10^{-6}$ \citep{2006ApJ...636..240S}.
 The paralensing constraint comes from assuming that only the secondary microlensing parallax signal is used for discovery, and not the primary heliocentric microlensing signal.
-
+\NEW{These sensitivity projection do not include contamination from microlensing events caused by stars and compact objects resulting from stellar evolution. They are thus an estimate of the limiting sensitivity of LSST in a ``background free'' regime (see \secref{pbh_discovery} for more details).}
 
