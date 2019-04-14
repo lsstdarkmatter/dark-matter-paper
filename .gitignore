@@ -1,5 +1,6 @@
 ## Compiled document
 main.pdf
+*.pdf
 lsst-dark-matter.pdf
 lsst-dark-matter.tar.gz
 
