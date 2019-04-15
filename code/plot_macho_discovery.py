@@ -33,9 +33,12 @@ def plot_hist(x,y,**kwargs):
   return n,b,p
 
 plt.figure()
-kwargs = dict(bins=bins,histtype='step',lw=2.5)
+kwargs = dict(bins=bins,histtype='stepfilled',lw=2.5)
+plt.hist(data['bin_edge'],weights=scale*data['no_pbh'],
+          color='k',alpha=0.07,zorder=0, **kwargs)
 
-plot_hist(data['bin_edge'],scale*data['no_pbh'],label='No PBHs',
+kwargs['histtype']='step'
+plot_hist(data['bin_edge'],scale*data['no_pbh'],label=r'No PBHs',
           color='k',zorder=10,**kwargs)
 plot_hist(data['bin_edge'],scale*data['all_f 5'],label=r'$f_{PBH}=5\%$',
           color='skyblue',**kwargs)
