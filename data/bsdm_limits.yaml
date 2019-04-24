@@ -19,6 +19,28 @@ lsst_dwarfs:
     1.000000e+00 5.808472e-29
     1.000000e+01 4.197402e-28
 
+lsst_dwarfs_v2:
+
+  style:
+    label : 'LSST Dwarf Galaxies'
+    color : 'orange'
+    marker : 'None'
+    linestyle : '-'
+    linewidth : 3.0
+
+  label_x : 5e-3
+  label_y : 5e-29
+  rotation : 6
+  xystring: |
+    1.000000e-05 1.54304476e-30
+    1.000000e-04 2.97591403e-30
+    1.000000e-03 5.62260562e-30
+    1.000000e-02 9.98135115e-30
+    1.000000e-01 1.74223285e-29
+    1.000000e+00 5.45647606e-29
+    1.000000e+01 3.95147917e-28
+    1.000000e+02 2.34135560e-27
+
 gluscevic2018_planck:
 
   style:

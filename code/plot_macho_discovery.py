@@ -50,7 +50,7 @@ plot_hist(data['bin_edge'],scale*data['all_f30'],label=r'$f_{PBH}=30\%$',
 plt.gca().set_xscale('log'); plt.gca().set_yscale('log')
 plt.xlim(1,6e3)
 
-plt.legend(loc='upper right')
+plt.legend(loc='upper right',frameon=False)
 
 plt.xlabel(r'$t_E$ (days)',fontsize=18)
 plt.ylabel('Number of Events',fontsize=18)

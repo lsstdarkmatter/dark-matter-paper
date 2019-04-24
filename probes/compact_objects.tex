@@ -35,8 +35,8 @@ has motivated a renewed interest in PBH dark matter with larger masses than have
 \end{figure}
 
 In this section, we focus on the ability of LSST to directly detect signals of compact halo objects through precise, short ($\sim30\,$s) and long-duration ($\sim$ years) gravitational microlensing observations.
-If scheduled optimally, the wide field-of-view, high cadence, and precise photometry of LSST \NEW{will provide sensitivity to the fraction of dark matter in compact objects down to} $\roughly 0.03\%$ for masses $>0.1\Msun$ (\figref{macho_constraints}).
-We briefly mention that LSST will also probe PBHs by determining the rate of SN Type 1a, identifying candidate wide-binary star systems at greater distance than is possible with \Gaia, and through dedicated mini-surveys of high stellar density fields (similar to that performed with HSC by \citealt{1701.02151}).
+If scheduled optimally, the wide field-of-view, high cadence, and precise photometry of LSST \NEW{will provide sensitivity to microlensing event rates corresponding to $\roughly 0.03\%$ of the dark matter density in compact objects with} masses $>0.1\Msun$ (\figref{macho_constraints}).
+We briefly mention that LSST will also probe PBHs by determining the rate of type 1a SN, identifying candidate wide-binary star systems at greater distance than is possible with \Gaia, and through dedicated mini-surveys of high stellar density fields (similar to that performed with HSC by \citealt{1701.02151}).
 
 
 \subsection{Microlensing}
@@ -140,9 +140,11 @@ In addition, systematic  microlensing measurements, especially when extended to 
 
 We project the LSST Milky Way (MW) microlensing and paralensing sensitivity  from a Monte Carlo analysis of injected light curves based on LSST OpSim cadence simulations.
 %\footnote{Details available in: \url{https://github.com/lsstdarkmatter/dark-matter-paper/issues/8}.}
-We inject simulated microlensing signals onto the OpSim lightcurves for 200k PBH lenses in the mass range from $10^{-2}\Msun$ to $10^{8}\Msun$ distributed using a triangular density distribution, where $p(r = 0 \kpc) = 0$ and $p(r = 8\kpc) = 0.25$.
+We inject simulated microlensing signals onto the OpSim lightcurves for $2\times10^5$ PBH lenses in the mass range from $10^{-2}\Msun$ to $10^{8}\Msun$ distributed using a triangular density distribution, where $p(r = 0 \kpc) = 0$ and $p(r = 8\kpc) = 0.25$.
 The sources are assumed to be $23\magn$ stars located at $8\kpc$ with measurement noise generated from the standard LSST photometric error model \citep{0805.2366}.
 LSST is expected to detect $\roughly 10^{9}$ such stars, with an optical depth of $4.48 \times 10^{-6}$ \citep{2006ApJ...636..240S}.
 The paralensing constraint comes from assuming that only the secondary microlensing parallax signal is used for discovery, and not the primary heliocentric microlensing signal.
-\NEW{These sensitivity projection do not include contamination from microlensing events caused by stars and compact objects resulting from stellar evolution. They are thus an estimate of the limiting sensitivity of LSST in a ``background free'' regime (see \secref{pbh_discovery} for more details on expected conventional microlensing event rates).}
+\NEW{These sensitivity projection do not attempt to separate microlensing events produced by PBHs from conventional microlensing events produced by stars and compact objects resulting from stellar evolution. 
+Thus, these projections should be interpreted as the limiting sensitivity of LSST to \emph{all} microlensing events, regardless of their origin. 
+In \secref{pbh_discovery} we discuss the expected conventional microlensing event rates in more detail.}
 
