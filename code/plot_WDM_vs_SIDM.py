@@ -53,7 +53,7 @@ def mwdm2mhalo(mwdm):
     --------
     mhalo : halo mass (Msun)
     """
-    return 5.5e10*(np.asarray(mwdm)/1.0)**-3.33
+    return 1.6e10*(np.asarray(mwdm)/1.0)**-3.33
 
 def mhalo2mwdm(mhalo):
     """
@@ -68,7 +68,7 @@ def mhalo2mwdm(mhalo):
     --------
     mwdm : warm dark matter particle mass (keV)
     """
-    return (np.asarray(mhalo)/5.5e10)**(1/-3.33)
+    return (np.asarray(mhalo)/1.6e10)**(1/-3.33)
 
 
 # Load data
