@@ -1,0 +1,6 @@
+m_WDM	1.5 20.0
+log_sigma_o_m  -3.0 1.69897
+log_M_min      7.5 10.0
+alpha_m	  -2.0 -1.25
+sigma_m	  0.2  2
+M_host	  0.5  2
