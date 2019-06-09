@@ -1,0 +1,6 @@
+m_WDM  m_{\rm WDM}\,({\rm keV})
+log_sigma_o_m  \log(\frac{\sigma_{\rm SIDM}}{m_\chi}\frac{\rm g}{\rm cm^2})
+log_M_min \log(\mathcal{M}_{\rm min}/M_\odot)
+alpha_m	  \alpha_{\rm M}
+sigma_m	  \sigma_{\rm M}
+M_host	  M_{\rm MW}\,(10^{12} M_\odot)
