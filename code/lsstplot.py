@@ -57,78 +57,85 @@ def get_mass_limit(data):
          mass *= 1e3
     return mass, limit
 
-def plot_text(data):
-    kwargs = dict(ha='center',  va='top', rotation=data.get('rotation',0))
+def plot_text(data,**kwargs):
+    kw = dict(ha='center',  va='top', rotation=data.get('rotation',0))
+    kw.update(kwargs)
     return plt.text(float(data['label_x']),
                     float(data['label_y']),
                     data['style']['label'],
-                    **kwargs
+                    **kw
                     )
 
-def plot_limit(data):
+def plot_limit(data, **kwargs):
     mass,limit = get_mass_limit(data)
-    kwargs = dict(**data['style'])
-    plt.plot(mass, limit, **kwargs)
+    kw = dict(**data['style'])
+    kw.update(kwargs)
+    plt.plot(mass, limit, **kw)
     plot_text(data)
 
-def plot_limit_fill(data, low=False):
+def plot_limit_fill(data, low=False, **kwargs):
     mass,limit = get_mass_limit(data)
 
-    kwargs = dict(**data['style'])
-    setdefaults(kwargs,DEFAULTS)
+    kw = dict(**data['style'])
+    kw.update(**kwargs)
+    setdefaults(kw,DEFAULTS)
 
     plt.fill_between(mass, limit, y2 = 1 if not low else 0,
-                     edgecolor=kwargs['color'],
-                     facecolor=kwargs['color'],
-                     alpha=kwargs['alpha'],
+                     edgecolor=kw['color'],
+                     facecolor=kw['color'],
+                     alpha=kw['alpha'],
     )
     plot_text(data)
 
 
-def plot_lsst_limit(data, low=False):
-    kwargs = dict(**data['style'])
+def plot_lsst_limit(data, low=False, **kwargs):
+    kw = dict(**data['style'])
+    kw.update(kwargs)
+    setdefaults(kw,{'alpha':0.15})
     setdefaults(kwargs,DEFAULTS)
 
     mass,limit = get_mass_limit(data)
-    kwargs['alpha'] = 0.15
     plt.fill_between(mass, limit, y2 = 1 if not low else 0,
-                     edgecolor=kwargs['color'],
-                     facecolor=kwargs['color'],
+                     edgecolor=kw['color'],
+                     facecolor=kw['color'],
                      #facecolor='none', hatch = '/',
-                     alpha=kwargs['alpha'],
+                     alpha=kw['alpha'],
     )
     plot_text(data)
 
-    kwargs['alpha'] = 1
-    plt.plot(mass, limit, **kwargs)
+    kw['alpha'] = 1
+    plt.plot(mass, limit, **kw)
 
 
-def plot_limit_patch(data):
-    kwargs = dict(**data['style'])
-    setdefaults(kwargs,DEFAULTS)
+def plot_limit_patch(data,**kwargs):
+    kw = dict(**data['style'])
+    kw.update(kwargs)
+    setdefaults(kw,DEFAULTS)
 
     mass,limit = get_mass_limit(data)
     patch = PathPatch(Path(zip(mass, limit)),
-                      edgecolor=kwargs['color'],
-                      facecolor=kwargs['color'],
-                     alpha=kwargs['alpha'])
+                      edgecolor=kw['color'],
+                      facecolor=kw['color'],
+                     alpha=kw['alpha'])
     plt.gca().add_artist(patch)
     plot_text(data)
 
-def plot_one(data):
-    kwargs = dict(**data['style'])
-    setdefaults(kwargs,DEFAULTS)
+def plot_one(data,**kwargs):
+    kw = dict(**data['style'])
+    kw.update(kwargs)
+    setdefaults(kw,DEFAULTS)
 
     mass,limit = get_mass_limit(data)
     plt.fill_between(mass, limit, y2=1.0,
                      edgecolor=COLORS['blue'],
                      facecolor=COLORS['blue'],
-                     alpha=kwargs['alpha'])
+                     alpha=kw['alpha'])
     plot_text(data)
 
-def plot_two(data_loose, data_tight):
-    kwargs = dict(**data_loose['style'])
-    setdefaults(kwargs,DEFAULTS)
+def plot_two(data_loose, data_tight, **kwargs):
+    kw = dict(**data_loose['style'])
+    kw.update(**kwargs)
+    setdefaults(kw,DEFAULTS)
 
     mass_loose,limit_loose = get_mass_limit(data_loose)
     mass_tight,limit_tight = get_mass_limit(data_tight)
@@ -143,7 +150,7 @@ def plot_two(data_loose, data_tight):
     plt.fill_between(mass_loose, limit_loose, y2=1.0,
                      edgecolor=COLORS['blue'],
                      facecolor=COLORS['blue'],
-                     alpha=kwargs['alpha'])
+                     alpha=kw['alpha'])
     plt.fill_between(x, limit_tight_interp, limit_loose_interp,
                      edgecolor='k',
                      linewidth=0,
