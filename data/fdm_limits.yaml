@@ -191,7 +191,7 @@ schutz2020_streams:
     2.0e-21 1e-40
     2.0e-21 1e10
 
-lsst_dwarfs:
+lsst_streams:
   style:
     label : 'LSST Streams'
     color : 'orange'
