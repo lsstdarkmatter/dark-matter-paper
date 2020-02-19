@@ -11,12 +11,6 @@ import yaml
 from lsstplot import plot_limit, plot_limit_fill, plot_limit_patch, plot_lsst_limit
 import lsstplot
 
-def m22_nu(m22):
-    return 1e-6 * (m22/40)
-
-def nu_m22(nu):
-    return  40 * nu / 1e-6
-
 limits = yaml.load(open('data/snu_limits.yaml'))
 
 fig,ax = plt.subplots()
