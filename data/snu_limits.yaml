@@ -781,3 +781,21 @@ boyarsky2006_heao1_mw:
     8.76316e+1  8.26820e-15
     9.50026e+1  7.53320e-15
     9.92828e+1  7.52987e-15
+
+boyarsky2014_3.5kev:
+  #https://arxiv.org/abs/1402.4119
+  # 3.5 keV X-ray line
+  style:
+    label : 'Boyarsky et al. 2014'
+    color : 'black'
+    marker : 'None'
+    linestyle : '-'
+    linewidth : 3.5
+
+  label_x : 1000
+  label_y : 1e-20
+  rotation : 90
+  xystring: |
+    7.04 2.17501e-11
+    7.04 5.11656e-11
+    7.04 1.98250e-10
