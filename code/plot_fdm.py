@@ -64,7 +64,7 @@ x = copy.deepcopy(limits['schutz2020_streams'])
 x['label_y'] = 1e-9
 plot_limit_fill(x)
 
-x = copy.deepcopy(limits['lsst_dwarfs'])
+x = copy.deepcopy(limits['lsst_streams'])
 x['label_y'] = 1e-9
 plot_lsst_limit(x)
 
