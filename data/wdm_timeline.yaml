@@ -1,0 +1,123 @@
+# Lyman-alpha
+V05: 
+  author: 'Viel+05'
+  date: '2005-03-31'
+  mwdm: [0.55]
+  type: 'lya'
+  ref: 'astro-ph/0501562'
+V06: 
+  author: 'Viel+06'
+  date: '2006-08-17'
+  mwdm: [2.0]
+  type: 'lya'
+  ref: 'astro-ph/0605706'
+S06: 
+  author: 'Seljak+06'
+  date: '2006-11-08'
+  mwdm: [2.5]
+  type: 'lya'
+  ref: 'astro-ph/0602430'
+I17:
+  author: 'Irsic+17'
+  date: '2017-07-19'
+  mwdm: [3.5,5.3]
+  type: 'lya'
+  ref: '1702.01764'
+M18:
+  author: 'Murgia+18'
+  date: '2018-10-31'
+  mwdm: [2.7, 3.6]
+  type: 'lya'
+P19:
+  author: 'Palanque-Delabrouille+20'
+  date: '2020-04-22'
+  mwdm: [5.3]
+  type: 'lya'
+  ref: '1911.09073'
+  redshift: 4.5
+# Strong Lensing
+B17:
+  author: 'Birrer+17'
+  date: '2017-05-18'
+  mwdm: [2.0]
+  type: 'grav imaging'
+V18: 
+  author: 'Vegetti+18'
+  date: '2018-12-01'
+  mwdm: [0.3]
+  type: 'grav imaging'
+R19:
+  author: 'Ritondale+19'
+  date: '2019-02-15'
+  mwdm: [0.3]
+  type: 'grav imaging'
+G19a:
+  author: 'Gilman+19'
+  date: '2019-06-19'
+  mwdm: [3.1,4.4]
+  type: 'flux ratios'
+G19b:
+  author: 'Gilman+19'
+  date: '2019-12-11'
+  mwdm: [5.2]
+  type: 'flux ratios'
+H19:
+  author: 'Hseuh+19'
+  date: '2019-11-15'
+  mwdm: [5.58]
+  type: 'flux ratios'
+# Dwarf Galaxies
+P11:
+  author: 'Polisensky+11'
+  date: '2011-02-07'
+  mwdm: [2.3]
+  type: 'dsphs'
+  ref: ''
+  redshift: 0
+K14:
+  # Scatter from MW halo mass
+  author: 'Kennedy+14'
+  date: '2014-06-24'
+  mwdm: [1.3,5.0]
+  type: 'dsphs'
+  ref: '1310.7739'
+  redshift: 0
+J17:
+  author: 'Jethwa+17'
+  date: '2017-09-11'
+  mwdm: [2.9]
+  type: 'dsphs'
+  ref: '1612.07834'
+  redshift: 0
+N19:
+  author: 'Nadler+19'
+  date: '2019-06-17'
+  mwdm: [3.26]
+  type: 'dsphs'
+  ref: '1904.10000'
+  redshift: 0
+N20:
+  author: 'Nadler+21'
+  date: '2021-03-01'
+  mwdm: [6.5]
+  type: 'dsphs'
+  ref: '2008.00022'
+  redshift: 0
+# MW Streams
+B19:
+  author: 'Banik+19'
+  date: '2019-11-06'
+  mwdm: [4.6,6.3]
+  type: 'streams'
+# Combinations
+E20:
+  author: 'Enzi+20'
+  date: '2020-10-28'
+  mwdm: [6.733]
+  type: 'combo'
+N21:
+  author: 'Nadler+21'
+  date: '2021-01-19'
+  mwdm: [9.7]
+  type: 'combo'
+  ref: '2101.07810'
