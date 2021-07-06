@@ -1,4 +1,10 @@
 # Lyman-alpha
+N00:
+  author: 'Narayanan+00'
+  date: '2000-10-27'
+  mwdm: [0.75]
+  type: 'lya'
+  ref: astro-ph/0005095
 V05: 
   author: 'Viel+05'
   date: '2005-03-31'
@@ -17,6 +23,24 @@ S06:
   mwdm: [2.5]
   type: 'lya'
   ref: 'astro-ph/0602430'
+V08:
+  author: 'Viel08'
+  date: '2008-01-01'
+  mwdm: [1.2,4.0]
+  type: 'lya'
+  ref: "https://link.springer.com/chapter/10.1007/978-88-470-0747-5_40"
+V13:
+  author: 'Viel+13'
+  date: '2013-08-05'
+  mwdm: [3.3]
+  type: 'lya'
+  ref: '1306.2314'
+B15:
+  author: 'Baur+15'
+  date: '2016-08-08'
+  mwdm: [2.96,4.09]
+  type: 'lya'
+  ref: '1512.01981'
 I17:
   author: 'Irsic+17'
   date: '2017-07-19'
@@ -35,6 +59,12 @@ P19:
   type: 'lya'
   ref: '1911.09073'
   redshift: 4.5
+G21:
+  author: 'Garzilli+21'
+  date: '2021-01-23'
+  mwdm: [1.9]
+  type: 'lya'
+  ref: '2021MNRAS.502.2356G'
 # Strong Lensing
 B17:
   author: 'Birrer+17'
@@ -67,6 +97,13 @@ H19:
   mwdm: [5.58]
   type: 'flux ratios'
 # Dwarf Galaxies
+M09:
+  author: 'Maccio+2010'
+  date: '2010-05-01'
+  mwdm: [1.0]
+  type: 'dsphs'
+  ref: '0910.2460'
+  redshift: 0
 P11:
   author: 'Polisensky+11'
   date: '2011-02-07'
@@ -96,6 +133,13 @@ N19:
   type: 'dsphs'
   ref: '1904.10000'
   redshift: 0
+Newton20:
+  author: 'Newton+20'
+  date: '2020-11-17'
+  mwdm: [2.02,3.99]
+  type: 'dsphs'
+  ref: 2011.08865
+  redshift: 0
 N20:
   author: 'Nadler+21'
   date: '2021-03-01'
@@ -109,15 +153,23 @@ B19:
   date: '2019-11-06'
   mwdm: [4.6,6.3]
   type: 'streams'
+  ref: 1911.02663
+B21:
+  author: 'Banik+21'
+  date: '2021-01-25'
+  mwdm: [3.0,4.6]
+  type: 'streams'
+  ref: 1911.02662
 # Combinations
 E20:
   author: 'Enzi+20'
   date: '2020-10-28'
-  mwdm: [6.733]
+  mwdm: [6.048]
   type: 'combo'
+  ref: 2010.13802
 N21:
   author: 'Nadler+21'
   date: '2021-01-19'
   mwdm: [9.7]
   type: 'combo'
-  ref: '2101.07810'
+  ref: 2101.07810
