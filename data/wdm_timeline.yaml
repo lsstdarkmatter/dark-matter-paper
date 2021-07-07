@@ -160,6 +160,19 @@ B21:
   mwdm: [3.0,4.6]
   type: 'streams'
   ref: 1911.02662
+# High redshift galaxies
+P13:
+  author: 'Pacucci+13'
+  date: '2013-08-09'
+  mwdm: [0.9,1.0]
+  type: 'high-z'
+  ref: 1306.0009
+C17:
+  author: 'Corasaniti+17'
+  date: '2017-04-12'
+  mwdm: [1.5]
+  type: 'high-z'
+  ref: 1611.05892
 # Combinations
 E20:
   author: 'Enzi+20'
