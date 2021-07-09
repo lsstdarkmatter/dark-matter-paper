@@ -167,12 +167,30 @@ P13:
   mwdm: [0.9,1.0]
   type: 'high-z'
   ref: 1306.0009
+S14:
+  author: 'Schultz+14'
+  date: '2014-06-16'
+  mwdm: [0.8,1.3]
+  type: 'high-z'
+  ref: 1401.3769
+M16:
+  author: 'Menci+16'
+  date: '2016-02-10'
+  mwdm: [1.5,1.8]
+  type: 'high-z'
+  ref: 1601.01820
 C17:
   author: 'Corasaniti+17'
   date: '2017-04-12'
   mwdm: [1.5]
   type: 'high-z'
   ref: 1611.05892
+R21:
+  author: 'Rudakovskyi+21'
+  date: '2021-04-09'
+  mwdm: [2.0]
+  type: 'high-z'
+  ref: 2104.04481
 # Combinations
 E20:
   author: 'Enzi+20'

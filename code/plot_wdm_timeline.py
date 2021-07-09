@@ -16,14 +16,15 @@ COLORS=odict([
     ('dsphs',(r'MW Satellites','tab:green')),
     ('grav imaging',(r'Grav. Imaging','tab:orange')),
     ('flux ratios',(r'Flux Ratios','tab:red')),
-    #('streams','black'),
+    ('high-z',(r'High-z Galaxies','tab:pink')),
+    ('streams',(r'Stellar Streams','tab:gray')),
     ('combo',(r'Combinations','tab:purple')),
 ])
 
 fig,ax = plt.subplots()
 kwargs=dict(lolims=True,lw=3,capsize=8,capthick=3)
 for key,val in LIMITS.items():
-    if val['type'] == 'streams': continue
+    if val['type'] not in COLORS.keys(): continue
     print(key)
     label,color=COLORS[val['type']]
     date = parse(val['date'])
